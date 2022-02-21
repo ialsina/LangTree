@@ -1,0 +1,1029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?r6n0n4" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.5, minimum-scale=1, user-scalable=yes" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.ethnologue.com/subgroups/caddoan" />
+<link rel="shortlink" href="https://www.ethnologue.com/subgroups/caddoan" />
+<meta property="og:site_name" content="Ethnologue" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ethnologue.com/subgroups/caddoan" />
+<meta property="og:title" content="Caddoan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@theEthnologue" />
+  <link rel="search" type="application/opensearchdescription+xml" title="Ethnologue" href="/sites/default/files/ethnologuedotcom.xml">
+  <link rel="apple-touch-icon" href="/sites/all/themes/ethn/images/apple-touch-icon.png" />
+  <title>Caddoan | Ethnologue</title>
+  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?8363d80c"></script-->
+  <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M7MVKTH');</script>
+  <!-- End Google Tag Manager -->
+  <script type="text/javascript" src="//use.typekit.net/uas6grd.js"></script>
+  <script src="https://use.fortawesome.com/6d0c5b64.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <style type="text/css" media="all">
+@import url("https://www.ethnologue.com/modules/system/system.base.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.menus.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.messages.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.theme.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/comment/comment.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/field/theme/field.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/node/node.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/search/search.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/user/user.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?r6n0n4");
+</style>
+
+<!--[if lt IE 10]>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?r6n0n4");
+</style>
+<![endif]-->
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?r6n0n4");
+</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?r6n0n4");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+</style>
+<!--<![endif]-->
+<style type="text/css" media="print">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?r6n0n4");
+</style>
+  <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?r6n0n4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-20037946-14", {"cookieDomain":"auto"});ga("set", "dimension2", "anonymous user");ga('require', 'linkid', {
+  'levels': 5
+});
+var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
+ga('set', 'dimension1', pixelRatio );ga("send", "pageview");ga('require', 'Clearbit', {"mapping":{"companyName":"dimension3","companyDomain":"dimension4","companyTags":"dimension5","companySector":"dimension6","companyIndustryGroup":"dimension7","companyIndustry":"dimension8","companySubIndustry":"dimension9","companyType":"dimension10","companyEmployeesRange":"dimension11","companyAlexaRank":"dimension12","companyCity":"dimension13","companyState":"dimension14","companyCountry":"dimension15"}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?r6n0n4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"Z3GQGTI_0wAP4YOUIXgB1oPO_J7vubUov1O7TC_-scc","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.22.0"},"smart_ip":{"location":{"country_code":"CH","country":"Switzerland","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"212.25.19.58","timestamp":1643843936}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-family page-family-24-2868 context-subgroups">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7MVKTH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+  <div id="page-wrapper" class="page-wrapper clearfix container-24">
+          <header id="section-header" class="section section-header">
+  
+<div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">  
+  <div id="zone-header" class="zone zone-header clearfix container-24">
+    <!--div id="slicknav-main"></div>
+    <div id="mobile-toggles"-->
+      <!--div title="Menu" class="icon menu"></div-->
+      <!--div title="Search" class="icon search"></div>      
+    </div-->
+    <img id="print-logo" src="/sites/all/themes/ethn/images/print_logo.gif" alt="" />
+    <div class="grid-16 region region-user-first" id="region-user-first">
+  <div class="region-inner region-user-first-inner">
+    <div class="block block-block block-446 block-block-446 odd block-without-title" id="block-block-446">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.pricing-menu a {
+border-radius: 3px;
+background: #74AC3C;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-506 block-block-506 even block-without-title" id="block-block-506">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'left', leadColor : '#146ff8', triggerColor : '#146ff8', triggerRadius : '50%', triggerPositionX : 'left', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>    </div>
+  </div>
+</div><div class="block block-block block-66 block-block-66 odd block-without-title" id="block-block-66">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <!-- Start of Woopra Code -->
+<script>
+(function(){
+        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+    domain: 'ethnologue.com'
+});
+
+woopra.track();
+</script>
+<!-- End of Woopra Code -->    </div>
+  </div>
+</div><div class="block block-block block-71 block-block-71 even block-without-title" id="block-block-71">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script src="https://use.fortawesome.com/6d0c5b64.js"></script>    </div>
+  </div>
+</div><div class="block block-block block-271 block-block-271 odd block-without-title" id="block-block-271">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.aa-col-left {
+  width: 90%;
+  display: inline-block;
+}
+.aa-col-right {
+  width: 10%;
+  display: inline-block;
+  color: #ddd;
+  vertical-align: top;
+}
+.aa-col-right span {
+  display: inline-block;
+  padding-top: 49%;
+  text-align: uppercase;
+}
+.aa-input-container {
+  display: inline-block;
+  position: relative; }
+.aa-input-search {
+  width: 300px;
+  padding: 7px 6px 6px 28px !important;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-family: "Myriad-Pro", sans-serif;
+  font-size: 11px;
+  box-sizing: border-box;
+  color: #333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+    display: none; }
+  .aa-input-search:focus {
+    outline: 0;
+    border-color: #3a96cf;
+    box-shadow: 4px 4px 0 rgba(58, 150, 207, 0.1); }
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 48%;
+  left: 9px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4;
+  pointer-events: none; }
+.aa-hint {
+  color: #e4e4e4; }
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 2px solid rgba(228, 228, 228, 0.6);
+  border-top-width: 0;
+  font-family: "Myriad-Pro", sans-serif;
+  width: 280px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 0 rgba(241, 241, 241, 0.35);
+  font-size: 11px;
+  border-radius: 4px;
+  box-sizing: border-box; }
+.aa-empty, .aa-suggestion a {
+  border-top: 1px solid #efefef;
+  text-decoration: none;
+  padding: 8px 12px 6px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .aa-suggestion:hover, .aa-suggestion.aa-cursor {
+    background-color: rgba(241, 241, 241, 0.35); }
+  .aa-suggestion a .title {
+    display: block;
+    font-size: 13px;
+    color: #000; }
+  .aa-suggestion a .subtitle {
+    color: #a9a9a9; }
+.aa-suggestion .promo {
+  background-color: rgba(253, 255, 228, 0.6);
+}
+.aa-suggestion .promo:hover {
+  background-color: rgba(247, 249, 218, 1);
+}
+.aa-suggestions-category {
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(228, 228, 228, 0.6);
+  border-top: 2px solid rgba(228, 228, 228, 0.6);
+  padding: 6px 12px;
+  color: #a9a9a9; }
+.aa-suggestion a em {
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgba(58, 150, 207, 0.1);
+  padding: 2px 0 2px 2px; }
+#aa-search-input {
+    font-family: expo-serif-pro, serif;
+    font-size: 14px !important;
+    border-radius: 20px !important;
+    width: 280px !important;
+    margin-top: -2px;
+}
+.aa-empty {
+  padding: 11px 12px 12px;
+  text-align: center;
+  cursor: initial;
+}
+.aa-empty .title {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.aa-empty hr {
+  width: 120px;
+  margin: auto;
+  background: #efefef;
+}
+.aa-empty .description {
+  margin-top: 5px;
+  display: block;
+  line-height: 1.3;
+  color: #a9a9a9;
+}
+</style>
+
+<!-- HTML Markup -->
+<div class="aa-input-container" id="aa-input-container">
+    <input type="text" id="aa-search-input" class="aa-input-search" placeholder="Find a language or country..." name="search" autocomplete="off" />
+    <svg class="aa-input-icon" viewBox="654 -372 1664 1664">
+        <path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
+    </svg>
+</div>
+<!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.28.2/dist/autocomplete.min.js"></script>
+<!-- Initialize Woopra tracking for search -->
+<script>
+var url = window.location.pathname
+document.getElementById("aa-search-input").onclick = function() {
+    woopra.track("search-input", {
+        path: url
+    });
+};
+</script>
+<!-- Initialize autocomplete menu -->
+<script>
+var client = algoliasearch("2RP8PHQQI3", "45348df641ea37f730d2938add600be1");
+var countries = client.initIndex('countries_24');
+var macrolanguages = client.initIndex('macrolanguages_24');
+var languages = client.initIndex('languages_24');
+var alt = client.initIndex('alt_24');
+var autonyms = client.initIndex('autonyms_24');
+var guides = client.initIndex('guides');
+
+//initialize autocomplete on search input (ID selector must match)
+autocomplete('#aa-search-input', 
+  { 
+    hint: false, 
+    openOnFocus: true,
+    templates: {
+      empty: '<i class="icon icon-magnifying-glass icon-3x"></i><h5 class="title">No Results Found</h5><hr><span class="description">Try adjusting your search terms. You can search countries, languages, and guides.</span>'
+    }
+  }, 
+[
+{
+      source: autocomplete.sources.hits(guides, {hitsPerPage: 5}),
+      displayKey: 'guide_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/guides/' + suggestion.slug +'" class="promo"><span class="title">' +
+              suggestion._highlightResult.title.value + '</span><span class="subtitle">An Ethnologue guide</span></a>';
+          }
+      }
+  },  
+{
+      source: autocomplete.sources.hits(countries, {hitsPerPage: 1}),
+      displayKey: 'country_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/country/' + suggestion.country_code +'" class="promo"><span class="title">' +
+              suggestion._highlightResult.country_name.value + '</span><span class="subtitle">A country in ' +
+              suggestion.country_in + '</span></a>';
+          }
+      }
+  },
+  {
+      source: autocomplete.sources.hits(macrolanguages, {hitsPerPage: 1}),
+      displayKey: 'macrolanguage_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/language/' + suggestion.iso_639 +'" class="promo"><div class="aa-col-left"><span class="title">' +
+              suggestion._highlightResult.macrolanguage_name.value + '</span><span class="subtitle">A macrolanguage of ' +
+              suggestion.language_of + '</span></div><div class="aa-col-right"><span>' + suggestion.iso_639 + '</span></div></a>';
+          }
+      }
+  },
+  {
+      source: autocomplete.sources.hits(languages, {hitsPerPage: 3}),
+      displayKey: 'language_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/language/' + suggestion.iso_639 +'"><div class="aa-col-left"><span class="title">' +
+              suggestion._highlightResult.language_name.value + '</span><span class="subtitle">A language of ' +
+              suggestion.language_of + '</span></div><div class="aa-col-right"><span>' + suggestion.iso_639 + '</span></div></a>';
+          }
+      }
+},
+{
+      source: autocomplete.sources.hits(alt, {hitsPerPage: 3}),
+      displayKey: 'name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/language/' + suggestion.iso_639 +'"><div class="aa-col-left"><span class="title">' +
+              suggestion._highlightResult.name.value + '</span><span class="subtitle">' + suggestion.nametype_lower + ' ' +
+              suggestion.langname + '</span></div><div class="aa-col-right"><span>' + suggestion.iso_639 + '</span></div></a>';
+          }
+      }
+  }
+]).on('autocomplete:selected', function(event, suggestion, dataset) {
+  window.location = "/language/"+suggestion["iso_639"];
+});
+</script>    </div>
+  </div>
+</div><div class="block block-block block-131 block-block-131 even block-without-title" id="block-block-131">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>.block-menu-block .block-title a {
+	font-size: 15.4px;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-151 block-block-151 odd block-without-title" id="block-block-151">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script>
+var _prum = [['id', '57a5f1d1abe53d2d78eaa446'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>    </div>
+  </div>
+</div><div class="block block-block block-171 block-block-171 even block-without-title" id="block-block-171">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.recurlyjs-billing-info {
+display: table;
+}
+
+.recurlyjs-total {
+text-align: right;
+}
+
+.webform-client-form input.form-text, #user-register-form input.form-text, #user-login input.form-text, #user-pass input.form-text, #user-profile-form input.form-text {
+font-size: 18px;
+padding: 12px 9px 8px 9px;
+font-family: 'expo-serif-pro';
+font-weight: 400;
+margin-top: 3px;
+margin-bottom: 3px;
+color: #222;
+}
+
+.webform-client-form .form-textarea {
+font-size: 18px;
+padding: 11px 9px 8px 9px;
+font-family: 'expo-serif-pro';
+font-weight: 400;
+margin-top: 3px;
+margin-bottom: 3px;
+color: #222;
+}
+
+.webform-client-form label, #user-register-form label, #user-login label, #user-pass label, #user-profile-form label {
+color: #555;
+}
+
+.confirm-parent, .password-parent {
+width: 38.7em;
+}
+
+</style>
+    </div>
+  </div>
+</div><div class="block block-block block-256 block-block-256 odd block-without-title" id="block-block-256">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.form-item-name {
+margin-top: 0;
+}
+.page-toboggan-denied .description, .page-toboggan-denied .print-link, .page-toboggan-denied .form-required {
+display: none;
+}
+.page-toboggan-denied div.button span {
+line-height: 1em;
+}
+.page-toboggan-denied #uniform-edit-submit {
+border-radius: 3px;
+font-size: 17.2px;
+background-color: rgba(62, 124, 0, 0.78);
+width: 100%;
+height: 40px;
+padding-top: 6px;
+text-align: center;
+background-image: none;
+}
+.page-toboggan-denied #uniform-edit-submit span {
+background-image: none;
+font-family: "Myriad-Pro","PT Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+.page-toboggan-denied #uniform-edit-submit:hover {
+background-color: rgba(62, 124, 0, 1);
+}
+@media (min-width: 481px) {
+.page-toboggan-denied .section-content .section-wrapper, .page-toboggan-denied #zone-content {
+background: #f5fafd;
+}
+.page-toboggan-denied #region-content .region-inner {
+max-width: 375px;
+margin: 0 auto;
+border: 1px solid #ccc;
+border-radius: 3px;
+padding: 30px 45px 30px 45px;
+background-color: #fff;
+}
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-231 block-block-231 even block-without-title" id="block-block-231">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+#region-menu nav>ul>li>a {
+	font-family: 'myriad-pro', Arial, sans-serif;
+	font-size: 18px;
+	padding: 7px 9px 6px;
+	text-transform: none;
+}
+#region-user-second ul.menu li {
+	margin-left: -3px;
+	border-right: 1px solid rgba(255,255,255,0.3);
+}
+#region-user-second ul.menu li a {
+	color: rgba(255,255,255,0.9);
+	font-size: 0.95em;
+        padding: 8px 10px;
+}
+#region-user-second ul li a.account {
+	background-color: rgba(0,84,127,0.54);
+	margin: 0 6px 0 3px;
+	border-radius: 3px;
+	text-transform: capitalize;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-176 block-block-176 odd block-without-title" id="block-block-176">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.messages {
+font-size: 14px;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-206 block-block-206 even block-without-title" id="block-block-206">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.recurly-paywall-curtain-w .cta .current {
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #FFF;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 17.2px;
+}
+.recurly-paywall-curtain-w .cta a {
+    display: inline-block;
+    background-color: #3E7C00;
+    border-radius: 5px;
+    color: #FFF;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17.2px;
+}
+
+.recurly-paywall-curtain-w .cta a:hover {
+    background-color: #4d9900;
+}
+.recurly-paywall-curtain-w .pricing-table .cell {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.recurly-paywall-curtain-w .pricing-table h4 {
+    text-align: center;
+    font-size: 18px !important;
+}
+.recurly-paywall-curtain-w .pricing-table p {
+    margin-bottom: 25px;
+    font-family: 'expo-serif-pro';
+    text-align: center;
+    float: none;
+    font-size: 14px;
+}
+.recurly-paywall-curtain-w .icon-ul li {
+    list-style: none;
+    font-family: 'expo-serif-pro';
+    margin-bottom: 4px;
+} 
+.recurly-paywall-curtain-w .pricing-table .icon-ul {
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 8px;
+    font-size: 14px;
+    float: none;
+}
+.recurly-paywall-curtain-w .pricing-table .icon-ul li {
+    margin-bottom: 0;
+}
+.recurly-paywall-curtain-w .pricing-table .icon {
+    padding-right: 2px;
+}
+.recurly-paywall-curtain-w .pricing-table .cta {
+    text-align: center;
+    margin: 16px 0 5px;
+}
+.recurly-paywall-curtain-w .pricing-table .amount {
+    line-height: 1;
+    font-weight: normal;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+    background: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+}
+.recurly-paywall-curtain-w .pricing-table small {
+    font-size: 80%;
+}
+.recurly-paywall-curtain-w .plan-category {
+    font-weight: 300;
+}
+</style>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-8 region region-user-second" id="region-user-second">
+  <div class="region-inner region-user-second-inner">
+    <div class="block block-system block-menu block-user-menu block-system-user-menu odd block-without-title" id="block-system-user-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/24-2868">Login</a></li>
+<li class="last leaf"><a href="/cart/my" style="text-transform: capitalize;">Shopping cart</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-24 prefix-2 region region-branding alpha" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?r6n0n4" alt="Ethnologue" id="logo" /></a>      </div>
+                        <hgroup class="site-name-slogan">        
+                                <h2 class="site-name element-invisible"><a href="/" title="Home">Ethnologue</a></h2>
+                              </hgroup>
+          </div>
+          </div>
+</div><div class="grid-24 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <nav class="navigation">
+      <ul class="menu"><li class="first leaf"><a href="/browse/names">Languages</a></li>
+<li class="leaf"><a href="/browse/countries">Countries</a></li>
+<li class="leaf"><a href="/guides">Guides</a></li>
+<li class="collapsed"><a href="/about">About</a></li>
+<li class="last leaf subscribe-ip pricing-menu"><a href="/pricing">Plans &amp; Pricing</a></li>
+</ul>    </nav>
+          </div>
+</div>
+    <div class="separator"></div>
+  </div>
+  <div class="separator"></div>
+</div><div id="zone-header-second-wrapper" class="zone-wrapper zone-header-second-wrapper clearfix">  
+  <div id="zone-header-second" class="zone zone-header-second clearfix container-24">
+    <div class="grid-24 region region-header-first" id="region-header-first">
+  <div class="region-inner region-header-first-inner">
+          </div>
+</div>    <div class="separator"></div>
+  </div>
+  <div class="separator"></div>
+</div></header>              <section id="section-content" class="section section-content">
+  <div class="section-wrapper clearfix container-24">
+    	<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">
+<div id="zone-content" class="zone zone-content clearfix container-24">
+		<div class="grid-24 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+	      <a id="main-content"></a>
+              <div class="title-wrapper">
+                        <h1 class="title" id="page-title">Caddoan</h1>
+        <a class="print-link" href="javascript:window.print();">Print</a>              </div>
+              <div class="tabs clearfix"></div>    <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-5eccf01d0a8d413ec6f1d5777bf4adfb">
+        
+  
+      <div class="attachment attachment-before">
+      <div class="view view-family view-id-family view-display-id-attachment_2">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last indent0">
+      
+  <div>        <span></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-family view-id-family view-display-id-attachment_1 indent1">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-name-1">        <span class="field-content">Caddoan (5)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-dc41d824fc51d37b752366ffb524472e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Caddo <a href="/language/cad/24">[cad]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+      <div class="view-content indent1">
+      <div class="item-list"><ul><li class="first last">  
+          <a href="/subgroups/northern-caddoan">Northern Caddoan (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d11afc6aba3bdd741d05a8f70c4302d0">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Wichita <a href="/language/wic/24">[wic]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first last">  
+          <a href="/subgroups/kitsai-proto-pawnee">Kitsai-Proto-Pawnee (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3779fedfb61a45cdbf6f360f03f5c47f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kitsai <a href="/language/kii/24">[kii]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first last">  
+          <a href="/subgroups/proto-pawnee">Proto-Pawnee (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9b8c006a08605a45e2b6c4b13b88539b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Arikara <a href="/language/ari/24">[ari]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pawnee <a href="/language/paw/24">[paw]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li></ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div>      </div>
+</div></div>
+ <div class="separator"></div>
+	</div>
+  </div>
+</section>      
+          <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-24">
+    <div class="grid-4 suffix-1 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <div class="block block-menu block-menu-footer-menu-1 block-menu-menu-footer-menu-1 odd" id="block-menu-menu-footer-menu-1">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Browse by</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="/browse/countries" title="">Countries</a></li>
+<li class="leaf"><a href="/browse/names" title="">Language Names</a></li>
+<li class="leaf"><a href="/browse/codes" title="">Language Codes</a></li>
+<li class="leaf"><a href="/browse/families" title="">Language Families</a></li>
+<li class="leaf"><a href="/language-of-the-day" title="">Language of the Day</a></li>
+<li class="last leaf"><a href="/browse/maps" title="">Map Titles</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 suffix-1 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div class="block block-menu block-menu-footer-menu-2 block-menu-menu-footer-menu-2 odd" id="block-menu-menu-footer-menu-2">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Current Edition</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 24th Edition</a></li>
+<li class="leaf"><a href="/abbreviations">Abbreviations</a></li>
+<li class="leaf"><a href="/bibliography">Bibliography</a></li>
+<li class="leaf"><a href="/credits">Credits</a></li>
+<li class="leaf"><a href="/guides/how-many-languages">Number of Languages</a></li>
+<li class="leaf"><a href="/codes">Code Tables</a></li>
+<li class="last leaf"><a href="/faq">FAQ</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 suffix-1 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu-block block-7 block-menu-block-7 odd" id="block-menu-block-7">
+  <div class="block-inner clearfix">
+              <h2 class="block-title"><a href="/products" title="">Products</a></h2>
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-7 menu-name-menu-footer-menu-3 parent-mlid-29651 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-110291"><a href="/pricing">Plans</a></li>
+<li class="leaf menu-mlid-24281"><a href="/browse/products">Digests</a></li>
+<li class="last leaf menu-mlid-24286"><a href="/books" title="">Books</a></li>
+</ul></div>
+    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 suffix-1 region region-footer-fourth" id="region-footer-fourth">
+  <div class="region-inner region-footer-fourth-inner">
+    <div class="block block-block block-2 block-block-2 odd" id="block-block-2">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Related Sites</h2>
+            
+    <div class="content clearfix">
+      <ul>
+<li><a href="/archive" title="Ethnologue Archive">Ethnologue Archive</a></li>
+<li><a href="http://www.sil.org" title="SIL.org" target="_blank">SIL.org</a></li>
+<li><a href="http://www.scriptsource.org" title="ScriptSource" target="_blank">ScriptSource</a></li>
+<li><a href="https://iso639-3.sil.org/" title="ISO 639-3" target="_blank">ISO 639-3</a></li>
+<li><a href="https://derivation.co/" title="Derivation" target="_blank">Derivation</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 region region-footer-fifth" id="region-footer-fifth">
+  <div class="region-inner region-footer-fifth-inner">
+    <div class="block block-block block-316 block-block-316 odd block-without-title" id="block-block-316">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.region-footer-fifth a.sil {
+bottom: inherit;
+top: 2.75em;
+}
+.icon-twitter:hover, .icon-facebook-official:hover {
+text-decoration: none !important;
+color: #e5e5e5 !important;
+}
+</style>
+<p class="address">Ethnologue<br/>
+by <a href="https://www.sil.org">SIL International</a><br/>
+</p>
+<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#4325262627212220280326372b2d2c2f2c2436266d202c2e"><u>Contact us</u></a>
+<br/>
+<br/>
+<p class="contact">
+<p>Find Ethnologue on:</p>
+<a href="https://twitter.com/theEthnologue" class="icon icon-link icon-twitter" style="font-size: 1.75em;"></a>
+<a href="https://www.facebook.com/theEthnologue/" class="icon icon-link icon-facebook-official" style="font-size: 1.75em;padding-left: 3px;"></a> 
+</p>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-24 region region-footer-sixth" id="region-footer-sixth">
+  <div class="region-inner region-footer-sixth-inner">
+    <div class="block block-block block-9 block-block-9 odd block-without-title" id="block-block-9">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2021. <em>Ethnologue: Languages of the World.</em> Twenty-fourth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
+  </div>
+</div><div class="block block-block block-10 block-block-10 even block-without-title" id="block-block-10">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <!--
+<ul>
+  <li class="sm-fb"><a href="http://www.facebook.com"target="_blank"><span>Facebook</span></a></li>
+  <li class="sm-gp"><a href="http://google.com" target="_blank"><span>Google+</span></a></li>
+  <li class="sm-tw"><a href="http://twitter.com" target="_blank"><span>Twitter</span></a></li>
+  <li class="sm-li"><a href="http://linkedin.com" target="_blank"><span>LinkedIn</span></a></li>
+</ul>
+-->    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-24 region region-footer-bottom" id="region-footer-bottom">
+  <div class="region-inner region-footer-bottom-inner">
+    <div class="block block-block block-4 block-block-4 odd block-without-title" id="block-block-4">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      Copyright © 2021 SIL International    </div>
+  </div>
+</div><div class="block block-block block-11 block-block-11 even block-without-title" id="block-block-11">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <a href="/privacy-policy-and-terms-use" title="Terms of Use">Terms of Use | Privacy Policy</a>    </div>
+  </div>
+</div><div class="block block-block block-86 block-block-86 odd block-without-title" id="block-block-86">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* Replace 'APP_ID' with your app ID */
+window.intercomSettings = {
+    app_id: 'ne48fzn6',
+    custom_launcher_selector: '#intercom'
+};
+/* Replace 'APP_ID' with your app ID */
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ne48fzn6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+    </div>
+  </div>
+</div>  </div>
+</div>    <div class="separator"></div>
+  </div>
+  <div class="separator"></div>
+</div></footer>      </div>
+</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":313,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

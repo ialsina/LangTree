@@ -1,0 +1,3024 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?r6n0n4" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.5, minimum-scale=1, user-scalable=yes" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.ethnologue.com/subgroups/nilo-saharan" />
+<link rel="shortlink" href="https://www.ethnologue.com/subgroups/nilo-saharan" />
+<meta property="og:site_name" content="Ethnologue" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ethnologue.com/subgroups/nilo-saharan" />
+<meta property="og:title" content="Nilo-Saharan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@theEthnologue" />
+  <link rel="search" type="application/opensearchdescription+xml" title="Ethnologue" href="/sites/default/files/ethnologuedotcom.xml">
+  <link rel="apple-touch-icon" href="/sites/all/themes/ethn/images/apple-touch-icon.png" />
+  <title>Nilo-Saharan | Ethnologue</title>
+  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?43e78dc0"></script-->
+  <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M7MVKTH');</script>
+  <!-- End Google Tag Manager -->
+  <script type="text/javascript" src="//use.typekit.net/uas6grd.js"></script>
+  <script src="https://use.fortawesome.com/6d0c5b64.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <style type="text/css" media="all">
+@import url("https://www.ethnologue.com/modules/system/system.base.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.menus.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.messages.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.theme.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/comment/comment.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/field/theme/field.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/node/node.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/search/search.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/user/user.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?r6n0n4");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?r6n0n4");
+</style>
+
+<!--[if lt IE 10]>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?r6n0n4");
+</style>
+<![endif]-->
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?r6n0n4");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?r6n0n4");
+</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?r6n0n4");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+</style>
+<!--<![endif]-->
+<style type="text/css" media="print">
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?r6n0n4");
+</style>
+  <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?r6n0n4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-20037946-14", {"cookieDomain":"auto"});ga("set", "dimension2", "anonymous user");ga('require', 'linkid', {
+  'levels': 5
+});
+var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
+ga('set', 'dimension1', pixelRatio );ga("send", "pageview");ga('require', 'Clearbit', {"mapping":{"companyName":"dimension3","companyDomain":"dimension4","companyTags":"dimension5","companySector":"dimension6","companyIndustryGroup":"dimension7","companyIndustry":"dimension8","companySubIndustry":"dimension9","companyType":"dimension10","companyEmployeesRange":"dimension11","companyAlexaRank":"dimension12","companyCity":"dimension13","companyState":"dimension14","companyCountry":"dimension15"}});
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?r6n0n4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"Z3GQGTI_0wAP4YOUIXgB1oPO_J7vubUov1O7TC_-scc","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.22.0"},"smart_ip":{"location":{"country_code":"CH","country":"Switzerland","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"212.25.19.58","timestamp":1643843936}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-family page-family-24-39 context-subgroups">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7MVKTH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+  <div id="page-wrapper" class="page-wrapper clearfix container-24">
+          <header id="section-header" class="section section-header">
+  
+<div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">  
+  <div id="zone-header" class="zone zone-header clearfix container-24">
+    <!--div id="slicknav-main"></div>
+    <div id="mobile-toggles"-->
+      <!--div title="Menu" class="icon menu"></div-->
+      <!--div title="Search" class="icon search"></div>      
+    </div-->
+    <img id="print-logo" src="/sites/all/themes/ethn/images/print_logo.gif" alt="" />
+    <div class="grid-16 region region-user-first" id="region-user-first">
+  <div class="region-inner region-user-first-inner">
+    <div class="block block-block block-446 block-block-446 odd block-without-title" id="block-block-446">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.pricing-menu a {
+border-radius: 3px;
+background: #74AC3C;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-506 block-block-506 even block-without-title" id="block-block-506">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'left', leadColor : '#146ff8', triggerColor : '#146ff8', triggerRadius : '50%', triggerPositionX : 'left', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>    </div>
+  </div>
+</div><div class="block block-block block-66 block-block-66 odd block-without-title" id="block-block-66">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <!-- Start of Woopra Code -->
+<script>
+(function(){
+        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+    domain: 'ethnologue.com'
+});
+
+woopra.track();
+</script>
+<!-- End of Woopra Code -->    </div>
+  </div>
+</div><div class="block block-block block-71 block-block-71 even block-without-title" id="block-block-71">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script src="https://use.fortawesome.com/6d0c5b64.js"></script>    </div>
+  </div>
+</div><div class="block block-block block-271 block-block-271 odd block-without-title" id="block-block-271">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.aa-col-left {
+  width: 90%;
+  display: inline-block;
+}
+.aa-col-right {
+  width: 10%;
+  display: inline-block;
+  color: #ddd;
+  vertical-align: top;
+}
+.aa-col-right span {
+  display: inline-block;
+  padding-top: 49%;
+  text-align: uppercase;
+}
+.aa-input-container {
+  display: inline-block;
+  position: relative; }
+.aa-input-search {
+  width: 300px;
+  padding: 7px 6px 6px 28px !important;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-family: "Myriad-Pro", sans-serif;
+  font-size: 11px;
+  box-sizing: border-box;
+  color: #333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+    display: none; }
+  .aa-input-search:focus {
+    outline: 0;
+    border-color: #3a96cf;
+    box-shadow: 4px 4px 0 rgba(58, 150, 207, 0.1); }
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 48%;
+  left: 9px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4;
+  pointer-events: none; }
+.aa-hint {
+  color: #e4e4e4; }
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 2px solid rgba(228, 228, 228, 0.6);
+  border-top-width: 0;
+  font-family: "Myriad-Pro", sans-serif;
+  width: 280px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 0 rgba(241, 241, 241, 0.35);
+  font-size: 11px;
+  border-radius: 4px;
+  box-sizing: border-box; }
+.aa-empty, .aa-suggestion a {
+  border-top: 1px solid #efefef;
+  text-decoration: none;
+  padding: 8px 12px 6px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .aa-suggestion:hover, .aa-suggestion.aa-cursor {
+    background-color: rgba(241, 241, 241, 0.35); }
+  .aa-suggestion a .title {
+    display: block;
+    font-size: 13px;
+    color: #000; }
+  .aa-suggestion a .subtitle {
+    color: #a9a9a9; }
+.aa-suggestion .promo {
+  background-color: rgba(253, 255, 228, 0.6);
+}
+.aa-suggestion .promo:hover {
+  background-color: rgba(247, 249, 218, 1);
+}
+.aa-suggestions-category {
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(228, 228, 228, 0.6);
+  border-top: 2px solid rgba(228, 228, 228, 0.6);
+  padding: 6px 12px;
+  color: #a9a9a9; }
+.aa-suggestion a em {
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgba(58, 150, 207, 0.1);
+  padding: 2px 0 2px 2px; }
+#aa-search-input {
+    font-family: expo-serif-pro, serif;
+    font-size: 14px !important;
+    border-radius: 20px !important;
+    width: 280px !important;
+    margin-top: -2px;
+}
+.aa-empty {
+  padding: 11px 12px 12px;
+  text-align: center;
+  cursor: initial;
+}
+.aa-empty .title {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.aa-empty hr {
+  width: 120px;
+  margin: auto;
+  background: #efefef;
+}
+.aa-empty .description {
+  margin-top: 5px;
+  display: block;
+  line-height: 1.3;
+  color: #a9a9a9;
+}
+</style>
+
+<!-- HTML Markup -->
+<div class="aa-input-container" id="aa-input-container">
+    <input type="text" id="aa-search-input" class="aa-input-search" placeholder="Find a language or country..." name="search" autocomplete="off" />
+    <svg class="aa-input-icon" viewBox="654 -372 1664 1664">
+        <path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
+    </svg>
+</div>
+<!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.28.2/dist/autocomplete.min.js"></script>
+<!-- Initialize Woopra tracking for search -->
+<script>
+var url = window.location.pathname
+document.getElementById("aa-search-input").onclick = function() {
+    woopra.track("search-input", {
+        path: url
+    });
+};
+</script>
+<!-- Initialize autocomplete menu -->
+<script>
+var client = algoliasearch("2RP8PHQQI3", "45348df641ea37f730d2938add600be1");
+var countries = client.initIndex('countries_24');
+var macrolanguages = client.initIndex('macrolanguages_24');
+var languages = client.initIndex('languages_24');
+var alt = client.initIndex('alt_24');
+var autonyms = client.initIndex('autonyms_24');
+var guides = client.initIndex('guides');
+
+//initialize autocomplete on search input (ID selector must match)
+autocomplete('#aa-search-input', 
+  { 
+    hint: false, 
+    openOnFocus: true,
+    templates: {
+      empty: '<i class="icon icon-magnifying-glass icon-3x"></i><h5 class="title">No Results Found</h5><hr><span class="description">Try adjusting your search terms. You can search countries, languages, and guides.</span>'
+    }
+  }, 
+[
+{
+      source: autocomplete.sources.hits(guides, {hitsPerPage: 5}),
+      displayKey: 'guide_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/guides/' + suggestion.slug +'" class="promo"><span class="title">' +
+              suggestion._highlightResult.title.value + '</span><span class="subtitle">An Ethnologue guide</span></a>';
+          }
+      }
+  },  
+{
+      source: autocomplete.sources.hits(countries, {hitsPerPage: 1}),
+      displayKey: 'country_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/country/' + suggestion.country_code +'" class="promo"><span class="title">' +
+              suggestion._highlightResult.country_name.value + '</span><span class="subtitle">A country in ' +
+              suggestion.country_in + '</span></a>';
+          }
+      }
+  },
+  {
+      source: autocomplete.sources.hits(macrolanguages, {hitsPerPage: 1}),
+      displayKey: 'macrolanguage_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/language/' + suggestion.iso_639 +'" class="promo"><div class="aa-col-left"><span class="title">' +
+              suggestion._highlightResult.macrolanguage_name.value + '</span><span class="subtitle">A macrolanguage of ' +
+              suggestion.language_of + '</span></div><div class="aa-col-right"><span>' + suggestion.iso_639 + '</span></div></a>';
+          }
+      }
+  },
+  {
+      source: autocomplete.sources.hits(languages, {hitsPerPage: 3}),
+      displayKey: 'language_name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/language/' + suggestion.iso_639 +'"><div class="aa-col-left"><span class="title">' +
+              suggestion._highlightResult.language_name.value + '</span><span class="subtitle">A language of ' +
+              suggestion.language_of + '</span></div><div class="aa-col-right"><span>' + suggestion.iso_639 + '</span></div></a>';
+          }
+      }
+},
+{
+      source: autocomplete.sources.hits(alt, {hitsPerPage: 3}),
+      displayKey: 'name',
+      templates: {
+          suggestion: function(suggestion) {
+            return '<a href="/language/' + suggestion.iso_639 +'"><div class="aa-col-left"><span class="title">' +
+              suggestion._highlightResult.name.value + '</span><span class="subtitle">' + suggestion.nametype_lower + ' ' +
+              suggestion.langname + '</span></div><div class="aa-col-right"><span>' + suggestion.iso_639 + '</span></div></a>';
+          }
+      }
+  }
+]).on('autocomplete:selected', function(event, suggestion, dataset) {
+  window.location = "/language/"+suggestion["iso_639"];
+});
+</script>    </div>
+  </div>
+</div><div class="block block-block block-131 block-block-131 even block-without-title" id="block-block-131">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>.block-menu-block .block-title a {
+	font-size: 15.4px;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-151 block-block-151 odd block-without-title" id="block-block-151">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script>
+var _prum = [['id', '57a5f1d1abe53d2d78eaa446'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>    </div>
+  </div>
+</div><div class="block block-block block-171 block-block-171 even block-without-title" id="block-block-171">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.recurlyjs-billing-info {
+display: table;
+}
+
+.recurlyjs-total {
+text-align: right;
+}
+
+.webform-client-form input.form-text, #user-register-form input.form-text, #user-login input.form-text, #user-pass input.form-text, #user-profile-form input.form-text {
+font-size: 18px;
+padding: 12px 9px 8px 9px;
+font-family: 'expo-serif-pro';
+font-weight: 400;
+margin-top: 3px;
+margin-bottom: 3px;
+color: #222;
+}
+
+.webform-client-form .form-textarea {
+font-size: 18px;
+padding: 11px 9px 8px 9px;
+font-family: 'expo-serif-pro';
+font-weight: 400;
+margin-top: 3px;
+margin-bottom: 3px;
+color: #222;
+}
+
+.webform-client-form label, #user-register-form label, #user-login label, #user-pass label, #user-profile-form label {
+color: #555;
+}
+
+.confirm-parent, .password-parent {
+width: 38.7em;
+}
+
+</style>
+    </div>
+  </div>
+</div><div class="block block-block block-256 block-block-256 odd block-without-title" id="block-block-256">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.form-item-name {
+margin-top: 0;
+}
+.page-toboggan-denied .description, .page-toboggan-denied .print-link, .page-toboggan-denied .form-required {
+display: none;
+}
+.page-toboggan-denied div.button span {
+line-height: 1em;
+}
+.page-toboggan-denied #uniform-edit-submit {
+border-radius: 3px;
+font-size: 17.2px;
+background-color: rgba(62, 124, 0, 0.78);
+width: 100%;
+height: 40px;
+padding-top: 6px;
+text-align: center;
+background-image: none;
+}
+.page-toboggan-denied #uniform-edit-submit span {
+background-image: none;
+font-family: "Myriad-Pro","PT Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+.page-toboggan-denied #uniform-edit-submit:hover {
+background-color: rgba(62, 124, 0, 1);
+}
+@media (min-width: 481px) {
+.page-toboggan-denied .section-content .section-wrapper, .page-toboggan-denied #zone-content {
+background: #f5fafd;
+}
+.page-toboggan-denied #region-content .region-inner {
+max-width: 375px;
+margin: 0 auto;
+border: 1px solid #ccc;
+border-radius: 3px;
+padding: 30px 45px 30px 45px;
+background-color: #fff;
+}
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-231 block-block-231 even block-without-title" id="block-block-231">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+#region-menu nav>ul>li>a {
+	font-family: 'myriad-pro', Arial, sans-serif;
+	font-size: 18px;
+	padding: 7px 9px 6px;
+	text-transform: none;
+}
+#region-user-second ul.menu li {
+	margin-left: -3px;
+	border-right: 1px solid rgba(255,255,255,0.3);
+}
+#region-user-second ul.menu li a {
+	color: rgba(255,255,255,0.9);
+	font-size: 0.95em;
+        padding: 8px 10px;
+}
+#region-user-second ul li a.account {
+	background-color: rgba(0,84,127,0.54);
+	margin: 0 6px 0 3px;
+	border-radius: 3px;
+	text-transform: capitalize;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-176 block-block-176 odd block-without-title" id="block-block-176">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.messages {
+font-size: 14px;
+}
+</style>    </div>
+  </div>
+</div><div class="block block-block block-206 block-block-206 even block-without-title" id="block-block-206">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.recurly-paywall-curtain-w .cta .current {
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #FFF;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 17.2px;
+}
+.recurly-paywall-curtain-w .cta a {
+    display: inline-block;
+    background-color: #3E7C00;
+    border-radius: 5px;
+    color: #FFF;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17.2px;
+}
+
+.recurly-paywall-curtain-w .cta a:hover {
+    background-color: #4d9900;
+}
+.recurly-paywall-curtain-w .pricing-table .cell {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.recurly-paywall-curtain-w .pricing-table h4 {
+    text-align: center;
+    font-size: 18px !important;
+}
+.recurly-paywall-curtain-w .pricing-table p {
+    margin-bottom: 25px;
+    font-family: 'expo-serif-pro';
+    text-align: center;
+    float: none;
+    font-size: 14px;
+}
+.recurly-paywall-curtain-w .icon-ul li {
+    list-style: none;
+    font-family: 'expo-serif-pro';
+    margin-bottom: 4px;
+} 
+.recurly-paywall-curtain-w .pricing-table .icon-ul {
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 8px;
+    font-size: 14px;
+    float: none;
+}
+.recurly-paywall-curtain-w .pricing-table .icon-ul li {
+    margin-bottom: 0;
+}
+.recurly-paywall-curtain-w .pricing-table .icon {
+    padding-right: 2px;
+}
+.recurly-paywall-curtain-w .pricing-table .cta {
+    text-align: center;
+    margin: 16px 0 5px;
+}
+.recurly-paywall-curtain-w .pricing-table .amount {
+    line-height: 1;
+    font-weight: normal;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+    background: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+}
+.recurly-paywall-curtain-w .pricing-table small {
+    font-size: 80%;
+}
+.recurly-paywall-curtain-w .plan-category {
+    font-weight: 300;
+}
+</style>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-8 region region-user-second" id="region-user-second">
+  <div class="region-inner region-user-second-inner">
+    <div class="block block-system block-menu block-user-menu block-system-user-menu odd block-without-title" id="block-system-user-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/24-39">Login</a></li>
+<li class="last leaf"><a href="/cart/my" style="text-transform: capitalize;">Shopping cart</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-24 prefix-2 region region-branding alpha" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?r6n0n4" alt="Ethnologue" id="logo" /></a>      </div>
+                        <hgroup class="site-name-slogan">        
+                                <h2 class="site-name element-invisible"><a href="/" title="Home">Ethnologue</a></h2>
+                              </hgroup>
+          </div>
+          </div>
+</div><div class="grid-24 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <nav class="navigation">
+      <ul class="menu"><li class="first leaf"><a href="/browse/names">Languages</a></li>
+<li class="leaf"><a href="/browse/countries">Countries</a></li>
+<li class="leaf"><a href="/guides">Guides</a></li>
+<li class="collapsed"><a href="/about">About</a></li>
+<li class="last leaf subscribe-ip pricing-menu"><a href="/pricing">Plans &amp; Pricing</a></li>
+</ul>    </nav>
+          </div>
+</div>
+    <div class="separator"></div>
+  </div>
+  <div class="separator"></div>
+</div><div id="zone-header-second-wrapper" class="zone-wrapper zone-header-second-wrapper clearfix">  
+  <div id="zone-header-second" class="zone zone-header-second clearfix container-24">
+    <div class="grid-24 region region-header-first" id="region-header-first">
+  <div class="region-inner region-header-first-inner">
+          </div>
+</div>    <div class="separator"></div>
+  </div>
+  <div class="separator"></div>
+</div></header>              <section id="section-content" class="section section-content">
+  <div class="section-wrapper clearfix container-24">
+    	<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">
+<div id="zone-content" class="zone zone-content clearfix container-24">
+		<div class="grid-24 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+	      <a id="main-content"></a>
+              <div class="title-wrapper">
+                        <h1 class="title" id="page-title">Nilo-Saharan</h1>
+        <a class="print-link" href="javascript:window.print();">Print</a>              </div>
+              <div class="tabs clearfix"></div>    <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-7eaccf3f0f09ff3d9e66659c6f15f539">
+        
+  
+      <div class="attachment attachment-before">
+      <div class="view view-family view-id-family view-display-id-attachment_2">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last indent0">
+      
+  <div>        <span></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-family view-id-family view-display-id-attachment_1 indent1">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-name-1">        <span class="field-content">Nilo-Saharan (207)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8be4319753a96025bfca37aaab179171">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+      <div class="view-content indent1">
+      <div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kuliak">Kuliak (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-34cffda91fe78af5069682a5c074e0a6">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/ik">Ik (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-da35c76c0c71e602881df9408f2f32a9">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ik <a href="/language/ikx/24">[ikx]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/ngangea-so">Ngangea-So (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a2ae7b8a514b3419b150e7a85af830db">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyang’i <a href="/language/nyp/24">[nyp]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Soo <a href="/language/teu/24">[teu]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li>  
+          <a href="/subgroups/saharan">Saharan (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-43462f24137f8b0210e759dd57a435fa">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/eastern-6">Eastern (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9035718864200ac6b4a8c7de00a1cedb">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Berti <a href="/language/byt/24">[byt]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zaghawa <a href="/language/zag/24">[zag]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/western-4">Western (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6224eb839906e3ebff6aefd62fcba27e">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kanuri">Kanuri (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bbebac33672649957a60b737737bf3df">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kanembu <a href="/language/kbl/24">[kbl]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kanuri, Bilma <a href="/language/bms/24">[bms]</a> (A language of <a href="/country/NE">Niger</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kanuri, Manga <a href="/language/kby/24">[kby]</a> (A language of <a href="/country/NE">Niger</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kanuri, Tumari <a href="/language/krt/24">[krt]</a> (A language of <a href="/country/NE">Niger</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kanuri, Yerwa <a href="/language/knc/24">[knc]</a> (A language of <a href="/country/NG">Nigeria</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tarjumo <a href="/language/txj/24">[txj]</a> (A language of <a href="/country/NG">Nigeria</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/tebu">Tebu (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-50a972d0538ceb140393fc0d6a756f3e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dazaga <a href="/language/dzg/24">[dzg]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tedaga <a href="/language/tuq/24">[tuq]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/satellite-core">Satellite-Core (185)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-be1e930b36ddf7b75c2a00687cfd6476">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/core">Core (107)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-546ead9018ba199903436894e331839f">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/b%E2%80%99aga">B’aga (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f96f45b82d9ca2b8932a3c83e0c73942">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Daatsʼíin <a href="/language/dtn/24">[dtn]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gumuz <a href="/language/guk/24">[guk]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/eastern-sudanic">Eastern Sudanic (94)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d870dfea6c7e59eb44ce51f87643d644">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/northern-k-languages">Northern (k languages) (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c319d8545609bee03bf6e91452b38533">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/nara">Nara (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4e5254ca3903fae11382e62c0b2eefbb">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nara <a href="/language/nrb/24">[nrb]</a> (A language of <a href="/country/ER">Eritrea</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/nubian">Nubian (12)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b180138c462495fe01e4cb281a0d7f19">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/central-29">Central (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-837888a6e1c619f87ad872b8290f3e20">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mattokki <a href="/language/xnz/24">[xnz]</a> (A language of <a href="/country/EG">Egypt</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/birked">Birked (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-427135eef4440d3703761571f00bda83">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Birked <a href="/language/brk/24">[brk]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/dongolawi">Dongolawi (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6ad880fe8ebcad9d3d619bfac440f525">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Andaandi <a href="/language/dgl/24">[dgl]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/hill">Hill (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2937e074165763ed2f0bd62b2cdb658c">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kadaru-ghulfan">Kadaru-Ghulfan (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c830e37bcef59fb302c64f13002994c1">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ghulfan <a href="/language/ghl/24">[ghl]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kadaru <a href="/language/kdu/24">[kdu]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/unclassified-33">Unclassified (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-79748a17be40efbf67d9e6986d19759d">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dair <a href="/language/drb/24">[drb]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dilling <a href="/language/dil/24">[dil]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">El Hugeirat <a href="/language/elh/24">[elh]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Karko <a href="/language/kko/24">[kko]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Wali <a href="/language/wll/24">[wll]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/northern-36">Northern (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2e0fcb60aa1259dc5ad7519661476aa0">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nobiin <a href="/language/fia/24">[fia]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/western-38">Western (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7b153e0e03845909b5304961bb940b54">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Midob <a href="/language/mei/24">[mei]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li>  
+          <a href="/subgroups/nyimang">Nyimang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-55d8df7687a70f7597283b2fa9d7f6dd">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Afitti <a href="/language/aft/24">[aft]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ama <a href="/language/nyi/24">[nyi]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/tama-0">Tama (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-58074f88f3eb3f9a713532a441705200">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/mararit">Mararit (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ced2bc0465db3c369d9b6f77955602d9">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mararit <a href="/language/mgb/24">[mgb]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/tama-sungor">Tama-Sungor (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-83eda2bfc91ca0401ad9a266b7f34f6c">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Assangori <a href="/language/sjg/24">[sjg]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tama <a href="/language/tma/24">[tma]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/southern-n-languages">Southern (n languages) (76)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2e8c82878c0bbe846b0927a4be4d98d3">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/daju">Daju (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-38cb26b11f3a24270ba51a56a4b59429">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/eastern-daju">Eastern Daju (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d302cd9da40dae0ead15f6e522bb10b1">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Logorik <a href="/language/liu/24">[liu]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Shatt <a href="/language/shj/24">[shj]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/western-daju">Western Daju (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ef780a673e5636bddb3413da865d19ea">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Baygo <a href="/language/byg/24">[byg]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Daju, Dar Daju <a href="/language/djc/24">[djc]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Daju, Dar Fur <a href="/language/daj/24">[daj]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Daju, Dar Sila <a href="/language/dau/24">[dau]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Njalgulgule <a href="/language/njl/24">[njl]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li>  
+          <a href="/subgroups/eastern-jebel">Eastern Jebel (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4a9b780868d46962347ae6fe655ac17e">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/aka-kelo-molo">Aka-Kelo-Molo (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b4e10e490f3f8716e03e693fc66396f3">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Aka <a href="/language/soh/24">[soh]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kelo <a href="/language/xel/24">[xel]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Molo <a href="/language/zmo/24">[zmo]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/gaam">Gaam (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-79ee78d593309e420916b2a9fde29c11">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gaam <a href="/language/tbi/24">[tbi]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li>  
+          <a href="/subgroups/nilotic">Nilotic (53)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-24147c852145c0ea58a1e13e48178d35">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/eastern-36">Eastern (17)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0c63da2695e52e11c7b30b5bf5e3e757">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/bari">Bari (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b199544c925bf067a215092bbeccfb72">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bari <a href="/language/bfa/24">[bfa]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kakwa <a href="/language/keo/24">[keo]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kuku <a href="/language/ukv/24">[ukv]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mandari <a href="/language/mqu/24">[mqu]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/lotuxo-teso">Lotuxo-Teso (13)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ba130b1ce72ba3d90cec0484cbd0036f">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/lotuxo-maa">Lotuxo-Maa (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0b6ee67703312de2f5b59f6511d73712">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/lotuxo">Lotuxo (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-64599ffbd99e460631d2a6fa75f3d9cf">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dongotono <a href="/language/ddd/24">[ddd]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lango <a href="/language/lno/24">[lno]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lokoya <a href="/language/lky/24">[lky]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lopit <a href="/language/lpx/24">[lpx]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otuho <a href="/language/lot/24">[lot]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/ongamo-maa">Ongamo-Maa (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-93b0df801ade3ee161a809993a6d5ae4">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maasai <a href="/language/mas/24">[mas]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ngasa <a href="/language/nsg/24">[nsg]</a> (A language of <a href="/country/TZ">Tanzania, United Republic of</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Samburu <a href="/language/saq/24">[saq]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/teso-turkana">Teso-Turkana (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-50820d91967d1c16f6f7aed3c0d626e8">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/teso">Teso (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e52e7863fa4b0b4192f388977d6cdd6a">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ateso <a href="/language/teo/24">[teo]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/turkana">Turkana (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5bb1e73e4789cf80d9c683d0a177d9ae">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ng’akarimojong <a href="/language/kdj/24">[kdj]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyangatom <a href="/language/nnj/24">[nnj]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Toposa <a href="/language/toq/24">[toq]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Turkana <a href="/language/tuv/24">[tuv]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/southern-34">Southern (13)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-65f45e3b789e97fd77a58954f4512ac0">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kalenjin">Kalenjin (11)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c278f62d7645a458a69801ea1ba1cec6">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/elgon">Elgon (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3a3fcc154c742626b432381ee1508ea3">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kupsapiiny <a href="/language/kpz/24">[kpz]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sabaot <a href="/language/spy/24">[spy]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/nandi-markweta">Nandi-Markweta (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b34cceb64b4fe2767a853d0159882126">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kipsigis">Kipsigis (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-82a39ca372a097556daca5114837bf51">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kipsigis <a href="/language/sgc/24">[sgc]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/markweta">Markweta (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6a6ff8b5aaf0e8fef779c68a31349300">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Markweeta <a href="/language/enb/24">[enb]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/nandi">Nandi (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9766375a7e9e3fa479a108f10a7f2e2c">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Keiyo <a href="/language/eyo/24">[eyo]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kisankasa <a href="/language/kqh/24">[kqh]</a> (A language of <a href="/country/TZ">Tanzania, United Republic of</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nandi <a href="/language/niq/24">[niq]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Terik <a href="/language/tec/24">[tec]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tugen <a href="/language/tuy/24">[tuy]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li>  
+          <a href="/subgroups/okiek">Okiek (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7a9c0516c3eec29e83095aeb1f784f8f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Okiek <a href="/language/oki/24">[oki]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/pokot">Pokot (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-47866872448bb6fa0b9fabb12786fcf1">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pökoot <a href="/language/pko/24">[pko]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/tatoga">Tatoga (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c6fe63b21dcdbcfbbb4167dde6829caa">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Datooga <a href="/language/tcc/24">[tcc]</a> (A language of <a href="/country/TZ">Tanzania, United Republic of</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Omotik <a href="/language/omt/24">[omt]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/western-34">Western (23)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fcc7e77bf9579fc09a1f1925cd7188c3">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/dinka-nuer">Dinka-Nuer (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5ecdb1781143a05d36b96be7c5721674">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/dinka">Dinka (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d7156031b9b1be4b3b41f438ff567685">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dinka, Northeastern <a href="/language/dip/24">[dip]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dinka, Northwestern <a href="/language/diw/24">[diw]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dinka, South Central <a href="/language/dib/24">[dib]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dinka, Southeastern <a href="/language/dks/24">[dks]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dinka, Southwestern <a href="/language/dik/24">[dik]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/nuer">Nuer (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0ea27057ca1311294de244276847f01e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nuer <a href="/language/nus/24">[nus]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Reel <a href="/language/atu/24">[atu]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/luo">Luo (16)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9a559f161925d7c6d18cf34fe54712bd">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/northern-40">Northern (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-af81b8dd1eccd78a4a6ca3aeda93fe66">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/anuak">Anuak (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fa39700911219e61b6489dbcc5560431">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Anuak <a href="/language/anu/24">[anu]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/bor">Bor (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-953e2026331e9e083d7b31243080dab6">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Belanda Bor <a href="/language/bxb/24">[bxb]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/jur">Jur (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-30215359e31e537a240ead7521a4f0ff">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Luwo <a href="/language/lwo/24">[lwo]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/mabaan-burun">Mabaan-Burun (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6f527cb895201725be207011731bb03e">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/burun">Burun (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3a504b37605842167e139995d7516923">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Burun <a href="/language/bdi/24">[bdi]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/mabaan">Mabaan (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8091fc1643253badc646312e160d4948">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jumjum <a href="/language/jum/24">[jum]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mabaan <a href="/language/mfz/24">[mfz]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li>  
+          <a href="/subgroups/shilluk">Shilluk (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5627caa9abf216aa78a67c84c7aa405e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Shilluk <a href="/language/shk/24">[shk]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/thuri">Thuri (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f5dc92de3d90fe5c5c7c39ab1d8459a6">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Thuri <a href="/language/thu/24">[thu]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/unclassified-34">Unclassified (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-df38fea209eee3298dd7b1ce49bfe8d9">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Päri <a href="/language/lkr/24">[lkr]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/southern-41">Southern (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-357eed3bcf1f10b6c7cce3afede1f0e3">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/adhola">Adhola (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d9f78bcc303c2095818ace5603e4e79b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jopadhola <a href="/language/adh/24">[adh]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/kuman">Kuman (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-de4b43615718ecb70e5a62ab1157a9b8">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kumam <a href="/language/kdi/24">[kdi]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/luo-acholi">Luo-Acholi (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5da93bb50487e8cd0709c59738e3aeb9">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/alur-acholi">Alur-Acholi (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a032a0d9dff7378b76996ef22ed701d7">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Thur <a href="/language/lth/24">[lth]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/alur">Alur (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ba5be0f1d02b1b4a4358bac4fa195a1e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Alur <a href="/language/alz/24">[alz]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/lango-acholi">Lango-Acholi (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2a531dbe15fa13fce58d173b96ab4a12">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Acholi <a href="/language/ach/24">[ach]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lango <a href="/language/laj/24">[laj]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/luo-0">Luo (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cfd58e7b5144b3950788bf3b54bf018e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dholuo <a href="/language/luo/24">[luo]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/surmic">Surmic (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-da13d669b0d5dde2cc80e307f5bc336a">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/north-11">North (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-64b2182da0c181ec5512f00c131919da">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first last">  
+          <a href="/subgroups/majang">Majang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d29a25992823ee571a5d414e4006b4da">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Majang <a href="/language/mpe/24">[mpe]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/south-13">South (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a716da970db8bbd37165a83988615d43">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/southeast-1">Southeast (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-de292b359ec4953c2b1878df4604323e">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kwegu">Kwegu (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-db4f3e9ff13eba15681e4fe86030bb77">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kwegu <a href="/language/xwg/24">[xwg]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/pastoral">Pastoral (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-343bc040c6e9e7ba8ff06de9889c6e82">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/me%E2%80%99en">Me’en (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d10e8f7d10564945af4bd2565bdda6f9">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’en <a href="/language/mym/24">[mym]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/suri">Suri (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b1a48e94660be15180921a9bb9ec417f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mursi <a href="/language/muz/24">[muz]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Suri, Tirmaga-Chai <a href="/language/suq/24">[suq]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/southwest-4">Southwest (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fd20bfc639a29e32a7c0660825e424ba">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/didinga-murle">Didinga-Murle (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fd98a0475cf6e9c96180f59fd90c485b">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/didinga-longarim">Didinga-Longarim (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8101b0a59faf6f844f66147402343640">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Didinga <a href="/language/did/24">[did]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Narim <a href="/language/loh/24">[loh]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/murle">Murle (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3e99890e11bd0e55622cffca6e508c8b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Murle <a href="/language/mur/24">[mur]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/tennet">Tennet (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cc1be238b7651122cbd22eb2c8f1512b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tennet <a href="/language/tex/24">[tex]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/kacipo-balesi">Kacipo-Balesi (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-31b0f234d54d29f63bd43f3e8610d4ed">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Suri, Kacipo-Bale <a href="/language/koe/24">[koe]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/temein">Temein (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8aa275aa8c2064109aeb13eaf81ae654">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Temein <a href="/language/teq/24">[teq]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tese <a href="/language/keg/24">[keg]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/kadugli-krongo">Kadugli-Krongo (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-46b47c2c5a478149a29f5f5857a0eb99">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kanga <a href="/language/kcp/24">[kcp]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katcha-Kadugli-Miri <a href="/language/xtc/24">[xtc]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Keiga <a href="/language/kec/24">[kec]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Krongo <a href="/language/kgo/24">[kgo]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tulishi <a href="/language/tey/24">[tey]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tumtum <a href="/language/tbr/24">[tbr]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/koman">Koman (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-85c873157925a01f75877b062cdd7057">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gule <a href="/language/gly/24">[gly]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gwama <a href="/language/kmq/24">[kmq]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Komo <a href="/language/xom/24">[xom]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Opo <a href="/language/lgn/24">[lgn]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Uduk <a href="/language/udu/24">[udu]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/satellites">Satellites (78)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a9957fbb4751d04b54662f43e58c6f09">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Berta <a href="/language/wti/24">[wti]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/central-sudanic">Central Sudanic (65)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ce4066b4f9aafd2d610ae152700440b4">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/east-5">East (23)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5cb5066f8d330b73d5115dca856205ad">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/lendu">Lendu (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-60ff5174faf2843cdd977d49e716ac33">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lendu <a href="/language/led/24">[led]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ndrulo <a href="/language/dno/24">[dno]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ngiti <a href="/language/niy/24">[niy]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/mangbetu">Mangbetu (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f64626b0dabfe27307fea14e44b78b6f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Asoa <a href="/language/asv/24">[asv]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lombi <a href="/language/lmi/24">[lmi]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mangbetu <a href="/language/mdj/24">[mdj]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/mangbutu-efe">Mangbutu-Efe (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c859a36badf1c0fb16f83ab2f3ce8bf1">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bendi <a href="/language/bct/24">[bct]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Efe <a href="/language/efe/24">[efe]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kebu <a href="/language/ndp/24">[ndp]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lese <a href="/language/les/24">[les]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mamvu <a href="/language/mdi/24">[mdi]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mangbutu <a href="/language/mdk/24">[mdk]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mvuba <a href="/language/mxh/24">[mxh]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/moru-madi">Moru-Madi (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6c741e2ae156a1aae1c1a3f7dab41343">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/central-27">Central (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-009e412ed331140235e472978b32381f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Aringa <a href="/language/luc/24">[luc]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Avokaya <a href="/language/avu/24">[avu]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Keliko <a href="/language/kbo/24">[kbo]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Logo <a href="/language/log/24">[log]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lugbara <a href="/language/lgg/24">[lgg]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Omi <a href="/language/omi/24">[omi]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/northern-35">Northern (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7163f3384669940fb70abfc84e5fb2f2">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Moru <a href="/language/mgd/24">[mgd]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/southern-36">Southern (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7c3fc6cbf8b05c2eaeee55f1c263a0a5">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ma’di <a href="/language/mhi/24">[mhi]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ma’di, Southern <a href="/language/snm/24">[snm]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Olu’bo <a href="/language/lul/24">[lul]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/west-5">West (42)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9d0cc0329172d30ea29597e3ca1e5f19">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/bongo-bagirmi">Bongo-Bagirmi (40)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-231700e8ab17461a080a5d8f74d6f785">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/bongo-baka">Bongo-Baka (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8358cc29165c0a258aa080f5eef3dd64">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/baka">Baka (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-487b2d6c3cfe9f089d9b31559c256091">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Baka <a href="/language/bdh/24">[bdh]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/bongo">Bongo (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e6273afaac447c3e80aa391193daa598">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bongo <a href="/language/bot/24">[bot]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/morokodo-beli">Morokodo-Beli (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-494388128ea6cc152786d635215dfff5">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Beli <a href="/language/blm/24">[blm]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jur Modo <a href="/language/bex/24">[bex]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mittu <a href="/language/mwu/24">[mwu]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first last">  
+          <a href="/subgroups/morokodo-mo%E2%80%99da">Morokodo-Mo’da (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ca6ea17dadbaa7bb61496d1af1986005">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Morokodo <a href="/language/mgc/24">[mgc]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mo’da <a href="/language/gbn/24">[gbn]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyamusa-Molo <a href="/language/nwm/24">[nwm]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/kara">Kara (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-448f5d657d4e7d78341176d1259fb8d9">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Furu <a href="/language/fuu/24">[fuu]</a> (A language of <a href="/country/CD">Congo, The Democratic Republic of the</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gula <a href="/language/kcm/24">[kcm]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yulu <a href="/language/yul/24">[yul]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/sara-bagirmi">Sara-Bagirmi (28)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e026cf260476e6623d8b7030711cb4bf">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Birri <a href="/language/bvq/24">[bvq]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Fongoro <a href="/language/fgr/24">[fgr]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/bagirmi">Bagirmi (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-90de17db5c45c791316b884d20740cc0">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bagirmi <a href="/language/bmi/24">[bmi]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Berakou <a href="/language/bxv/24">[bxv]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Disa <a href="/language/dsi/24">[dsi]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gula <a href="/language/glu/24">[glu]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jaya <a href="/language/jyy/24">[jyy]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kenga <a href="/language/kyq/24">[kyq]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Morom <a href="/language/bdo/24">[bdo]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Naba <a href="/language/mne/24">[mne]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/sara">Sara (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c3075a998537cbb3035152ae5f21aef1">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/sara-proper">Sara Proper (16)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7a98add00109cd88aae8eac03550709a">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bedjond <a href="/language/bjv/24">[bjv]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dagba <a href="/language/dgk/24">[dgk]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gor <a href="/language/gqr/24">[gqr]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gulay <a href="/language/gvl/24">[gvl]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Horo <a href="/language/hor/24">[hor]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kabba <a href="/language/ksp/24">[ksp]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Laka <a href="/language/lap/24">[lap]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mango <a href="/language/mge/24">[mge]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mbay <a href="/language/myb/24">[myb]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ngam <a href="/language/nmc/24">[nmc]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ngambay <a href="/language/sba/24">[sba]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sar <a href="/language/mwm/24">[mwm]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first last">  
+          <a href="/subgroups/sara-kaba">Sara Kaba (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4703634d35592831bb838577c6d5e29c">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kaba Démé, Sara <a href="/language/kwg/24">[kwg]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kaba Naa, Sara <a href="/language/kwv/24">[kwv]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kulfa <a href="/language/kxj/24">[kxj]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sara Kaba <a href="/language/sbz/24">[sbz]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/vale">Vale (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4e27d81354b5171483048a9486775a48">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lutos <a href="/language/ndy/24">[ndy]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Vale <a href="/language/vae/24">[vae]</a> (A language of <a href="/country/CF">Central African Republic</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/sinyar">Sinyar (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-33794a3b17182d5fffff33377999a8a6">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sinyar <a href="/language/sys/24">[sys]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/kresh">Kresh (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d614a53c1e650fa3f44677fc29e7b3e1">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Aja <a href="/language/aja/24">[aja]</a> (A language of <a href="/country/SS">South Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gbaya <a href="/language/krs/24">[krs]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li><li>  
+          <a href="/subgroups/fur">Fur (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-21404b3f6a90735dc53ab18798858c54">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amdang <a href="/language/amj/24">[amj]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Fur <a href="/language/fvr/24">[fvr]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/kunama">Kunama (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-05eed9bf79e7368a7b025de8406a6533">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kunama <a href="/language/kun/24">[kun]</a> (A language of <a href="/country/ER">Eritrea</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/maban">Maban (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4cb5cc6623b28435131c0344ac0078ca">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Karanga <a href="/language/kth/24">[kth]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/kendeje">Kendeje (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bba3c9f8ee8077dcb9fe8e9143a80cc9">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kendeje <a href="/language/klf/24">[klf]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/maba">Maba (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a44c7aed4293843eef7be5e25a112aad">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maba <a href="/language/mde/24">[mde]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Marfa <a href="/language/mvu/24">[mvu]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/masalit">Masalit (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9cb15b029573478b2fd71de716a65481">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Masalit <a href="/language/mls/24">[mls]</a> (A language of <a href="/country/SD">Sudan</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Massalat <a href="/language/mdg/24">[mdg]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li>  
+          <a href="/subgroups/runga-kibet">Runga-Kibet (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7c3b74fa09e088260898a62e68038726">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kibet <a href="/language/kie/24">[kie]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Runga <a href="/language/rou/24">[rou]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/surbakhal">Surbakhal (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0c2ccc0b62d16115222a5b628bde0c88">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Surbakhal <a href="/language/sbj/24">[sbj]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div></li></ul></div></li><li class="last">  
+          <a href="/subgroups/songhai">Songhai (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-261acc215dd595b0da41b52417421508">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korandje <a href="/language/kcy/24">[kcy]</a> (A language of <a href="/country/DZ">Algeria</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="item-list"><ul><li class="first">  
+          <a href="/subgroups/northern-8">Northern (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d14e6ad6cf1009f83fd3a8e4733659d2">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tadaksahak <a href="/language/dsq/24">[dsq]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tasawaq <a href="/language/twq/24">[twq]</a> (A language of <a href="/country/NE">Niger</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li><li class="last">  
+          <a href="/subgroups/southern-7">Southern (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b5b3cb7979cf0087fcef0e1b9fb9933c">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dendi <a href="/language/ddn/24">[ddn]</a> (A language of <a href="/country/BJ">Benin</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Songhay, Humburi Senni <a href="/language/hmb/24">[hmb]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Songhay, Koyra Chiini <a href="/language/khq/24">[khq]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Songhay, Koyraboro Senni <a href="/language/ses/24">[ses]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tondi Songway Kiini <a href="/language/tst/24">[tst]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zarma <a href="/language/dje/24">[dje]</a> (A language of <a href="/country/NE">Niger</a>)</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></li></ul></div></li></ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div>      </div>
+</div></div>
+ <div class="separator"></div>
+	</div>
+  </div>
+</section>      
+          <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-24">
+    <div class="grid-4 suffix-1 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <div class="block block-menu block-menu-footer-menu-1 block-menu-menu-footer-menu-1 odd" id="block-menu-menu-footer-menu-1">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Browse by</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="/browse/countries" title="">Countries</a></li>
+<li class="leaf"><a href="/browse/names" title="">Language Names</a></li>
+<li class="leaf"><a href="/browse/codes" title="">Language Codes</a></li>
+<li class="leaf"><a href="/browse/families" title="">Language Families</a></li>
+<li class="leaf"><a href="/language-of-the-day" title="">Language of the Day</a></li>
+<li class="last leaf"><a href="/browse/maps" title="">Map Titles</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 suffix-1 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div class="block block-menu block-menu-footer-menu-2 block-menu-menu-footer-menu-2 odd" id="block-menu-menu-footer-menu-2">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Current Edition</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 24th Edition</a></li>
+<li class="leaf"><a href="/abbreviations">Abbreviations</a></li>
+<li class="leaf"><a href="/bibliography">Bibliography</a></li>
+<li class="leaf"><a href="/credits">Credits</a></li>
+<li class="leaf"><a href="/guides/how-many-languages">Number of Languages</a></li>
+<li class="leaf"><a href="/codes">Code Tables</a></li>
+<li class="last leaf"><a href="/faq">FAQ</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 suffix-1 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu-block block-7 block-menu-block-7 odd" id="block-menu-block-7">
+  <div class="block-inner clearfix">
+              <h2 class="block-title"><a href="/products" title="">Products</a></h2>
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-7 menu-name-menu-footer-menu-3 parent-mlid-29651 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-110291"><a href="/pricing">Plans</a></li>
+<li class="leaf menu-mlid-24281"><a href="/browse/products">Digests</a></li>
+<li class="last leaf menu-mlid-24286"><a href="/books" title="">Books</a></li>
+</ul></div>
+    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 suffix-1 region region-footer-fourth" id="region-footer-fourth">
+  <div class="region-inner region-footer-fourth-inner">
+    <div class="block block-block block-2 block-block-2 odd" id="block-block-2">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Related Sites</h2>
+            
+    <div class="content clearfix">
+      <ul>
+<li><a href="/archive" title="Ethnologue Archive">Ethnologue Archive</a></li>
+<li><a href="http://www.sil.org" title="SIL.org" target="_blank">SIL.org</a></li>
+<li><a href="http://www.scriptsource.org" title="ScriptSource" target="_blank">ScriptSource</a></li>
+<li><a href="https://iso639-3.sil.org/" title="ISO 639-3" target="_blank">ISO 639-3</a></li>
+<li><a href="https://derivation.co/" title="Derivation" target="_blank">Derivation</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 region region-footer-fifth" id="region-footer-fifth">
+  <div class="region-inner region-footer-fifth-inner">
+    <div class="block block-block block-316 block-block-316 odd block-without-title" id="block-block-316">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style>
+.region-footer-fifth a.sil {
+bottom: inherit;
+top: 2.75em;
+}
+.icon-twitter:hover, .icon-facebook-official:hover {
+text-decoration: none !important;
+color: #e5e5e5 !important;
+}
+</style>
+<p class="address">Ethnologue<br/>
+by <a href="https://www.sil.org">SIL International</a><br/>
+</p>
+<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#e38586868781828088a386978b8d8c8f8c849686cd808c8e"><u>Contact us</u></a>
+<br/>
+<br/>
+<p class="contact">
+<p>Find Ethnologue on:</p>
+<a href="https://twitter.com/theEthnologue" class="icon icon-link icon-twitter" style="font-size: 1.75em;"></a>
+<a href="https://www.facebook.com/theEthnologue/" class="icon icon-link icon-facebook-official" style="font-size: 1.75em;padding-left: 3px;"></a> 
+</p>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-24 region region-footer-sixth" id="region-footer-sixth">
+  <div class="region-inner region-footer-sixth-inner">
+    <div class="block block-block block-9 block-block-9 odd block-without-title" id="block-block-9">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2021. <em>Ethnologue: Languages of the World.</em> Twenty-fourth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
+  </div>
+</div><div class="block block-block block-10 block-block-10 even block-without-title" id="block-block-10">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <!--
+<ul>
+  <li class="sm-fb"><a href="http://www.facebook.com"target="_blank"><span>Facebook</span></a></li>
+  <li class="sm-gp"><a href="http://google.com" target="_blank"><span>Google+</span></a></li>
+  <li class="sm-tw"><a href="http://twitter.com" target="_blank"><span>Twitter</span></a></li>
+  <li class="sm-li"><a href="http://linkedin.com" target="_blank"><span>LinkedIn</span></a></li>
+</ul>
+-->    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-24 region region-footer-bottom" id="region-footer-bottom">
+  <div class="region-inner region-footer-bottom-inner">
+    <div class="block block-block block-4 block-block-4 odd block-without-title" id="block-block-4">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      Copyright © 2021 SIL International    </div>
+  </div>
+</div><div class="block block-block block-11 block-block-11 even block-without-title" id="block-block-11">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <a href="/privacy-policy-and-terms-use" title="Terms of Use">Terms of Use | Privacy Policy</a>    </div>
+  </div>
+</div><div class="block block-block block-86 block-block-86 odd block-without-title" id="block-block-86">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* Replace 'APP_ID' with your app ID */
+window.intercomSettings = {
+    app_id: 'ne48fzn6',
+    custom_launcher_selector: '#intercom'
+};
+/* Replace 'APP_ID' with your app ID */
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ne48fzn6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+    </div>
+  </div>
+</div>  </div>
+</div>    <div class="separator"></div>
+  </div>
+  <div class="separator"></div>
+</div></footer>      </div>
+</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":3498,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
