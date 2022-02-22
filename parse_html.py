@@ -1,3 +1,7 @@
+"""Given the html files for each of the language families,
+build language tree for each and write them in json object
+"""
+
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import json

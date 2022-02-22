@@ -1,3 +1,8 @@
+"""Given the file families.txt, recursively guess
+the ethnologue url for each specific language family,
+and write the url content to file
+"""
+
 import requests
 from tqdm import tqdm
 

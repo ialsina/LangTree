@@ -1,3 +1,6 @@
+"""Fetch html for a single url
+"""
+
 import requests
 from tqdm import tqdm
 
