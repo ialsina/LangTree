@@ -42,8 +42,6 @@ def walk(tup):
 
 	for child in children:
 
-		outcome = walk(child)
-
 		l.extend([name + '/' + el for el in walk(child)])
 
 	return l

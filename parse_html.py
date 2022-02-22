@@ -96,7 +96,7 @@ def parse_file(path):
         
         res = [unravel(el) for el in get_list(top)]
 
-    return Node(family, res)
+    return Node(root.text, res)
 
 
 def parse_all():
@@ -125,3 +125,4 @@ if __name__ == '__main__':
     res = parse_all()
     with open('data/language_families.json', 'w') as f:
         json.dump(res.json(), f)
+
