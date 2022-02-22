@@ -4,6 +4,7 @@ build language tree for each and write them in json object
 
 from bs4 import BeautifulSoup
 from tqdm import tqdm
+from utils import Node
 import json
 import sys
 import os
@@ -69,9 +70,9 @@ def unravel(tag):
 
     name, elems = strip(tag)
     if elems is not None:
-        return (name, [unravel(elem) for elem in elems])
+        return Node(name, [unravel(elem) for elem in elems])
     else:
-        return (name, [])
+        return Node(name)
 
 
 def parse_file(path):
@@ -95,11 +96,11 @@ def parse_file(path):
         
         res = [unravel(el) for el in get_list(top)]
 
-    return {family: res}
+    return Node(family, res)
 
 
 def parse_all():
-    tree = {}
+    tree = Node("/")
 
     errcount = 0
 
@@ -109,7 +110,7 @@ def parse_all():
 
         path = os.path.join('html', file)
         try:
-            tree.update(parse_file(path))
+            tree.add(parse_file(path))
         except Exception as e:
             print('ERROR IN', file)
             errcount += 1
@@ -123,4 +124,4 @@ def parse_all():
 if __name__ == '__main__':
     res = parse_all()
     with open('data/language_families.json', 'w') as f:
-        json.dump(res, f)
+        json.dump(res.json(), f)
