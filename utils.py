@@ -1,8 +1,9 @@
-from copy import deepcopy
+from copy import deepcopy, copy
 
 class Node:
-    def __init__(self, name, children=None):
+    def __init__(self, name, children=None, soup=None):
         self.attrs = {}
+        self.soup = soup
 
         name = name.replace('\n', '').strip()
         self.name = name
@@ -111,7 +112,7 @@ class Node:
 
     def flatten(self):
 
-        output = deepcopy(self._children)
+        output = copy(self._children)
 
         for child in self._children:
             output.extend(child.flatten())
@@ -160,11 +161,6 @@ class Node:
                 print("Result: expected - actual = {}".format(expected - self.count_terminal))
 
         return out
-
-
-
-
-
 
 
 if __name__ == "__main__":
