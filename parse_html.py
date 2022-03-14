@@ -137,7 +137,6 @@ def get_root(inp, is_path=False, write=False):
     if write:
         write_root(root, 'pretty/{}.txt'.format(family))
 
-
     return root
 
 
@@ -193,7 +192,7 @@ def parse_file(path):
                 print("RAISED IN TOP #{}".format(i))
                 raise(e)
 
-    return Node(name, children)
+    return Node(name, children, path=path)
 
 
 def write_root(r, path_to_file):
@@ -209,22 +208,29 @@ def parse_all():
     
     dirs = sorted(os.listdir('html'))
 
-    for file in tqdm(dirs):
-        if file == '.html':
-            continue
+    with tqdm(total=len(dirs)) as progress:
+        for file in dirs:
 
-        path = os.path.join('html', file)
-        try:
-            tree.add(parse_file(path))
+            progress.set_description_str('{:>30s}'.format(file))
+            #progress.sleep(1)
+            progress.update()
 
-        except EmptyR1 as e:
-            print('EMPTY ERROR in {}'.format(path))
-            raise e
+            if file == '.html':
+                continue
 
-        except Exception as e:
-            print('ERROR IN', file)
-            errcount += 1
-            raise e
+            path = os.path.join('html', file)
+            try:
+                tree.add(parse_file(path))
+
+            except EmptyR1 as e:
+                print('EMPTY ERROR in {}'.format(path))
+                raise e
+
+            except Exception as e:
+                print('ERROR IN', file)
+                errcount += 1
+                raise e
+
 
     checks = [el.check() for el in tree]
 
@@ -233,9 +239,6 @@ def parse_all():
     print("Tree error count:", checks.count(False))
 
     return tree
-
-
-
 
 
 if __name__ == '__main__':
