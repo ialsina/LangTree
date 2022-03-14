@@ -16,11 +16,6 @@ link = 'html/mongolic.html'
 link = 'html/bororoan.html'
 
 
-deb = Debug()
-counter = Counter()
-prelangs = dict()
-
-
 def get_elements(html):
 
     result_try1 = html.find_all('ul', recursive=False)
@@ -62,11 +57,7 @@ def get_list(html):
       #  result1 = html.find_all('div', {'class': ['item-list', 'view-language']}, recursive=False)
         result1 = html.find_all('div', {'class': 'view-language'}, recursive=False)
         result2 = html.find_all('div', {'class': 'item-list'}, recursive=False)
-        result2 = [el for el in result2 if el.text.replace('\n', '').strip() != ""]
-
-        deb.h = html
-        deb.r1 = result1
-        deb.r2 = result2
+        result2 = [el for el in result2 if clean(el) != ""]
 
         elements = []
 
@@ -136,52 +127,30 @@ def get_root(inp, is_path=False, write=False):
         path = 'html/{}.html'.format(inp)
         family = inp
 
-    deb.path = path
-
     with open(path, 'r') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
 
-    deb.soup = soup
-
-    root = soup.find_all('div', {"class": "views-field views-field-name-1"})
+    root = soup.find_all("div", {"class": "ethn-tree"})
     assert len(root) == 1, "Too many root candidates!"
     root = root[0]
 
-    root2 = soup.find_all("div", {"class": "ethn-tree"})
-    assert len(root2) == 1, "Too many root2 candidates!"
-    root2 = root2[0]
-
     if write:
-        write_root(root2, 'pretty/{}.txt'.format(family))
+        write_root(root, 'pretty/{}.txt'.format(family))
 
-    deb.root1 = root
-    deb.root2 = root2
 
-    return root2
+    return root
 
 
 def clean(tag):
-    for t in tag.find_all(recursive=False):
-        if text_clean(t) == "":
-            t.extract()
-
-    return tag
-
-
-def text_clean(tag):
     return tag.text.replace('\n', '').strip()
 
 def parse_len1(tag):
     if not 'attachment-before' in tag.attrs.get('class', []):
         assert False
 
-    #divs = tag.find_all('div', recursive=False)
-    #divs = [el for el in divs if text_clean(el) != ""]
-    #assert len(divs) == 1, "Bad number of divs!"
-
     name_candidate = tag.find_all('div', {'class': 'views-field-name-1'})
     assert len(name_candidate) == 1
-    name = text_clean(name_candidate[0])
+    name = clean(name_candidate[0])
 
     elements_candidate = tag.find_all('div', {'class': 'item-list'})
     assert len(elements_candidate) in [0, 1]
@@ -192,21 +161,13 @@ def parse_len1(tag):
 
     elements_node = [unravel(el) for el in elements_tag]
 
-    #print(name, '\n', len(elements_tag), end='\n\n\n')
-
-    prelangs[deb.cur] = elements_node
-
     return name, elements_node
 
 
 
 def parse_file(path):
 
-    deb.cur = path2name(path)
     root = get_root(path, is_path=True, write=True)
-
-    #top = root.find_parent().find_parent().find_parent().find_parent().find_next_sibling()
-    ##blocks = top.find_all('li', {'class': 'first'})
 
     children = []
 
@@ -219,26 +180,17 @@ def parse_file(path):
 
     if len(divs) == 2:
 
-        #tops = divs[1].find_all_next('div', {"class": "view-content"}, recursive=False)
-        #tops = [el for el in tops if el.text.replace("\n", "").strip() != ""]
-
         tops = get_list(divs[1])
-
-        deb.tops = tops        
 
         for i, top in enumerate(tops):
             try:
-                if len(top.text.replace('\n', '').strip()) > 30:
+                if len(clean(top)) > 30:
                     children.extend([unravel(el) for el in get_list(top)])
                 else:
                     continue
-                deb['rootok'] = root
-                deb['topsok'] = tops
+
             except Exception as e:
                 print("RAISED IN TOP #{}".format(i))
-                deb.errtop = top
-                deb['rootko'] = root
-                deb['topsko'] = tops
                 raise(e)
 
     return Node(name, children)
@@ -254,8 +206,6 @@ def parse_all():
     tree = Node("/")
 
     errcount = 0
-
-    stats = Counter()
     
     dirs = sorted(os.listdir('html'))
 
@@ -264,12 +214,10 @@ def parse_all():
             continue
 
         path = os.path.join('html', file)
-        deb.curpath = path
         try:
             tree.add(parse_file(path))
 
         except EmptyR1 as e:
-            deb.d['r1error'].append(path)
             print('EMPTY ERROR in {}'.format(path))
             raise e
 
@@ -287,39 +235,6 @@ def parse_all():
     return tree
 
 
-def statistics():
-
-    stats = Counter()
-    cont_soup = Container()
-    cont_attb = Container()
-
-    dirs = sorted(os.listdir('html'))
-
-    for file in tqdm(dirs):
-
-        deb.cur = file
-
-        if file == '.html':
-            continue
-
-        root = get_root('html/'+file, is_path=True, write=False)
-        attb = attachment_before(root)
-        parse_len1(attb)
-
-
-    # MOCK SPLIT
-
-        divs = root.find_all('div', recursive=False)
-
-        name = path2name(file)
-        cont_soup[len(divs)][name] = root
-        cont_attb[len(divs)][name] = attb
-        stats.update(len(divs))
-
-
-    return stats, (cont_soup, cont_attb)
-
-
 
 
 
@@ -327,8 +242,6 @@ if __name__ == '__main__':
     res = parse_all()
     with open('data/language_families.json', 'w') as f:
         json.dump(res.json(), f)
-    
-    #s, (c, ca) = statistics()
 
 
 
