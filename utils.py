@@ -1,9 +1,10 @@
 from copy import deepcopy, copy
 
 class Node:
-    def __init__(self, name, children=None, soup=None):
+    def __init__(self, name, children=None, soup=None, path=None):
         self.attrs = {}
         self.soup = soup
+        self.path = path
 
         name = name.replace('\n', '').strip()
         self.name = name
@@ -58,6 +59,15 @@ class Node:
         else:
             raise TypeError("Argument must be str")
 
+
+    def launch(self):
+        import webbrowser
+        if self.path is not None:
+            return webbrowser.open(self.path)
+        else:
+            return False
+
+
     def __apply_to_children(self, fun):
         return [fun(el) for el in self._children]
 
@@ -77,17 +87,16 @@ class Node:
         else:
             return {self.name: [child.json() for child in self._children]}
 
-    def __draw_level(self, stack=[]):
+    def __draw_level(self, stack=[], printer=print):
         pattern = ''.join(list(map(lambda x: {False: "   ", True: "┃  "}.get(x), stack[:-1])))
         if len(stack) == 0:
             pass
         else:
             pattern += {True: "┠─ ", False: "┖─ "}.get(stack[-1])
-        print(pattern + self.name)
-        #print("┃  "*(stack-1) + ("┠─ " + self.name if stack else self.name))
+        printer(pattern + self.name)
         for (i, child) in enumerate(self._children):
 
-            child.__draw_level(stack=stack+[i!=len(self._children)-1])
+            child.__draw_level(stack=stack+[i!=len(self._children)-1], printer=printer)
 
     @property
     def terminal(self):
@@ -119,9 +128,9 @@ class Node:
 
         return output
 
-    def tree(self):
+    def tree(self, printer=print):
 
-        self.__draw_level()
+        self.__draw_level(printer=printer)
 
     def __parse_info(self, readstream, replace_name=True):
         import re
