@@ -1,5 +1,6 @@
 from copy import deepcopy, copy
 import os
+from helper import *
 
 class Node:
     def __init__(self, name, children=None, soup=None, path=None):
@@ -32,6 +33,23 @@ class Node:
         self._children.extend(children)
 
 
+    def get(self, path):
+        levels = [el for el in path.split('/') if len(el) > 0]
+        cur = ''
+
+        output = deepcopy(self)
+
+        for level in levels:
+
+            output = output.find(level, deep=False)
+            cur += '/' + level
+
+            if output is None:
+                raise BadPathError(cur)
+
+        return output
+
+
     def __repr__(self):
         return "NODE: {} | CHILDREN_COUNT: {}".format(self.name, len(self._children))
 
@@ -40,19 +58,42 @@ class Node:
         if isinstance(ind, int):
             return self._children[ind]
         elif isinstance(ind, str):
-            return self.find(ind)
+            return self.find(ind, deep=False)
 
 
     def __len__(self):
         return len(self._children)
 
 
-    def find(self, query, deep=False):
-        if deep:
-            raise NotImplementedError
+    def find(self, query, deep=True, ret_path=False):
 
-        if isinstance(query, str):
-            query = query.lower()
+        assert isinstance(query, str), "Argument must be str"
+
+        query = query.lower()
+
+        if deep:
+            candidates_str = [el for el in self.paths() if query in el.lower()]
+            candidates_set = set()
+
+            for path in candidates_str:
+                path_list = path.split('/')
+                for i, p in enumerate(path_list):
+                    if query in p.lower():
+                        candidates_set.add('/'.join(path_list[:i+1]))
+
+            candidates = []
+            candidate_paths = list(candidates_set)
+
+            for path in candidate_paths:
+                candidates.append(self.get(path))
+
+            if ret_path:
+                return candidates, candidate_paths
+
+            else:
+                return candidates
+
+        else:
             for child in self._children:
                 if child.name.lower() == query:
                     return child
@@ -60,9 +101,6 @@ class Node:
                 if query in child.name.lower():
                     return child
             return None
-
-        else:
-            raise TypeError("Argument must be str")
 
 
     def launch(self):

@@ -23,7 +23,24 @@ class ParsingError(Exception):
         return m
 
 
+class BadPathError(Exception):
+    def __init__(self, path=None):
+        self.path = path
+        self.base_msg = "INVALID PATH"
+
+    def __str__(self):
+        return self.msg
+
+    @property
+    def msg(self):
+        m = self.base_msg
+
+        if self.path:
+            m += '\n\t>>> {}'.format(self.path)
+
+        return m
     
+
 
 
 class DebugStop(Exception):
