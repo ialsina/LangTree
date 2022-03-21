@@ -1,4 +1,5 @@
 from copy import deepcopy, copy
+import os
 
 class Node:
     def __init__(self, name, children=None, soup=None, path=None):
@@ -136,11 +137,20 @@ class Node:
         import re
         roun = re.findall(r"\((.*?) *\)", readstream)
         squa = re.findall(r"\[(.*?) *\]", readstream)
+        roun_readd = []
 
         if len(squa) == 0:
             if len(roun) == 1:
                 if roun[0].isnumeric():
                     self.attrs["exp_len"] = int(roun[0])
+
+            elif len(roun) > 1:
+                for el in roun:
+                    if el.isnumeric():
+                        self.attrs["exp_len"] = int(el)
+                    else:
+                        roun_readd.append(el)
+
 
         elif len(squa) == 1:
             if len(roun) == 1:
@@ -153,7 +163,10 @@ class Node:
         if replace_name:
             out = re.sub(r"\((.*?) *\)", "", readstream)
             out = re.sub(r"\[(.*?) *\]", "", out)
-            self.name = out
+            for el in roun_readd:
+                out += " ({})".format(el)
+
+            self.name = out.strip()
 
 
     def check(self, verbose=False):
@@ -172,12 +185,27 @@ class Node:
         return out
 
 
+    def save(self, location = None):
+        import pickle
+
+        location = location or 'data/node_tree.pickle'
+
+        with open(location, "wb") as f:
+            pickle.dump(self, f, pickle.HIGHEST_PROTOCOL)
+
+        print("> Saved object in {}".format(os.path.abspath(location)))
+
+
+    def save_json(self, location = None):
+        import json
+
+        location = location or 'data/node_tree.json'
+
+        with open(location, "w") as f:
+            json.dump(self.json(), f)
+
+        print("> Saved json in {}".format(os.path.abspath(location)))
+
+
 if __name__ == "__main__":
-    a = Node("a", [Node("a{}".format(i)) for i in range(1, 8)])
-    b = Node("b", [Node("b{}".format(i)) for i in range(1, 10)])
-    c = Node("c", [Node("c{}".format(i)) for i in range(1, 12)])
-    d = Node("d", [Node("d{}".format(i)) for i in range(1, 4)])
-
-    b[3] = d
-
-    z = Node("z", [a, b, Node("x"), c])
+    print("'utils.py' run as script")

@@ -100,13 +100,13 @@ def strip(html):
     return name, elems
 
 
-def unravel(tag):
+def unravel(tag, save_soup=False):
 
     name, elems = strip(tag)
     if elems is not None:
-        return Node(name, [unravel(elem) for elem in elems], soup=tag)
+        return Node(name, [unravel(elem) for elem in elems], soup=tag if save_soup else None)
     else:
-        return Node(name, soup=tag)
+        return Node(name, soup=tag if save_soup else None)
 
 
 def attachment_before(soup):
@@ -143,7 +143,7 @@ def get_root(inp, is_path=False, write=False):
 def clean(tag):
     return tag.text.replace('\n', '').strip()
 
-def parse_len1(tag):
+def parse_len1(tag, save_soup=False):
     if not 'attachment-before' in tag.attrs.get('class', []):
         assert False
 
@@ -158,22 +158,22 @@ def parse_len1(tag):
     else:
         elements_tag = []
 
-    elements_node = [unravel(el) for el in elements_tag]
+    elements_node = [unravel(el, save_soup) for el in elements_tag]
 
     return name, elements_node
 
 
 
-def parse_file(path):
+def parse_file(path, save_soup=False):
 
-    root = get_root(path, is_path=True, write=True)
+    root = get_root(path, is_path=True, write=False)
 
     children = []
 
     divs = root.find_all('div', recursive=False)
     assert len(divs) in [1, 2]
 
-    name, c = parse_len1(divs[0])
+    name, c = parse_len1(divs[0], save_soup)
 
     children.extend(c)
 
@@ -184,7 +184,7 @@ def parse_file(path):
         for i, top in enumerate(tops):
             try:
                 if len(clean(top)) > 30:
-                    children.extend([unravel(el) for el in get_list(top)])
+                    children.extend([unravel(el, save_soup) for el in get_list(top)])
                 else:
                     continue
 
@@ -201,7 +201,7 @@ def write_root(r, path_to_file):
         f.write(r.prettify())
 
 
-def parse_all():
+def parse_all(save_soup=False):
     tree = Node("/")
 
     errcount = 0
@@ -220,7 +220,7 @@ def parse_all():
 
             path = os.path.join('html', file)
             try:
-                tree.add(parse_file(path))
+                tree.add(parse_file(path, save_soup))
 
             except EmptyR1 as e:
                 print('EMPTY ERROR in {}'.format(path))
@@ -242,9 +242,9 @@ def parse_all():
 
 
 if __name__ == '__main__':
-    res = parse_all()
-    with open('data/language_families.json', 'w') as f:
-        json.dump(res.json(), f)
+    tree = parse_all()
+    tree.save()
+    tree.save_json()
 
-
-
+#    with open('data/language_families.json', 'w') as f:
+#        json.dump(tree.json(), f)
