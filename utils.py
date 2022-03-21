@@ -177,6 +177,8 @@ class Node:
         if replace_name:
             out = re.sub(r"\((.*?) *\)", "", readstream)
             out = re.sub(r"\[(.*?) *\]", "", out)
+            out = out.strip()
+
             for el in roun_readd:
                 out += " ({})".format(el)
 

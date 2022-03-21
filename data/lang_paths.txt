@@ -445,12 +445,12 @@
 /Arafundi/Andai
 /Arafundi/Nanubae
 /Arafundi/Tapei
-/Arai   (Left May)/Bo
-/Arai   (Left May)/Nakwi
-/Arai   (Left May)/Nimo
-/Arai   (Left May)/Owiniga
-/Arai   (Left May)/Sawiyanu
-/Arai   (Left May)/Yawuno Teneyo
+/Arai (Left May)/Bo
+/Arai (Left May)/Nakwi
+/Arai (Left May)/Nimo
+/Arai (Left May)/Owiniga
+/Arai (Left May)/Sawiyanu
+/Arai (Left May)/Yawuno Teneyo
 /Arauan/Dení
 /Arauan/Kulina
 /Arauan/Paumarí
@@ -3802,553 +3802,553 @@
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Mamfe/Kendem
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Mamfe/Kenyang
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Mbe/Mbe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bembe-Buyi   (D.54)/Bembe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bembe-Buyi   (D.55)/Buyu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.301)/Kari
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.302)/Boguru
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.303)/Ngbinda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.304)/Homa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.305)/Nyanga-li
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.307)/Mayeka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.308)/Bodo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.31)/Bhele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.311)/Bila
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.312)/Kaiku
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.32)/Bira
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.33)/Nyali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.331)/Vanuma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.332)/Budu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.333)/Ndaka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.334)/Mbo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.335)/Beeke
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali   (D.336)/Ngbee
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.201)/Lika
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.21)/Bali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.211)/Kango
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.22)/Amba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.23)/Komo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.24)/Songoora
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.25)/Lega-Mwenga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.251)/Kanu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.251)/Kwami
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.251)/Lega-Shabunda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.26)/Zimba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.27)/Bangubangu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo   (D.28)/Holoholo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya   (D.11)/Mbole
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya   (D.12)/Lengola
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya   (D.13)/Mituku
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya   (D.14)/Enya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbolle-Enya   (D.141)/Zula
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Nyanga   (D.43)/Nyanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.621)/Machame
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.621)/Rwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.622)/Mochi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.622)/Vunjo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.623)/Rombo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.64)/Kahe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga   (E.65)/Gweno
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.51)/Gikuyu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.52)/Kiembu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.53)/Kimîîru
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.531)/Mwimbi-Muthambi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.54)/Kitharaka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.541)/Gichuka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.55)/Kamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba   (E.56)/Dhaiso
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.701)/Kiwilwana
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.71)/Kipfokomo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.72)/Chichonyi-Chidzihana-Chikauma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.72)/Chiduruma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.72)/Kigiryama
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.73)/Chidigo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.731)/Segeju
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.74)/Dawida
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.74)/Taveta
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita   (E.741)/Sagalla
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Temi   (E.46)/Temi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bembe-Buyi (D.54)/Bembe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bembe-Buyi (D.55)/Buyu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.301)/Kari
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.302)/Boguru
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.303)/Ngbinda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.304)/Homa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.305)/Nyanga-li
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.307)/Mayeka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.308)/Bodo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.31)/Bhele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.311)/Bila
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.312)/Kaiku
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.32)/Bira
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.33)/Nyali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.331)/Vanuma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.332)/Budu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.333)/Ndaka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.334)/Mbo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.335)/Beeke
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Bira-Nyali (D.336)/Ngbee
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.201)/Lika
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.21)/Bali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.211)/Kango
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.22)/Amba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.23)/Komo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.24)/Songoora
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.25)/Lega-Mwenga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.251)/Kanu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.251)/Kwami
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.251)/Lega-Shabunda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.26)/Zimba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.27)/Bangubangu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Lega-Holoholo (D.28)/Holoholo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya (D.11)/Mbole
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya (D.12)/Lengola
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya (D.13)/Mituku
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbole-Enya (D.14)/Enya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Mbolle-Enya (D.141)/Zula
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/D/Nyanga (D.43)/Nyanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.621)/Machame
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.621)/Rwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.622)/Mochi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.622)/Vunjo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.623)/Rombo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.64)/Kahe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Chaga (E.65)/Gweno
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.51)/Gikuyu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.52)/Kiembu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.53)/Kimîîru
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.531)/Mwimbi-Muthambi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.54)/Kitharaka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.541)/Gichuka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.55)/Kamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba (E.56)/Dhaiso
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.701)/Kiwilwana
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.71)/Kipfokomo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.72)/Chichonyi-Chidzihana-Chikauma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.72)/Chiduruma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.72)/Kigiryama
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.73)/Chidigo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.731)/Segeju
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.74)/Dawida
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.74)/Taveta
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Nyika-Taita (E.741)/Sagalla
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Temi (E.46)/Temi
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Ruwila
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi   (F.31)/Isanzu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi   (F.31)/Nilamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi   (F.32)/Nyaturu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi   (F.33)/Langi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi   (F.34)/Mbugwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi   (F.21)/Sukuma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi   (F.22)/Konongo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi   (F.22)/Nyamwezi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi   (F.23)/Sumbwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi   (F.24)/Kimbu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi   (F.25)/Bungu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Tongwe-Bende   (F.11)/Tongwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Tongwe-Bende   (F.12)/Bende
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.61)/Sangu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.62)/Hehe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.63)/Bena
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.64)/Pangwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.65)/Kinga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.651)/Magoma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.66)/Vwanji
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga   (G.67)/Kisi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Gogo-Kagulu   (G.11)/Gogo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Gogo-Kagulu   (G.12)/Kagulu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Pogolo-Ndamba   (G.51)/Pogolo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Pogolo-Ndamba   (G.52)/Ndamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Shambala   (G.22)/Asu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Shambala   (G.23)/Shambala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Shambala   (G.24)/Bondei
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.40)/Swahili, Congo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.402)/Makwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.403)/Mwani
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.42)/Swahili
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.44)/Comorian, Maore
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.44)/Comorian, Mwali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.44)/Comorian, Ndzwani
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili   (G.44)/Comorian, Ngazidja
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.301)/Doe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.31)/Zigula
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.311)/Mushungulu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.32)/Kwere
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.33)/Zaramo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.34)/Ngulu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.35)/Luguru
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.36)/Kami
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.37)/Kutu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.38)/Vidunda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo   (G.39)/Sagala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.11)/Beembe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.112)/Doondo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.112)/Kaamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.12)/Vili
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.13)/Kunyi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.131)/Suundi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.16)/Kongo, San Salvador
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.16)/Koongo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.16)/Laari
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo   (H.16)/Yombe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu   (H.21)/Kimbundu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu   (H.21)/Mpinda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu   (H.22)/Sama
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu   (H.23)/Kibala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu   (H.24)/Songo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Mbala-Hunganna   (H.41)/Mbala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Mbala-Hunganna   (H.42)/Hungana
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.31)/Lonzo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.31)/Pelende
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.31)/Yaka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.32)/Hungu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.32)/Suku
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.321)/Sonde
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka   (H.34)/Mbangala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.20)/Subi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.21)/Nyambo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.22)/Haya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.23)/Zinza
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.24)/Kerewe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.25)/Jita
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.251)/Kwaya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita   (E.252)/Kara
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Konzo-Ndandi   (D.40)/Kobo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Konzo-Ndandi   (D.41)/Konzo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Konzo-Ndandi   (D.42)/Nande
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.401)/Ngoreme
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.402)/Ikizu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.403)/Suba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.405)/Kabwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.406)/Singa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.41)/Lulogooli
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.411)/Luidakho-Luisukha-Lutirichi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.42)/Ekegusii
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.43)/Kuria
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.431)/Suba-Simbiti
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.44)/Zanaki
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria   (E.45)/Ikoma-Nata-Isenye
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.31)/Bukusu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.31)/Lutachoni
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.31)/Masaaba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.32)/Lukabaras
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.32)/Nyala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.32)/Olumarama
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.32)/Olushisa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.32)/Olutsotso
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.32)/Oluwanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.33)/Olunyole
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.34)/Saamya-Gwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.341)/Olukhayo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.342)/Olumarachi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya   (E.35)/Nyole
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.101)/Gungu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.102)/Talinga-Bwisi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.103)/Ruruuli-Runyala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.11)/Nyoro
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.12)/Tooro
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.121)/Hema
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.13)/Nyankore
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.14)/Chiga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.15)/Ganda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.16)/Kenye
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.16)/Soga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda   (E.17)/Gwere
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.61)/Kinyarwanda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.62)/Rundi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.63)/Fuliiru
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.631)/Joba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.64)/Shubi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.65)/Hangaza
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.66)/Ha
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi   (D.67)/Vinza
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde   (D.501)/Nyindu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde   (D.51)/Hunde
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde   (D.52)/Havu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde   (D.53)/Shi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde   (D.531)/Tembo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde   (D.56)/Kabwari
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.11)/Chokwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.12)/Luimbi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.12)/Nyemba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.13)/Luchazi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.14)/Luvale
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.15)/Mbunda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.16)/Nyengo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.16)/Yauma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.17)/Mbwela
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi   (K.18)/Nkangala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Lozi   (K.21)/Lozi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.31)/Luyana
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.32)/Mbowe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.33)/Kwangali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.332)/Gciriku
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.333)/Mbukushu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.34)/Mashi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana   (K.35)/Simaa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Subiya-Totela   (K.402)/Fwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Subiya-Totela   (K.41)/Totela
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Subiya-Totela   (K.42)/Kuhane
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Kaonde   (L.41)/Kaonde
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba   (L.31)/Luba-Kasai
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba   (L.32)/Kanyok
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba   (L.33)/Luba-Katanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba   (L.34)/Hemba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba   (L.35)/Sanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Lunda   (L.51)/Salampasu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Lunda   (L.52)/Lunda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Lunda   (L.53)/Ruund
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Nkoya   (L.60)/Nkoya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende   (L.11)/Phende
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende   (L.12)/Holu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende   (L.12)/Samba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende   (L.13)/Kwese
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe   (L.21)/Kete
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe   (L.221)/Lwalu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe   (L.23)/Songe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe   (L.231)/Binji
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe   (L.24)/Luna
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba   (M.401)/Bwile
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba   (M.402)/Aushi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba   (M.41)/Taabwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba   (M.42)/Bemba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe   (M.11)/Pimbwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe   (M.12)/Rungwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe   (M.13)/Fipa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe   (M.14)/Mambwe-Lungu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lala-Bisa-Lamba   (M.51)/Lala-Bisa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lala-Bisa-Lamba   (M.54)/Lamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lala-Bisa-Lamba   (M.55)/Seba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga   (M.61)/Lenje
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga   (M.62)/Soli
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga   (M.63)/Ila
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga   (M.631)/Sala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga   (M.64)/Dombe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga   (M.64)/Tonga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyakyusa-Ngonde   (M.301)/Ndali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyakyusa-Ngonde   (M.31)/Nyakyusa-Ngonde
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.201)/Lambya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.21)/Wanda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.22)/Nyamwanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.23)/Nyiha, Malawi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.23)/Nyiha, Tanzania
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.23)/Nyika
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.23)/Nyika, Tanzania
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.24)/Malila
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa   (M.25)/Safwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Chewa-Nyanja   (N.31)/Chichewa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.101)/Ndendeule
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.102)/Nindi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.11)/Manda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.12)/Chingoni
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.12)/Xingoni
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.13)/Matengo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.14)/Mpoto
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda   (N.15)/Tonga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.41)/Nsenga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.41)/Phimbi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.42)/Kunda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.43)/Nyungwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.44)/Barwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.44)/Sena
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena   (N.441)/Sena, Malawi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Tumbuka   (N.201)/Mwera
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Tumbuka   (N.21)/Tumbuka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Kokola
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Lolo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Makhuwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Makhuwa-Marrevone
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Makhuwa-Meetto
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Makhuwa-Saka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Makhuwa-Shirima
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Manyawa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Marenje
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.31)/Takwane
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.311)/Koti
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.312)/Nathembo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.32)/Lomwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.331)/Lomwe, Malawi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.34)/Chuwabu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.34)/Maindo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa   (P.341)/Makhuwa-Moniga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi   (P.11)/Ndengereko
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi   (P.12)/Rufiji
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi   (P.13)/Matumbi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi   (P.14)/Ngindo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi   (P.15)/Mbunga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao   (P.21)/Yao
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao   (P.22)/Mwera
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao   (P.23)/Machinga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao   (P.23)/Makonde
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao   (P.24)/Ndonde Hamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Herero   (R.30)/Herero
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Herero   (R.311)/Dhimba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.101)/Kuvale
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.101)/Ngendelengo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.11)/Umbundu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.12)/Ndombe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.13)/Kwandu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.13)/Nyaneka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu   (R.14)/Nkumbi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo   (R.21)/Oshiwambo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo   (R.214)/Mbalanhu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo   (R.22)/Ndonga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo   (R.23)/Kwambi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo   (R.24)/Ngandjera
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Yeyi   (R.41)/Yeyi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Copi   (S.61)/Chopi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Copi   (S.62)/Tonga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni   (S.407)/Ndebele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni   (S.41)/Xhosa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni   (S.42)/Zulu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni   (S.43)/Swati
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni   (S.44)/Ndebele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.10)/Dema
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.10)/Shona
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.11)/Tawara
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.13)/Manyika
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.13)/Tewe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.15)/Ndau
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.16)/Kalanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona   (S.16)/Nambya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana   (S.31)/Setswana
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana   (S.311)/Kgalagadi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana   (S.32)/Birwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana   (S.32)/Sotho, Northern
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana   (S.32)/Tswapong
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana   (S.33)/Sotho, Southern
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga   (S.51)/Tswa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga   (S.53)/Tsonga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga   (S.54)/Ronga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Venda   (S.21)/Venda
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia   (A.501)/Hijuk
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia   (A.51)/Lefa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia   (A.52)/Dimbong
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia   (A.53)/Bafia
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia   (A.54)/Tibea
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.41)/Barombi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.42)/Bankon
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.43)/Bakoko
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.43)/Basaa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.44)/Tunen
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.45)/Nyokon
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.46)/Nomaande
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.461)/Tuotomb
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa   (A.462)/Yambeta
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga   (A.31)/Bube
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga   (A.31)/Bubia
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga   (A.32)/Batanga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga   (A.33)/Kombe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga   (A.33)/Yasa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga   (A.34)/Benga
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala   (A.21)/Wumboko
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala   (A.22)/Mokpwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala   (A.23)/Isu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala   (A.231)/Bakole
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala   (A.24)/Duala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala   (A.27)/Malimba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.71)/Eton
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.71)/Mengisa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.72)/Ewondo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.73)/Bebele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.73)/Bebil
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.74)/Bulu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang   (A.75)/Fang
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Kaka   (A.91)/Kwakum
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Kaka   (A.92)/Pol
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Kaka   (A.93)/Kako
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.11)/Oroko
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.13)/Bafaw-Balong
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.14)/Bonkeng
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.15)/Mbo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.151)/Nkongho
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.15B)/Bassossi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.15C)/Akoose
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong   (A.15C)/Bakaka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.801)/Gyele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.802)/Ukhwejo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.81)/Kwasio
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.82)/Swo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.83)/Makaa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.831)/Byep
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.832)/Kol
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.84)/Njyem
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.842)/Koonzime
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.85)/Bekwel
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.86)/Mpiemo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.86)/Mpumpong
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem   (A.87)/Bomwali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.601)/Leti
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.601)/Tuki
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.62)/Elip
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.62)/Mmaala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.62)/Yangben
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.621)/Nubaca
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.622)/Nugunu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.623)/Mbule
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga   (A.65)/Bati
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.201)/Ndasa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.202)/Sighu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.203)/Samay
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.204)/Ndambomo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.21)/Seki
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.211)/Molengue
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.22)/Kélé
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.22)/Ngom
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.23)/Mbangwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.24)/Wumbvu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.25)/Kota
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.251)/Sake
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele   (B.252)/Mahongwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete   (B.602)/Kaningi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete   (B.61)/Mbere
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete   (B.62)/Ombamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete   (B.63)/Ndumu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Myene   (B.11)/Myene
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi   (B.501)/Wandji
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi   (B.51)/Duma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi   (B.52)/Njebi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi   (B.53)/Tsaangi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.401)/Bwisi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.402)/Barama
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.403)/Vumbu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.41)/Sira
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.42)/Sangu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.43)/Punu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu   (B.44)/Lumbu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.701)/Tchitchege
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.71)/Teke-Tege
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.72)/Ngungwel
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.73)/Teke-Laali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.73)/Teke-Tsaayi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.73)/Teke-Tyee
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.73)/Yaka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.74)/Teke-Eboo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.74)/Teke-Nzikou
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.75)/Teke, Ibali
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.77)/Teke-Fuumu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke   (B.77)/Teke-Kukuya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.81)/Tiene
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.82)/Boma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.83)/Mfinu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.84)/Mpuono
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.85)/Iyansi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.85)/Songo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.86)/Ding
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.861)/Ngul
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.864)/Ngongo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi   (B.865)/Nzadi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo   (B.301)/Eviya
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo   (B.302)/Simba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo   (B.304)/Pinji
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo   (B.305)/Bubi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo   (B.31)/Tsogo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo   (B.32)/Kande
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.30)/Bangala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.30)/Lingala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.302)/Bolondo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.31)/Baloi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.31)/Likila
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.311)/Mabaale
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.312)/Ndobo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.32)/Bangi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.32)/Moi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.321)/Libinza
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.33)/Sengele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.34)/Sakata
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.35)/Bolia
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.35)/Ntomba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.36)/Boloki
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.36)/Lusengo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.36)/Ndolo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.36)/Yamongeri
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.37)/Budza
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba   (C.371)/Tembo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong   (C.81)/Dengese
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong   (C.82)/Songomeno
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong   (C.83)/Bushoong
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong   (C.84)/Lele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong   (C.85)/Wongo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi   (C.21)/Mboko
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi   (C.22)/Akwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi   (C.24)/Koyo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi   (C.25)/Mbosi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi   (C.26)/Likwala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi   (C.27)/Likuba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mongo-Nkundo   (C.61)/Mongo-Nkundu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mongo-Nkundo   (C.62)/Lalia
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mongo-Nkundo   (C.63)/Ngando
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.401)/Pagibete
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.403)/Kango
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.41)/Ngombe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.411)/Bomboma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.412)/Bamwe
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.413)/Dzando
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.414)/Ligenza
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.42)/Bwela
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.44)/Bwa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.441)/Babango
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe   (C.45)/Ngelima
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.101)/Dibole
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.102)/Ngando
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.104)/Yaka
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.11)/Ngundi
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.12)/Pande
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.13)/Mbati
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.14)/Bomitaba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.143)/Bonjo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.15)/Bongili
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.16)/Boko
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.16)/Lobala
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.161)/Bomboli
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi   (C.162)/Bozaba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele   (C.51)/Mbesa
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele   (C.52)/So
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele   (C.53)/Poke
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele   (C.54)/Lombo
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele   (C.55)/Kele
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele   (C.56)/Foma
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.71)/Hamba
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.71)/Tetela
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.72)/Kusu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.73)/Nkutu
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.74)/Yela
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.75)/Kela
-/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela   (C.76)/Ombo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi (F.31)/Isanzu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi (F.31)/Nilamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi (F.32)/Nyaturu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi (F.33)/Langi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Nilamba-Rangi (F.34)/Mbugwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi (F.21)/Sukuma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi (F.22)/Konongo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi (F.22)/Nyamwezi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi (F.23)/Sumbwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi (F.24)/Kimbu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Sukuma-Nyamwezi (F.25)/Bungu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Tongwe-Bende (F.11)/Tongwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/F/Tongwe-Bende (F.12)/Bende
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.61)/Sangu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.62)/Hehe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.63)/Bena
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.64)/Pangwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.65)/Kinga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.651)/Magoma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.66)/Vwanji
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Bena-Kinga (G.67)/Kisi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Gogo-Kagulu (G.11)/Gogo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Gogo-Kagulu (G.12)/Kagulu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Pogolo-Ndamba (G.51)/Pogolo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Pogolo-Ndamba (G.52)/Ndamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Shambala (G.22)/Asu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Shambala (G.23)/Shambala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Shambala (G.24)/Bondei
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.40)/Swahili, Congo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.402)/Makwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.403)/Mwani
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.42)/Swahili
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.44)/Comorian, Maore
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.44)/Comorian, Mwali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.44)/Comorian, Ndzwani
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Swahili (G.44)/Comorian, Ngazidja
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.301)/Doe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.31)/Zigula
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.311)/Mushungulu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.32)/Kwere
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.33)/Zaramo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.34)/Ngulu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.35)/Luguru
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.36)/Kami
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.37)/Kutu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.38)/Vidunda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/G/Zigula-Zaramo (G.39)/Sagala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.11)/Beembe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.112)/Doondo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.112)/Kaamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.12)/Vili
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.13)/Kunyi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.131)/Suundi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.16)/Kongo, San Salvador
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.16)/Koongo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.16)/Laari
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kikongo (H.16)/Yombe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu (H.21)/Kimbundu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu (H.21)/Mpinda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu (H.22)/Sama
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu (H.23)/Kibala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kimbundu (H.24)/Songo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Mbala-Hunganna (H.41)/Mbala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Mbala-Hunganna (H.42)/Hungana
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.31)/Lonzo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.31)/Pelende
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.31)/Yaka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.32)/Hungu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.32)/Suku
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.321)/Sonde
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Yaka (H.34)/Mbangala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.20)/Subi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.21)/Nyambo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.22)/Haya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.23)/Zinza
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.24)/Kerewe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.25)/Jita
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.251)/Kwaya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Haya-Jita (E.252)/Kara
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Konzo-Ndandi (D.40)/Kobo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Konzo-Ndandi (D.41)/Konzo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Konzo-Ndandi (D.42)/Nande
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.401)/Ngoreme
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.402)/Ikizu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.403)/Suba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.405)/Kabwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.406)/Singa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.41)/Lulogooli
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.411)/Luidakho-Luisukha-Lutirichi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.42)/Ekegusii
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.43)/Kuria
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.431)/Suba-Simbiti
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.44)/Zanaki
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Logooli-Kuria (E.45)/Ikoma-Nata-Isenye
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.31)/Bukusu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.31)/Lutachoni
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.31)/Masaaba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.32)/Lukabaras
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.32)/Nyala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.32)/Olumarama
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.32)/Olushisa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.32)/Olutsotso
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.32)/Oluwanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.33)/Olunyole
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.34)/Saamya-Gwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.341)/Olukhayo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.342)/Olumarachi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Masaba-Luhya (E.35)/Nyole
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.101)/Gungu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.102)/Talinga-Bwisi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.103)/Ruruuli-Runyala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.11)/Nyoro
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.12)/Tooro
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.121)/Hema
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.13)/Nyankore
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.14)/Chiga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.15)/Ganda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.16)/Kenye
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.16)/Soga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda (E.17)/Gwere
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.61)/Kinyarwanda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.62)/Rundi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.63)/Fuliiru
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.631)/Joba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.64)/Shubi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.65)/Hangaza
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.66)/Ha
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi (D.67)/Vinza
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde (D.501)/Nyindu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde (D.51)/Hunde
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde (D.52)/Havu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde (D.53)/Shi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde (D.531)/Tembo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Shi-Hunde (D.56)/Kabwari
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.11)/Chokwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.12)/Luimbi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.12)/Nyemba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.13)/Luchazi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.14)/Luvale
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.15)/Mbunda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.16)/Nyengo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.16)/Yauma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.17)/Mbwela
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Ciokwe-Luchazi (K.18)/Nkangala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Lozi (K.21)/Lozi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.31)/Luyana
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.32)/Mbowe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.33)/Kwangali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.332)/Gciriku
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.333)/Mbukushu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.34)/Mashi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Luyana (K.35)/Simaa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Subiya-Totela (K.402)/Fwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Subiya-Totela (K.41)/Totela
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/K/Subiya-Totela (K.42)/Kuhane
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Kaonde (L.41)/Kaonde
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba (L.31)/Luba-Kasai
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba (L.32)/Kanyok
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba (L.33)/Luba-Katanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba (L.34)/Hemba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba (L.35)/Sanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Lunda (L.51)/Salampasu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Lunda (L.52)/Lunda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Lunda (L.53)/Ruund
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Nkoya (L.60)/Nkoya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende (L.11)/Phende
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende (L.12)/Holu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende (L.12)/Samba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Pende (L.13)/Kwese
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe (L.21)/Kete
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe (L.221)/Lwalu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe (L.23)/Songe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe (L.231)/Binji
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Songe (L.24)/Luna
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba (M.401)/Bwile
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba (M.402)/Aushi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba (M.41)/Taabwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Bemba (M.42)/Bemba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe (M.11)/Pimbwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe (M.12)/Rungwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe (M.13)/Fipa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Fipa-Mambwe (M.14)/Mambwe-Lungu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lala-Bisa-Lamba (M.51)/Lala-Bisa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lala-Bisa-Lamba (M.54)/Lamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lala-Bisa-Lamba (M.55)/Seba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga (M.61)/Lenje
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga (M.62)/Soli
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga (M.63)/Ila
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga (M.631)/Sala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga (M.64)/Dombe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Lenje-Tonga (M.64)/Tonga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyakyusa-Ngonde (M.301)/Ndali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyakyusa-Ngonde (M.31)/Nyakyusa-Ngonde
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.201)/Lambya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.21)/Wanda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.22)/Nyamwanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.23)/Nyiha, Malawi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.23)/Nyiha, Tanzania
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.23)/Nyika
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.23)/Nyika, Tanzania
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.24)/Malila
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/M/Nyiha-Safwa (M.25)/Safwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Chewa-Nyanja (N.31)/Chichewa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.101)/Ndendeule
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.102)/Nindi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.11)/Manda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.12)/Chingoni
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.12)/Xingoni
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.13)/Matengo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.14)/Mpoto
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Manda (N.15)/Tonga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.41)/Nsenga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.41)/Phimbi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.42)/Kunda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.43)/Nyungwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.44)/Barwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.44)/Sena
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Senga-Sena (N.441)/Sena, Malawi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Tumbuka (N.201)/Mwera
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Tumbuka (N.21)/Tumbuka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Kokola
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Lolo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Makhuwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Makhuwa-Marrevone
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Makhuwa-Meetto
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Makhuwa-Saka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Makhuwa-Shirima
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Manyawa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Marenje
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.31)/Takwane
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.311)/Koti
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.312)/Nathembo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.32)/Lomwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.331)/Lomwe, Malawi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.34)/Chuwabu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.34)/Maindo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Makhuwa (P.341)/Makhuwa-Moniga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi (P.11)/Ndengereko
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi (P.12)/Rufiji
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi (P.13)/Matumbi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi (P.14)/Ngindo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Matuumbi (P.15)/Mbunga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao (P.21)/Yao
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao (P.22)/Mwera
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao (P.23)/Machinga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao (P.23)/Makonde
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/P/Yao (P.24)/Ndonde Hamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Herero (R.30)/Herero
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Herero (R.311)/Dhimba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.101)/Kuvale
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.101)/Ngendelengo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.11)/Umbundu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.12)/Ndombe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.13)/Kwandu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.13)/Nyaneka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Umbundu (R.14)/Nkumbi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo (R.21)/Oshiwambo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo (R.214)/Mbalanhu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo (R.22)/Ndonga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo (R.23)/Kwambi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo (R.24)/Ngandjera
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Yeyi (R.41)/Yeyi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Copi (S.61)/Chopi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Copi (S.62)/Tonga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni (S.407)/Ndebele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni (S.41)/Xhosa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni (S.42)/Zulu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni (S.43)/Swati
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni (S.44)/Ndebele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.10)/Dema
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.10)/Shona
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.11)/Tawara
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.13)/Manyika
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.13)/Tewe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.15)/Ndau
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.16)/Kalanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona (S.16)/Nambya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana (S.31)/Setswana
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana (S.311)/Kgalagadi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana (S.32)/Birwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana (S.32)/Sotho, Northern
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana (S.32)/Tswapong
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana (S.33)/Sotho, Southern
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga (S.51)/Tswa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga (S.53)/Tsonga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga (S.54)/Ronga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Venda (S.21)/Venda
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia (A.501)/Hijuk
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia (A.51)/Lefa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia (A.52)/Dimbong
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia (A.53)/Bafia
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bafia (A.54)/Tibea
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.41)/Barombi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.42)/Bankon
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.43)/Bakoko
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.43)/Basaa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.44)/Tunen
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.45)/Nyokon
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.46)/Nomaande
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.461)/Tuotomb
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Basaa (A.462)/Yambeta
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga (A.31)/Bube
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga (A.31)/Bubia
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga (A.32)/Batanga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga (A.33)/Kombe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga (A.33)/Yasa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Bubi-Benga (A.34)/Benga
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala (A.21)/Wumboko
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala (A.22)/Mokpwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala (A.23)/Isu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala (A.231)/Bakole
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala (A.24)/Duala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Duala (A.27)/Malimba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.71)/Eton
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.71)/Mengisa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.72)/Ewondo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.73)/Bebele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.73)/Bebil
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.74)/Bulu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Ewondo-Fang (A.75)/Fang
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Kaka (A.91)/Kwakum
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Kaka (A.92)/Pol
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Kaka (A.93)/Kako
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.11)/Oroko
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.13)/Bafaw-Balong
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.14)/Bonkeng
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.15)/Mbo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.151)/Nkongho
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.15B)/Bassossi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.15C)/Akoose
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Lundu-Balong (A.15C)/Bakaka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.801)/Gyele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.802)/Ukhwejo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.81)/Kwasio
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.82)/Swo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.83)/Makaa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.831)/Byep
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.832)/Kol
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.84)/Njyem
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.842)/Koonzime
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.85)/Bekwel
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.86)/Mpiemo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.86)/Mpumpong
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Makaa-Njem (A.87)/Bomwali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.601)/Leti
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.601)/Tuki
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.62)/Elip
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.62)/Mmaala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.62)/Yangben
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.621)/Nubaca
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.622)/Nugunu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.623)/Mbule
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/A/Sanaga (A.65)/Bati
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.201)/Ndasa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.202)/Sighu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.203)/Samay
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.204)/Ndambomo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.21)/Seki
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.211)/Molengue
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.22)/Kélé
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.22)/Ngom
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.23)/Mbangwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.24)/Wumbvu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.25)/Kota
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.251)/Sake
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Kele (B.252)/Mahongwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete (B.602)/Kaningi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete (B.61)/Mbere
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete (B.62)/Ombamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Mbete (B.63)/Ndumu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Myene (B.11)/Myene
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi (B.501)/Wandji
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi (B.51)/Duma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi (B.52)/Njebi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Nzebi (B.53)/Tsaangi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.401)/Bwisi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.402)/Barama
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.403)/Vumbu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.41)/Sira
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.42)/Sangu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.43)/Punu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Shira-Punu (B.44)/Lumbu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.701)/Tchitchege
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.71)/Teke-Tege
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.72)/Ngungwel
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.73)/Teke-Laali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.73)/Teke-Tsaayi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.73)/Teke-Tyee
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.73)/Yaka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.74)/Teke-Eboo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.74)/Teke-Nzikou
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.75)/Teke, Ibali
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.77)/Teke-Fuumu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Teke (B.77)/Teke-Kukuya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.81)/Tiene
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.82)/Boma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.83)/Mfinu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.84)/Mpuono
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.85)/Iyansi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.85)/Songo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.86)/Ding
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.861)/Ngul
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.864)/Ngongo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tiene-Yanzi (B.865)/Nzadi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo (B.301)/Eviya
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo (B.302)/Simba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo (B.304)/Pinji
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo (B.305)/Bubi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo (B.31)/Tsogo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/B/Tsogo (B.32)/Kande
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.30)/Bangala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.30)/Lingala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.302)/Bolondo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.31)/Baloi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.31)/Likila
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.311)/Mabaale
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.312)/Ndobo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.32)/Bangi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.32)/Moi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.321)/Libinza
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.33)/Sengele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.34)/Sakata
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.35)/Bolia
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.35)/Ntomba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.36)/Boloki
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.36)/Lusengo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.36)/Ndolo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.36)/Yamongeri
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.37)/Budza
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba (C.371)/Tembo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong (C.81)/Dengese
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong (C.82)/Songomeno
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong (C.83)/Bushoong
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong (C.84)/Lele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bushoong (C.85)/Wongo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi (C.21)/Mboko
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi (C.22)/Akwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi (C.24)/Koyo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi (C.25)/Mbosi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi (C.26)/Likwala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mboshi (C.27)/Likuba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mongo-Nkundo (C.61)/Mongo-Nkundu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mongo-Nkundo (C.62)/Lalia
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Mongo-Nkundo (C.63)/Ngando
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.401)/Pagibete
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.403)/Kango
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.41)/Ngombe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.411)/Bomboma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.412)/Bamwe
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.413)/Dzando
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.414)/Ligenza
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.42)/Bwela
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.44)/Bwa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.441)/Babango
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngombe (C.45)/Ngelima
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.101)/Dibole
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.102)/Ngando
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.104)/Yaka
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.11)/Ngundi
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.12)/Pande
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.13)/Mbati
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.14)/Bomitaba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.143)/Bonjo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.15)/Bongili
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.16)/Boko
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.16)/Lobala
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.161)/Bomboli
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Ngondi (C.162)/Bozaba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele (C.51)/Mbesa
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele (C.52)/So
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele (C.53)/Poke
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele (C.54)/Lombo
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele (C.55)/Kele
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Soko-Kele (C.56)/Foma
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.71)/Hamba
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.71)/Tetela
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.72)/Kusu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.73)/Nkutu
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.74)/Yela
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.75)/Kela
+/Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Tetela (C.76)/Ombo
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Ndemli/Ndemli
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Tikar/Tikar
 /Niger-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Tivoid/Abon
@@ -5240,100 +5240,100 @@
 /Nilo-Saharan/Western/Tebu/Tedaga
 /Nilo-Saharan/Core/B’aga/Daatsʼíin
 /Nilo-Saharan/Core/B’aga/Gumuz
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nara/Nara
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Mattokki
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Birked/Birked
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Dongolawi/Andaandi
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Kadaru-Ghulfan/Ghulfan
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Kadaru-Ghulfan/Kadaru
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Unclassified/Dair
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Unclassified/Dilling
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Unclassified/El Hugeirat
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Unclassified/Karko
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Central/Hill/Unclassified/Wali
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Northern/Nobiin
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nubian/Western/Midob
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nyimang/Afitti
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Nyimang/Ama
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Tama/Mararit/Mararit
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Tama/Tama-Sungor/Assangori
-/Nilo-Saharan/Core/Eastern Sudanic/Northern   (k languages)/Tama/Tama-Sungor/Tama
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Eastern Daju/Logorik
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Eastern Daju/Shatt
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Western Daju/Baygo
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Western Daju/Daju, Dar Daju
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Western Daju/Daju, Dar Fur
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Western Daju/Daju, Dar Sila
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Daju/Western Daju/Njalgulgule
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Eastern Jebel/Aka-Kelo-Molo/Aka
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Eastern Jebel/Aka-Kelo-Molo/Kelo
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Eastern Jebel/Aka-Kelo-Molo/Molo
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Eastern Jebel/Gaam/Gaam
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Bari/Bari
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Bari/Kakwa
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Bari/Kuku
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Bari/Mandari
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Dongotono
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Lango
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Lokoya
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Lopit
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Otuho
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Ongamo-Maa/Maasai
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Ongamo-Maa/Ngasa
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Ongamo-Maa/Samburu
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Teso/Ateso
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Ng’akarimojong
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Nyangatom
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Toposa
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Turkana
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Elgon/Kupsapiiny
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Elgon/Sabaot
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Kipsigis/Kipsigis
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Markweta/Markweeta
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Keiyo
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Kisankasa
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Nandi
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Terik
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Tugen
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Okiek/Okiek
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Kalenjin/Pokot/Pökoot
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Tatoga/Datooga
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Southern/Tatoga/Omotik
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Northeastern
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Northwestern
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, South Central
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Southeastern
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Southwestern
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Nuer/Nuer
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Dinka-Nuer/Nuer/Reel
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Anuak/Anuak
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Bor/Belanda Bor
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Jur/Luwo
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Mabaan-Burun/Burun/Burun
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Mabaan-Burun/Mabaan/Jumjum
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Mabaan-Burun/Mabaan/Mabaan
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Shilluk/Shilluk
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Thuri/Thuri
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Northern/Unclassified/Päri
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Adhola/Jopadhola
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Kuman/Kumam
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Thur
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Alur/Alur
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Lango-Acholi/Acholi
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Lango-Acholi/Lango
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Luo/Dholuo
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/North/Majang/Majang
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southeast/Kwegu/Kwegu
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southeast/Pastoral/Me’en/Me’en
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southeast/Pastoral/Suri/Mursi
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southeast/Pastoral/Suri/Suri, Tirmaga-Chai
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southwest/Didinga-Murle/Didinga-Longarim/Didinga
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southwest/Didinga-Murle/Didinga-Longarim/Narim
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southwest/Didinga-Murle/Murle/Murle
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southwest/Didinga-Murle/Tennet/Tennet
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Surmic/South/Southwest/Kacipo-Balesi/Suri, Kacipo-Bale
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Temein/Temein
-/Nilo-Saharan/Core/Eastern Sudanic/Southern   (n languages)/Temein/Tese
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nara/Nara
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Mattokki
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Birked/Birked
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Dongolawi/Andaandi
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Kadaru-Ghulfan/Ghulfan
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Kadaru-Ghulfan/Kadaru
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Unclassified/Dair
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Unclassified/Dilling
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Unclassified/El Hugeirat
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Unclassified/Karko
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Central/Hill/Unclassified/Wali
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Northern/Nobiin
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nubian/Western/Midob
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nyimang/Afitti
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Nyimang/Ama
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Tama/Mararit/Mararit
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Tama/Tama-Sungor/Assangori
+/Nilo-Saharan/Core/Eastern Sudanic/Northern (k languages)/Tama/Tama-Sungor/Tama
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Eastern Daju/Logorik
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Eastern Daju/Shatt
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Western Daju/Baygo
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Western Daju/Daju, Dar Daju
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Western Daju/Daju, Dar Fur
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Western Daju/Daju, Dar Sila
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Daju/Western Daju/Njalgulgule
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Eastern Jebel/Aka-Kelo-Molo/Aka
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Eastern Jebel/Aka-Kelo-Molo/Kelo
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Eastern Jebel/Aka-Kelo-Molo/Molo
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Eastern Jebel/Gaam/Gaam
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Bari/Bari
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Bari/Kakwa
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Bari/Kuku
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Bari/Mandari
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Dongotono
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Lango
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Lokoya
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Lopit
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Lotuxo/Otuho
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Ongamo-Maa/Maasai
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Ongamo-Maa/Ngasa
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Lotuxo-Maa/Ongamo-Maa/Samburu
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Teso/Ateso
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Ng’akarimojong
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Nyangatom
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Toposa
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Eastern/Lotuxo-Teso/Teso-Turkana/Turkana/Turkana
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Elgon/Kupsapiiny
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Elgon/Sabaot
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Kipsigis/Kipsigis
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Markweta/Markweeta
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Keiyo
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Kisankasa
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Nandi
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Terik
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Nandi-Markweta/Nandi/Tugen
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Okiek/Okiek
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Kalenjin/Pokot/Pökoot
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Tatoga/Datooga
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Southern/Tatoga/Omotik
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Northeastern
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Northwestern
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, South Central
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Southeastern
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Dinka/Dinka, Southwestern
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Nuer/Nuer
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Dinka-Nuer/Nuer/Reel
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Anuak/Anuak
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Bor/Belanda Bor
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Jur/Luwo
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Mabaan-Burun/Burun/Burun
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Mabaan-Burun/Mabaan/Jumjum
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Mabaan-Burun/Mabaan/Mabaan
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Shilluk/Shilluk
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Thuri/Thuri
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Northern/Unclassified/Päri
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Adhola/Jopadhola
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Kuman/Kumam
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Thur
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Alur/Alur
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Lango-Acholi/Acholi
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Alur-Acholi/Lango-Acholi/Lango
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Nilotic/Western/Luo/Southern/Luo-Acholi/Luo/Dholuo
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/North/Majang/Majang
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southeast/Kwegu/Kwegu
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southeast/Pastoral/Me’en/Me’en
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southeast/Pastoral/Suri/Mursi
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southeast/Pastoral/Suri/Suri, Tirmaga-Chai
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southwest/Didinga-Murle/Didinga-Longarim/Didinga
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southwest/Didinga-Murle/Didinga-Longarim/Narim
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southwest/Didinga-Murle/Murle/Murle
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southwest/Didinga-Murle/Tennet/Tennet
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Surmic/South/Southwest/Kacipo-Balesi/Suri, Kacipo-Bale
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Temein/Temein
+/Nilo-Saharan/Core/Eastern Sudanic/Southern (n languages)/Temein/Tese
 /Nilo-Saharan/Core/Kadugli-Krongo/Kanga
 /Nilo-Saharan/Core/Kadugli-Krongo/Katcha-Kadugli-Miri
 /Nilo-Saharan/Core/Kadugli-Krongo/Keiga
