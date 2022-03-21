@@ -17,7 +17,14 @@ def load_obj():
 		return pickle.load(f)
 
 
+def load_paths():
+
+	with open('data/lang_paths.txt', 'r') as f:
+		return [el.replace('\n', '') for el in f.readlines()]
+
+
 if __name__ == "__main__":
 
 	tree_json = load_json()
+	tree_paths = load_paths()
 	tree = load_obj()

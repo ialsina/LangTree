@@ -31,8 +31,10 @@ class Node:
         self.__assert(*children)
         self._children.extend(children)
 
+
     def __repr__(self):
         return "NODE: {} | CHILDREN_COUNT: {}".format(self.name, len(self._children))
+
 
     def __getitem__(self, ind):
         if isinstance(ind, int):
@@ -40,8 +42,10 @@ class Node:
         elif isinstance(ind, str):
             return self.find(ind)
 
+
     def __len__(self):
         return len(self._children)
+
 
     def find(self, query, deep=False):
         if deep:
@@ -78,15 +82,22 @@ class Node:
             raise ValueError
         self._children[ind] = child
 
+
     def __assert(self, *seq):
         if not all(isinstance(el, __class__) for el in seq):
             raise TypeError("Not all elements in input sequence belong to {}.".format(__class__))
+
 
     def json(self):
         if len(self._children) == 0:
             return self.name
         else:
             return {self.name: [child.json() for child in self._children]}
+
+
+    def paths(self):
+        return paths_(self)
+
 
     def __draw_level(self, stack=[], printer=print):
         pattern = ''.join(list(map(lambda x: {False: "   ", True: "┃  "}.get(x), stack[:-1])))
@@ -120,18 +131,22 @@ class Node:
         return self._children
 
 
-    def flatten(self):
+    def flatten(self, last_level = False):
 
         output = copy(self._children)
 
         for child in self._children:
             output.extend(child.flatten())
 
+        if last_level:
+            output = [el for el in output if len(el) == 0]
+
         return output
 
-    def tree(self, printer=print):
 
+    def tree(self, printer=print):
         self.__draw_level(printer=printer)
+
 
     def __parse_info(self, readstream, replace_name=True):
         import re
@@ -150,7 +165,6 @@ class Node:
                         self.attrs["exp_len"] = int(el)
                     else:
                         roun_readd.append(el)
-
 
         elif len(squa) == 1:
             if len(roun) == 1:
@@ -207,5 +221,58 @@ class Node:
         print("> Saved json in {}".format(os.path.abspath(location)))
 
 
+    def save_paths(self, kind = 'txt', location = None):
+        import json
+
+        assert isinstance(kind, str)
+        kind = kind.lower()
+        assert kind in ['txt', 'json'], "kind not supported"
+
+        if kind == 'txt':
+            location = location or 'data/lang_paths.txt'
+
+            with open(location, "w") as f:
+                f.write("\n".join(self.paths()))
+
+        elif kind == 'json':
+            location = location or 'data/lang_paths.json'
+
+            with open(location, "w") as f:
+                json.dump({el.split('/')[-1]: el for el in self.paths()}, f)
+
+        print("> Saved paths ({}) in {}".format(kind, location))
+
+
+
+
+
+def paths_(node):
+
+    name = node.name.replace('/', '')
+    children = node.children
+
+    if len(node) == 0:
+        #iso_char = get_iso(tup[0])
+        #ISO_LANG[iso_char] = name
+        return [name]
+
+    l = []
+
+    for child in children:
+
+        l.extend([name + '/' + el for el in paths_(child)])
+
+    return l
+
+
 if __name__ == "__main__":
     print("'utils.py' run as script")
+
+    a = Node("a", [Node("a{}".format(i)) for i in range(1, 8)])
+    b = Node("b", [Node("b{}".format(i)) for i in range(1, 10)])
+    c = Node("c", [Node("c{}".format(i)) for i in range(1, 12)])
+    d = Node("d", [Node("d{}".format(i)) for i in range(1, 4)])
+
+    b[3] = d
+
+    z = Node("z", [a, b, Node("x"), c])

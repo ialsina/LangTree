@@ -245,6 +245,4 @@ if __name__ == '__main__':
     tree = parse_all()
     tree.save()
     tree.save_json()
-
-#    with open('data/language_families.json', 'w') as f:
-#        json.dump(tree.json(), f)
+    tree.save_paths()
