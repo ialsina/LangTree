@@ -33,9 +33,13 @@ class Node:
         self._children.extend(children)
 
 
-    def get(self, path):
+    def get(self, path, omit_self = False):
         levels = [el for el in path.split('/') if len(el) > 0]
         cur = ''
+
+        if omit_self:
+            if levels[0] == self.name:
+                levels = levels[1:]
 
         output = deepcopy(self)
 
@@ -85,7 +89,7 @@ class Node:
             candidate_paths = list(candidates_set)
 
             for path in candidate_paths:
-                candidates.append(self.get(path))
+                candidates.append(self.get(path, omit_self=True))
 
             if ret_path:
                 return candidates, candidate_paths
