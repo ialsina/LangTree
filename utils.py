@@ -5,7 +5,7 @@ from helper import *
 class Node:
     def __init__(self, name, children=None, soup=None, path=None):
         self.attrs = {}
-        self.soup = soup
+        self._soup_txt = str(soup) if soup is not None else ""
         self.path = path
 
         name = name.replace('\n', '').strip()
@@ -103,12 +103,26 @@ class Node:
             return None
 
 
+    @property
+    def soup(self):
+        from bs4 import BeautifulSoup
+        return BeautifulSoup(self._soup_txt, 'html.parser')
+    
+
+
     def launch(self):
         import webbrowser
         if self.path is not None:
             return webbrowser.open(self.path)
         else:
             return False
+
+
+    def html(self, path = None):
+        path = path or "file.txt"
+
+        with open(path, "w") as f:
+            f.write(self.soup.prettify())
 
 
     def __apply_to_children(self, fun):
@@ -167,6 +181,7 @@ class Node:
     @property
     def children(self):
         return self._children
+
 
 
     def flatten(self, last_level = False):
@@ -281,6 +296,20 @@ class Node:
                 json.dump({el.split('/')[-1]: el for el in self.paths()}, f)
 
         print("> Saved paths ({}) in {}".format(kind, location))
+
+
+    def tree_to_file(self, location = None):
+        location = location or 'output/{}_tree.txt'.format(self.name)
+
+        with open(location, "w") as f:
+            self.tree(lambda x: print(x, file=f))
+
+    def html_to_file(self, location = None):
+        location = location or 'output/{}_html.txt'.format(self.name)
+
+        with open(location, "w") as f:
+            f.write(self.soup.prettify())
+
 
 
 

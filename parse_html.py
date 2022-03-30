@@ -8,6 +8,7 @@ from utils import Node
 import json
 import sys
 import os
+from copy import copy, deepcopy
 
 from helper import *
 
@@ -100,11 +101,11 @@ def strip(html):
     return name, elems
 
 
-def unravel(tag, save_soup=False):
+def unravel(tag, save_soup=True):
 
     name, elems = strip(tag)
     if elems is not None:
-        return Node(name, [unravel(elem) for elem in elems], soup=tag if save_soup else None)
+        return Node(name, [unravel(elem, save_soup) for elem in elems], soup=tag if save_soup else None)
     else:
         return Node(name, soup=tag if save_soup else None)
 
@@ -143,7 +144,11 @@ def get_root(inp, is_path=False, write=False):
 def clean(tag):
     return tag.text.replace('\n', '').strip()
 
-def parse_len1(tag, save_soup=False):
+def parse_len1(tag, save_soup=True):
+    """Parse the information under the tag "attachment-before", namely:
+        - name of the family
+        - first (ungrouped) elements
+    """
     if not 'attachment-before' in tag.attrs.get('class', []):
         assert False
 
@@ -164,7 +169,8 @@ def parse_len1(tag, save_soup=False):
 
 
 
-def parse_file(path, save_soup=False):
+def parse_file(path, save_soup=True):
+    global name, c, children, divs, tops, children1
 
     root = get_root(path, is_path=True, write=False)
 
@@ -173,9 +179,11 @@ def parse_file(path, save_soup=False):
     divs = root.find_all('div', recursive=False)
     assert len(divs) in [1, 2]
 
+
     name, c = parse_len1(divs[0], save_soup)
 
     children.extend(c)
+    children1 = copy(children)
 
     if len(divs) == 2:
 
@@ -184,7 +192,8 @@ def parse_file(path, save_soup=False):
         for i, top in enumerate(tops):
             try:
                 if len(clean(top)) > 30:
-                    children.extend([unravel(el, save_soup) for el in get_list(top)])
+                    #children.extend([unravel(el, save_soup) for el in get_list(top)])
+                    children.append(unravel(top, save_soup))
                 else:
                     continue
 
@@ -192,7 +201,7 @@ def parse_file(path, save_soup=False):
                 print("RAISED IN TOP #{}".format(i))
                 raise(e)
 
-    return Node(name, children, path=path)
+    return Node(name, children, path=path, soup = root if save_soup else None)
 
 
 def write_root(r, path_to_file):
@@ -201,7 +210,7 @@ def write_root(r, path_to_file):
         f.write(r.prettify())
 
 
-def parse_all(save_soup=False):
+def parse_all(save_soup=True):
     tree = Node("/")
 
     errcount = 0
@@ -242,7 +251,10 @@ def parse_all(save_soup=False):
 
 
 if __name__ == '__main__':
-    tree = parse_all()
+    tree = parse_all(True)
     tree.save()
     tree.save_json()
     tree.save_paths()
+
+    #aa = parse_file('html/afro-asiatic.html')
+    #ie = parse_file('html/indo-european.html')
