@@ -58,18 +58,20 @@ class Node:
         return "NODE: {} | CHILDREN_COUNT: {}".format(self.name, len(self._children))
 
 
-    def __getitem__(self, ind):
-        if isinstance(ind, int):
-            return self._children[ind]
-        elif isinstance(ind, str):
-            return self.find(ind, deep=False)
+    def __getitem__(self, key):
+        if isinstance(key, int):
+            return self._children[key]
+        elif isinstance(key, slice):
+            return [self._children[i] for i in range(*key.indices(self.__len__()))]
+        elif isinstance(key, str):
+            return self.find(key, deep=False)
 
 
     def __len__(self):
         return len(self._children)
 
 
-    def find(self, query, deep=True, ret_path=False):
+    def find(self, query, ret_path=False, deep=True):
 
         assert isinstance(query, str), "Argument must be str"
 
@@ -228,7 +230,7 @@ class Node:
                 if "A language of " in roun[0]:
                     self.attrs["country"] = roun[0].replace("A language of ", "")
 
-            if len(squa) == 3:
+            if len(squa[0]) == 3:
                 self.attrs["iso3"] = squa[0]
 
         if replace_name:
