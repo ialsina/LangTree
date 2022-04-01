@@ -2,6 +2,73 @@ from copy import deepcopy, copy
 import os
 from helper import *
 
+class NodeSet:
+    def __init__(self, nodes, paths = None):
+        assert isinstance(nodes, list) or isinstance(nodes, Node)
+        assert isinstance(paths, list) or isinstance(paths, str) or paths is None
+        assert all([isinstance(el, Node) for el in nodes])
+
+        if isinstance(nodes, Node):
+            nodes = [nodes]
+
+        if isinstance(paths, str):
+            paths = [paths]
+
+        if paths is not None:
+            assert len(nodes) == len(paths)
+
+        self._nodes = nodes
+        self._paths = paths
+        self.has_paths = paths is not None
+
+
+    def __str__(self):
+        output = ""
+
+        if self.__len__() == 0:
+            return output + "* Empty *"
+
+        if self.has_paths:
+            for node, path in zip(self._nodes, self._paths):
+                output += "{:>52s}    {:<40s}\n".format(node.__repr__(), '/'.join(path.split('/')[:-1])+'/')
+
+        else:
+            for node in self._nodes:
+                output += "{:>52s}\n".format(node.__frepr__())
+
+        return output
+
+
+    def __repr__(self):
+        return self.__str__()
+
+
+    def __len__(self):
+        return len(self._nodes)
+
+    def __getitem__(self, key):
+        assert isinstance(key, int)
+
+        if self.has_paths:
+            return self._nodes[key], self._paths[key]
+
+        else:
+            return self._nodes[key]
+
+
+    def append(self, node, path = None):
+        assert isinstance(node, Node)
+
+        if self.has_paths:
+            assert isinstance(path, str)
+        else:
+            path = None
+
+        self._nodes.append(node)
+        if self.has_paths:
+            self._paths.append(path)
+
+
 class Node:
     def __init__(self, name, children=None, soup=None, path=None):
         self._attrs = {}
@@ -31,7 +98,7 @@ class Node:
         self._children.extend(children)
 
 
-    def get(self, path, omit_self = False, copy = False):
+    def follow(self, path, omit_self = False, copy = False):
         levels = [el for el in path.split('/') if len(el) > 0]
         cur = ''
 
@@ -56,7 +123,20 @@ class Node:
 
 
     def __repr__(self):
-        return "NODE: {} | CHILDREN_COUNT: {}".format(self._name, len(self._children))
+        #return "NODE: {} | CHILDREN_COUNT: {}".format(self._name, len(self._children))
+
+        if self.__len__() == 0:
+            name = self._name
+            iso3 = self.get("iso3")
+            iso2 = self.get("iso2")
+
+            if iso2:
+                return "{} ({} | {})".format(name, iso3, iso2)
+            else:
+                return "{} ({})".format(name, iso3)
+
+        else:
+            return "NODE: {} | CHILDREN_COUNT: {}".format(self.name, self.__len__())
 
 
     def __getitem__(self, key):
@@ -72,7 +152,7 @@ class Node:
         return len(self._children)
 
 
-    def find(self, query, ret_path=False, deep=True, copy=False, single_as_element = True):
+    def find(self, query, ret_path=False, deep=True, copy=False, terminal=False, single_as_element = True):
 
         assert isinstance(query, str), "Argument must be str"
 
@@ -92,17 +172,29 @@ class Node:
             candidate_paths = list(candidates_set)
 
             for path in candidate_paths:
-                candidates.append(self.get(path, omit_self=True, copy=copy))
+                candidates.append(self.follow(path, omit_self=True, copy=copy))
+
+            if terminal:
+                temp1, temp2 = [], []
+                for cand, cand_path in zip(candidates, candidate_paths):
+                    if cand.is_terminal:
+                        temp1.append(cand)
+                        temp2.append(cand_path)
+
+                candidates = temp1.copy()
+                candidate_paths = temp2.copy()
+                del temp1
+                del temp2
 
             if len(candidates) == 1 and single_as_element:
                 candidates = candidates[0]
                 candidate_paths = candidate_paths[0]
 
             if ret_path:
-                return candidates, candidate_paths
+                return NodeSet(candidates, candidate_paths)
 
             else:
-                return candidates
+                return NodeSet(candidates)
 
         else:
             for child in self._children:
@@ -194,11 +286,14 @@ class Node:
         return outp
 
 
-    def nodes(self, terminal = False, copy = False):
+    def nodes(self, terminal = False, copy = False, **kwargs):
         outp = nodes_(self)
 
         if terminal:
             outp = list(filter(lambda x: x.is_terminal, outp))
+
+        for kwarg in kwargs:
+            outp = list(filter(lambda x: x.attrs.get(kwarg) == kwargs[kwarg], outp))
 
         if copy:
             outp = deepcopy(outp)
@@ -241,10 +336,10 @@ class Node:
     # TO BE UPDATED
     @property
     def count_nodes(self):
-        return len(self.flatten())
+        return len(self.nodes(terminal = False))
 
     def count_terminal(self):
-        return len(self.terminal())
+        return len(self.nodes(terminal = True))
 
     def count_children(self):
         return self.__len__()    
@@ -268,6 +363,10 @@ class Node:
 
     def update(self, **kwargs):
         self._attrs.update(kwargs)
+
+
+    def get(self, key):
+        return self._attrs.get(key)
 
 
     # TO BE DEPRECATED

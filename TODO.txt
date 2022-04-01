@@ -1,2 +1,2 @@
-FIX HTML PARSING!
-AFRO-ASIATIC LANGUAGES ARE IMPORTED BADLY!
+CHANGE Nan imports to "" or sth
+Check which ones of those who do have iso2 in df are not touched (e.g. estonian because of Standard...)
