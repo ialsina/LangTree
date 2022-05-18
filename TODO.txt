@@ -1,2 +1,2 @@
-CHANGE Nan imports to "" or sth
-Check which ones of those who do have iso2 in df are not touched (e.g. estonian because of Standard...)
+Check why does tree.nodes(terminal = False) or tree.nodes(language = True)
+	act like tree.nodes(terminal = True).

@@ -3,6 +3,10 @@ import os
 from helper import *
 
 class NodeSet:
+    """Class that represents a collection of nodes,
+    typically as a result of a query.
+    """
+
     def __init__(self, nodes, paths = None):
         assert isinstance(nodes, list) or isinstance(nodes, Node)
         assert isinstance(paths, list) or isinstance(paths, str) or paths is None
@@ -29,12 +33,12 @@ class NodeSet:
             return output + "* Empty *"
 
         if self.has_paths:
-            for node, path in zip(self._nodes, self._paths):
-                output += "{:>52s}    {:<40s}\n".format(node.__repr__(), '/'.join(path.split('/')[:-1])+'/')
+            for node, clean_path in zip(self._nodes, self.clean_paths):
+                output += "{:>52s}    {:<40s}\n".format(node.__repr__(), clean_path)
 
         else:
             for node in self._nodes:
-                output += "{:>52s}\n".format(node.__frepr__())
+                output += "{:>52s}\n".format(node.__repr__())
 
         return output
 
@@ -69,8 +73,27 @@ class NodeSet:
             self._paths.append(path)
 
 
+    @property
+    def nodes(self):
+        return self._nodes
+
+    @property
+    def paths(self):
+        return self._paths
+
+    @property
+    def clean_paths(self):
+        return ['/'.join(path.split('/')[:-1])+'/' for path in self._paths]
+    
+    
+    
+
+
 class Node:
-    def __init__(self, name, children=None, soup=None, path=None):
+    """Core notion of the Tree. A nodes is each instance within it.
+    It can contain children, and many attributes
+    """
+    def __init__(self, name, children=None, soup=None, path=None, **attrs):
         self._attrs = {}
         self._soup_txt = str(soup) if soup is not None else ""
         self.path = path
@@ -78,6 +101,9 @@ class Node:
         name = name.replace('\n', '').strip()
         self._name = name
         self.__parse_info(name)
+
+        if attrs is not None:
+            self.update(**attrs)
 
         if isinstance(children, list):
             if len(children) == 0:
@@ -215,13 +241,13 @@ class Node:
 
         if len(query) == 3:
 
-            for node, path in zip(self.nodes(terminal = True), self.paths(terminal = True)):
+            for node, path in zip(self.nodes(language = True), self.paths(language = True)):
                 if node.attrs.get('iso3') == query:
                     output = (node, path)
 
         elif len(query) == 2:
 
-            for node, path in zip(self.nodes(terminal = True), self.paths(terminal = True)):
+            for node, path in zip(self.nodes(language = True), self.paths(language = True)):
                 if node.attrs.get('iso2') == query:
                     output = (node, path)
 
@@ -277,20 +303,26 @@ class Node:
             return {self._name: [child.json() for child in self._children]}
 
 
-    def paths(self, terminal = False):
+    def paths(self, terminal = False, language = False):
         outp = paths_(self)
 
         if terminal:
             outp = [pp for pp, nn in zip(outp, nodes_(self)) if nn.is_terminal]
 
+        elif language:
+            outp = [pp for pp, nn in zip(outp, nodes_(self)) if nn.is_language]
+
         return outp
 
 
-    def nodes(self, terminal = False, copy = False, **kwargs):
+    def nodes(self, terminal = False, language = False, copy = False, **kwargs):
         outp = nodes_(self)
 
         if terminal:
             outp = list(filter(lambda x: x.is_terminal, outp))
+
+        elif language:
+            outp = list(filter(lambda x: x.is_language, outp))
 
         for kwarg in kwargs:
             outp = list(filter(lambda x: x.attrs.get(kwarg) == kwargs[kwarg], outp))
@@ -355,6 +387,10 @@ class Node:
     @property
     def is_terminal(self):
         return len(self._children) == 0
+
+    @property
+    def is_language(self):
+        return self.is_terminal or self.get("iso2") is not None    
 
     @property
     def name(self):

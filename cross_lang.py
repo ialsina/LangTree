@@ -4,6 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 import numpy as np
 from copy import copy, deepcopy
+from collections import Counter
 
 f = open("output/cross_lang_report.txt", "w")
 
@@ -90,13 +91,15 @@ print_("\n> For each of them (SECTION 2) best match in tree by name")
 untouched_iso2_iso2 = untouched_iso2["Part1"].to_list()
 untouched_iso2_iso3 = untouched_iso2.index.to_list()
 untouched_iso2_names = untouched_iso2["Ref_Name"].to_list()
+untouched_iso2_paths = []
 
 for i, (iso2, iso3, name) in enumerate(zip(untouched_iso2_iso2, untouched_iso2_iso3, untouched_iso2_names)):
 	header = '{}. {} ({} | {}) '.format(i+1, name, iso3, iso2)
 	print_("")
 	print_('{:.<128s}'.format(header))
-	output = tree.find(name, terminal = True, ret_path = True)
-	print_(output)
+	output_set = tree.find(name, terminal = True, ret_path = True)
+	print_(output_set)
+	untouched_iso2_paths.append(output_set.clean_paths)
 
 print_("")
 print_("{:_^128s}".format("SECTION 4"))
@@ -104,3 +107,35 @@ print_("\n> Records in ISO639-3 not present in tree: {} out of {}".format(len(df
 print_(df_control[["Part1", "Ref_Name", "Scope", "Language_Type"]].fillna('').to_string())
 
 f.close()
+
+
+
+MANUAL_PATHS = {
+	"Estonian" : "/Uralic/Finnic/",
+	"Norwegian Nynorsk": "/Indo-European/Germanic/North/East Scandinavian/Danish-Swedish/Danish-Bokmal/",
+	
+
+}
+
+
+print_("")
+print_("{:_^128s}".format("SECTION 3"))
+print_("\n> For each of SECTION 5, fixes applied. Languages added")
+
+# Adding the language feature to nonterminal elements:
+
+for iso2, iso3, name, paths in zip(untouched_iso2_iso2, untouched_iso2_iso3, untouched_iso2_names, untouched_iso2_paths):
+
+	if name in MANUAL_PATHS:
+
+
+	if len(paths) == 0:
+		continue
+
+	counter = Counter(paths)
+	most_common, times_most_common = counter.most_common()[0]
+	total_times = sum(counter.values())
+
+	if times_most_common > total_times*0.5:
+		print("Adding:\n{} {} {} {}\n".format(iso2, iso3, name, most_common))
+		tree.follow(most_common).update(iso2 = iso2, iso3 = iso3)
