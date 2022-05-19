@@ -16,8 +16,8 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
-<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?r6n0n4" type="image/vnd.microsoft.icon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?raymof" type="image/vnd.microsoft.icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.5, minimum-scale=1, user-scalable=yes" />
 <meta name="generator" content="Drupal 7 (http://drupal.org)" />
 <link rel="canonical" href="https://www.ethnologue.com/subgroups/otomanguean" />
@@ -31,7 +31,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="Ethnologue" href="/sites/default/files/ethnologuedotcom.xml">
   <link rel="apple-touch-icon" href="/sites/all/themes/ethn/images/apple-touch-icon.png" />
   <title>Otomanguean | Ethnologue</title>
-  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?5323f3c4"></script-->
+  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?d28d3b2d"></script-->
   <!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,99 +45,99 @@
   
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/modules/system/system.base.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.menus.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.messages.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.theme.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.base.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.menus.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.messages.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.theme.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/comment/comment.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/field/theme/field.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/node/node.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/search/search.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/user/user.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?raymof");
+@import url("https://www.ethnologue.com/modules/comment/comment.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?raymof");
+@import url("https://www.ethnologue.com/modules/field/theme/field.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?raymof");
+@import url("https://www.ethnologue.com/modules/node/node.css?raymof");
+@import url("https://www.ethnologue.com/modules/search/search.css?raymof");
+@import url("https://www.ethnologue.com/modules/user/user.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?raymof");
 </style>
 
 <!--[if lt IE 10]>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?raymof");
 </style>
 <![endif]-->
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?raymof");
 </style>
 
 <!--[if (lt IE 9)&(!IEMobile)]>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?raymof");
 </style>
 <![endif]-->
 
 <!--[if gte IE 9]><!-->
 <style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?raymof");
 </style>
 <!--<![endif]-->
 
 <!--[if gte IE 9]><!-->
 <style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?raymof");
 </style>
 <!--<![endif]-->
 <style type="text/css" media="print">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?raymof");
 </style>
   <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?raymof"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?raymof"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-20037946-14", {"cookieDomain":"auto"});ga("set", "dimension2", "anonymous user");ga('require', 'linkid', {
@@ -147,20 +147,20 @@ var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
 ga('set', 'dimension1', pixelRatio );ga("send", "pageview");ga('require', 'Clearbit', {"mapping":{"companyName":"dimension3","companyDomain":"dimension4","companyTags":"dimension5","companySector":"dimension6","companyIndustryGroup":"dimension7","companyIndustry":"dimension8","companySubIndustry":"dimension9","companyType":"dimension10","companyEmployeesRange":"dimension11","companyAlexaRank":"dimension12","companyCity":"dimension13","companyState":"dimension14","companyCountry":"dimension15"}});
 //--><!]]>
 </script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?raymof"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"Z3GQGTI_0wAP4YOUIXgB1oPO_J7vubUov1O7TC_-scc","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.22.0"},"smart_ip":{"location":{"country_code":"CH","country":"Switzerland","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"212.25.19.58","timestamp":1643843936}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"6DS06TOYe1YsOTt4h3KvCAXq-DyUGqdrccbB7QJt8YQ","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.27.1"},"smart_ip":{"location":{"country_code":"PA","country":"Panama","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"186.148.105.138","timestamp":1652908788}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
 //--><!]]>
 </script>
 </head>
-<body class="html not-front not-logged-in no-sidebars page-family page-family-24-3810 context-subgroups">
+<body class="html not-front not-logged-in no-sidebars page-family page-family-25-3810 context-subgroups">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7MVKTH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -383,11 +383,11 @@ document.getElementById("aa-search-input").onclick = function() {
 <!-- Initialize autocomplete menu -->
 <script>
 var client = algoliasearch("2RP8PHQQI3", "45348df641ea37f730d2938add600be1");
-var countries = client.initIndex('countries_24');
-var macrolanguages = client.initIndex('macrolanguages_24');
-var languages = client.initIndex('languages_24');
-var alt = client.initIndex('alt_24');
-var autonyms = client.initIndex('autonyms_24');
+var countries = client.initIndex('countries_25');
+var macrolanguages = client.initIndex('macrolanguages_25');
+var languages = client.initIndex('languages_25');
+var alt = client.initIndex('alt_25');
+var autonyms = client.initIndex('autonyms_25');
 var guides = client.initIndex('guides');
 
 //initialize autocomplete on search input (ID selector must match)
@@ -709,7 +709,7 @@ font-size: 14px;
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/24-3810">Login</a></li>
+      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/25-3810">Login</a></li>
 <li class="last leaf"><a href="/cart/my" style="text-transform: capitalize;">Shopping cart</a></li>
 </ul>    </div>
   </div>
@@ -718,7 +718,7 @@ font-size: 14px;
   <div class="region-inner region-branding-inner">
         <div class="branding-data clearfix">
             <div class="logo-img">
-        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?r6n0n4" alt="Ethnologue" id="logo" /></a>      </div>
+        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?raymof" alt="Ethnologue" id="logo" /></a>      </div>
                         <hgroup class="site-name-slogan">        
                                 <h2 class="site-name element-invisible"><a href="/" title="Home">Ethnologue</a></h2>
                               </hgroup>
@@ -760,7 +760,7 @@ font-size: 14px;
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-d74986dd4e709b9fad59357b2fd0ca05">
+      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-aa835f8087948ded12910e22d7aef209">
         
   
       <div class="attachment attachment-before">
@@ -786,7 +786,7 @@ font-size: 14px;
       <div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
       
-  <div class="views-field views-field-name-1">        <span class="field-content">Otomanguean (178)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fba18d96ac4430c1bd6944c1092ba6ec">
+  <div class="views-field views-field-name-1">        <span class="field-content">Otomanguean (179)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-45ab92299374e2cb807b8714c9247c8b">
         
   
   
@@ -808,7 +808,7 @@ font-size: 14px;
   
       <div class="view-content indent1">
       <div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/eastern-otomanguean">Eastern Otomanguean (141)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-750ab371d7ab350c7d8e0bbbe498dd26">
+          <a href="/subgroups/eastern-otomanguean">Eastern Otomanguean (142)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2479939d003ed7d63dd018b75fb9f97c">
         
   
   
@@ -819,7 +819,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/amuzgo-mixtecan">Amuzgo-Mixtecan (60)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0a681d6247f4cb5b4cbaebd8e8b7cb25">
+          <a href="/subgroups/amuzgo-mixtecan">Amuzgo-Mixtecan (60)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-407d1a04e5fa8ea43148faf263561b9c">
         
   
   
@@ -830,17 +830,17 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/amuzgo">Amuzgo (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d7c486c75e4b1defb4125fe8f156a22c">
+          <a href="/subgroups/amuzgo">Amuzgo (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-28cfc2877d5b272ff607b17525ac8a96">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amuzgo, Guerrero <a href="/language/amu/24">[amu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amuzgo, Guerrero <a href="/language/amu/25">[amu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amuzgo, Ipalapa <a href="/language/azm/24">[azm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amuzgo, Ipalapa <a href="/language/azm/25">[azm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amuzgo, San Pedro Amuzgos <a href="/language/azg/24">[azg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amuzgo, San Pedro Amuzgos <a href="/language/azg/25">[azg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -849,7 +849,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/mixtecan">Mixtecan (57)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cb8c7077188d29e089275fa0d440cb7a">
+          <a href="/subgroups/mixtecan">Mixtecan (57)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a1b3a12224cfe7db7dbea979b083a151">
         
   
   
@@ -860,15 +860,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/cuiatec">Cuiatec (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-71487dae71f4f4ba628473d9f9c62b8d">
+          <a href="/subgroups/cuiatec">Cuiatec (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bbdc9272e3bdfe17d2f7d3bf4acf81a1">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cuicatec, Tepeuxila <a href="/language/cux/24">[cux]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cuicatec, Tepeuxila <a href="/language/cux/25">[cux]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cuicatec, Teutila <a href="/language/cut/24">[cut]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cuicatec, Teutila <a href="/language/cut/25">[cut]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -877,115 +877,115 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/mixtec">Mixtec (52)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-55cfe3c13ca75745faa4745732f29886">
+          <a href="/subgroups/mixtec">Mixtec (52)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-af882135421506e6b5e078c9433f8347">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Alacatlatzala <a href="/language/mim/24">[mim]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Alacatlatzala <a href="/language/mim/25">[mim]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Alcozauca <a href="/language/xta/24">[xta]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Alcozauca <a href="/language/xta/25">[xta]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Amoltepec <a href="/language/mbz/24">[mbz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Amoltepec <a href="/language/mbz/25">[mbz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Apasco-Apoala <a href="/language/mip/24">[mip]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Apasco-Apoala <a href="/language/mip/25">[mip]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Atatlahuca <a href="/language/mib/24">[mib]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Atatlahuca <a href="/language/mib/25">[mib]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Ayutla <a href="/language/miy/24">[miy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Ayutla <a href="/language/miy/25">[miy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Cacaloxtepec <a href="/language/miu/24">[miu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Cacaloxtepec <a href="/language/miu/25">[miu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Chayuco <a href="/language/mih/24">[mih]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Chayuco <a href="/language/mih/25">[mih]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Chazumba <a href="/language/xtb/24">[xtb]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Chazumba <a href="/language/xtb/25">[xtb]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Chigmecatitlán <a href="/language/mii/24">[mii]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Chigmecatitlán <a href="/language/mii/25">[mii]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Coatzospan <a href="/language/miz/24">[miz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Coatzospan <a href="/language/miz/25">[miz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Cuyamecalco <a href="/language/xtu/24">[xtu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Cuyamecalco <a href="/language/xtu/25">[xtu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Diuxi-Tilantongo <a href="/language/xtd/24">[xtd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Diuxi-Tilantongo <a href="/language/xtd/25">[xtd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Huitepec <a href="/language/mxs/24">[mxs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Huitepec <a href="/language/mxs/25">[mxs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Itundujia <a href="/language/mce/24">[mce]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Itundujia <a href="/language/mce/25">[mce]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Ixtayutla <a href="/language/vmj/24">[vmj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Ixtayutla <a href="/language/vmj/25">[vmj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Jamiltepec <a href="/language/mxt/24">[mxt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Jamiltepec <a href="/language/mxt/25">[mxt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Juxtlahuaca <a href="/language/vmc/24">[vmc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Juxtlahuaca <a href="/language/vmc/25">[vmc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Magdalena Peñasco <a href="/language/xtm/24">[xtm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Magdalena Peñasco <a href="/language/xtm/25">[xtm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Metlatónoc <a href="/language/mxv/24">[mxv]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Metlatónoc <a href="/language/mxv/25">[mxv]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Mitlatongo <a href="/language/vmm/24">[vmm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Mitlatongo <a href="/language/vmm/25">[vmm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Mixtepec <a href="/language/mix/24">[mix]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Mixtepec <a href="/language/mix/25">[mix]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Northern Tlaxiaco <a href="/language/xtn/24">[xtn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Northern Tlaxiaco <a href="/language/xtn/25">[xtn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Northwest Oaxaca <a href="/language/mxa/24">[mxa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Northwest Oaxaca <a href="/language/mxa/25">[mxa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Ocotepec <a href="/language/mie/24">[mie]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Ocotepec <a href="/language/mie/25">[mie]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Peñoles <a href="/language/mil/24">[mil]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Peñoles <a href="/language/mil/25">[mil]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Pinotepa Nacional <a href="/language/mio/24">[mio]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Pinotepa Nacional <a href="/language/mio/25">[mio]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Juan Colorado <a href="/language/mjc/24">[mjc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Juan Colorado <a href="/language/mjc/25">[mjc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Juan Teita <a href="/language/xtj/24">[xtj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Juan Teita <a href="/language/xtj/25">[xtj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Miguel el Grande <a href="/language/mig/24">[mig]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Miguel el Grande <a href="/language/mig/25">[mig]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Miguel Piedras <a href="/language/xtp/24">[xtp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, San Miguel Piedras <a href="/language/xtp/25">[xtp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Santa Lucía Monteverde <a href="/language/mdv/24">[mdv]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Santa Lucía Monteverde <a href="/language/mdv/25">[mdv]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Santa María Zacatepec <a href="/language/mza/24">[mza]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Santa María Zacatepec <a href="/language/mza/25">[mza]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Silacayoapan <a href="/language/mks/24">[mks]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Silacayoapan <a href="/language/mks/25">[mks]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Sindihui <a href="/language/xts/24">[xts]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Sindihui <a href="/language/xts/25">[xts]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Sinicahua <a href="/language/xti/24">[xti]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Sinicahua <a href="/language/xti/25">[xti]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Southeastern Nochixtlán <a href="/language/mxy/24">[mxy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Southeastern Nochixtlán <a href="/language/mxy/25">[mxy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Southern Puebla <a href="/language/mit/24">[mit]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Southern Puebla <a href="/language/mit/25">[mit]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Southwestern Tlaxiaco <a href="/language/meh/24">[meh]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Southwestern Tlaxiaco <a href="/language/meh/25">[meh]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Soyaltepec <a href="/language/vmq/24">[vmq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Soyaltepec <a href="/language/vmq/25">[vmq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tacahua <a href="/language/xtt/24">[xtt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tacahua <a href="/language/xtt/25">[xtt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tamazola <a href="/language/vmx/24">[vmx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tamazola <a href="/language/vmx/25">[vmx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tezoatlán <a href="/language/mxb/24">[mxb]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tezoatlán <a href="/language/mxb/25">[mxb]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tidaá <a href="/language/mtx/24">[mtx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tidaá <a href="/language/mtx/25">[mtx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tijaltepec <a href="/language/xtl/24">[xtl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tijaltepec <a href="/language/xtl/25">[xtl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tlazoyaltepec <a href="/language/mqh/24">[mqh]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tlazoyaltepec <a href="/language/mqh/25">[mqh]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tututepec <a href="/language/mtu/24">[mtu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Tututepec <a href="/language/mtu/25">[mtu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Western Juxtlahuaca <a href="/language/jmx/24">[jmx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Western Juxtlahuaca <a href="/language/jmx/25">[jmx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yoloxóchitl <a href="/language/xty/24">[xty]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yoloxóchitl <a href="/language/xty/25">[xty]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yosondúa <a href="/language/mpm/24">[mpm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yosondúa <a href="/language/mpm/25">[mpm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yucuañe <a href="/language/mvg/24">[mvg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yucuañe <a href="/language/mvg/25">[mvg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yutanduchi <a href="/language/mab/24">[mab]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mixtec, Yutanduchi <a href="/language/mab/25">[mab]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -994,17 +994,17 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/trique">Trique (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d64db0a17aace5af7d7df8063d1d1d0f">
+          <a href="/subgroups/trique">Trique (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-890b683e04ec8b0fee2b451521c838cf">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Triqui, Chicahuaxtla <a href="/language/trs/24">[trs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Triqui, Chicahuaxtla <a href="/language/trs/25">[trs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Triqui, Copala <a href="/language/trc/24">[trc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Triqui, Copala <a href="/language/trc/25">[trc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Triqui, San Martín Itunyoso <a href="/language/trq/24">[trq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Triqui, San Martín Itunyoso <a href="/language/trq/25">[trq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1013,7 +1013,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/popolocan-zapotecan">Popolocan-Zapotecan (81)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3db18afada63f62d8738ebe72793d103">
+          <a href="/subgroups/popolocan-zapotecan">Popolocan-Zapotecan (82)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c1da6abfaf0ac2acfb18832c747d6756">
         
   
   
@@ -1024,15 +1024,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/popolocan">Popolocan (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a0fc0574258322f5aa2ce096bc4943f0">
+          <a href="/subgroups/popolocan">Popolocan (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8813a33a981297c33e2c99c079d0edf3">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chocholtec <a href="/language/coz/24">[coz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chocholtec <a href="/language/coz/25">[coz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ixcatec <a href="/language/ixc/24">[ixc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ixcatec <a href="/language/ixc/25">[ixc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1041,29 +1041,29 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/mazatec">Mazatec (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8f6ca857bb1d86be6a634e6218ac7760">
+          <a href="/subgroups/mazatec">Mazatec (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e54c3d0010672277a7b297dd9e1d8ca9">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Ayautla <a href="/language/vmy/24">[vmy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Ayautla <a href="/language/vmy/25">[vmy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Chiquihuitlán <a href="/language/maq/24">[maq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Chiquihuitlán <a href="/language/maq/25">[maq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Huautla <a href="/language/mau/24">[mau]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Huautla <a href="/language/mau/25">[mau]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Ixcatlán <a href="/language/mzi/24">[mzi]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Ixcatlán <a href="/language/mzi/25">[mzi]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Jalapa de Díaz <a href="/language/maj/24">[maj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Jalapa de Díaz <a href="/language/maj/25">[maj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Mazatlán <a href="/language/vmz/24">[vmz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Mazatlán <a href="/language/vmz/25">[vmz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Puebla and Northeastern <a href="/language/pbm/24">[pbm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Puebla and Northeastern <a href="/language/pbm/25">[pbm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, San Jerónimo Tecóatl <a href="/language/maa/24">[maa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, San Jerónimo Tecóatl <a href="/language/maa/25">[maa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Soyaltepec <a href="/language/vmp/24">[vmp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazatec, Soyaltepec <a href="/language/vmp/25">[vmp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1072,25 +1072,25 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/popoloca">Popoloca (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-05178ccefc9f9caaffa58bfae9f125ff">
+          <a href="/subgroups/popoloca">Popoloca (7)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-be4b5de2193706bf1a4a730723843871">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, Coyotepec <a href="/language/pbf/24">[pbf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, Coyotepec <a href="/language/pbf/25">[pbf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, Mezontla <a href="/language/pbe/24">[pbe]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, Mezontla <a href="/language/pbe/25">[pbe]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Felipe Otlaltepec <a href="/language/pow/24">[pow]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Felipe Otlaltepec <a href="/language/pow/25">[pow]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Juan Atzingo <a href="/language/poe/24">[poe]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Juan Atzingo <a href="/language/poe/25">[poe]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Luís Temalacayuca <a href="/language/pps/24">[pps]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Luís Temalacayuca <a href="/language/pps/25">[pps]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Marcos Tlacoyalco <a href="/language/pls/24">[pls]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, San Marcos Tlacoyalco <a href="/language/pls/25">[pls]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, Santa Inés Ahuatempan <a href="/language/pca/24">[pca]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Popoloca, Santa Inés Ahuatempan <a href="/language/pca/25">[pca]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1099,7 +1099,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/zapotecan">Zapotecan (63)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3a138057b65638bb8864f382820e9952">
+          <a href="/subgroups/zapotecan">Zapotecan (64)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bd83198d3493edc420d03ed6c74d4e10">
         
   
   
@@ -1110,23 +1110,23 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/chatino">Chatino (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5079c2df0832485b7c618ab9591cd0a9">
+          <a href="/subgroups/chatino">Chatino (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bbfc4791ad8f10c9836350e0b47daaa2">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Eastern Highland <a href="/language/cly/24">[cly]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Eastern Highland <a href="/language/cly/25">[cly]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Nopala <a href="/language/cya/24">[cya]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Nopala <a href="/language/cya/25">[cya]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Tataltepec <a href="/language/cta/24">[cta]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Tataltepec <a href="/language/cta/25">[cta]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Western Highland <a href="/language/ctp/24">[ctp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Western Highland <a href="/language/ctp/25">[ctp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Zacatepec <a href="/language/ctz/24">[ctz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Zacatepec <a href="/language/ctz/25">[ctz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Zenzontepec <a href="/language/czn/24">[czn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chatino, Zenzontepec <a href="/language/czn/25">[czn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1135,125 +1135,127 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/zapotec">Zapotec (57)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b60f5174e61e29a28b2778aeaaf2eeb3">
+          <a href="/subgroups/zapotec">Zapotec (58)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fc3a928291d5947282b4082890301274">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Aloápam <a href="/language/zaq/24">[zaq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Aloápam <a href="/language/zaq/25">[zaq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Amatlán <a href="/language/zpo/24">[zpo]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Amatlán <a href="/language/zpo/25">[zpo]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Asunción Mixtepec <a href="/language/zoo/24">[zoo]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Asunción Mixtepec <a href="/language/zoo/25">[zoo]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Ayoquesco <a href="/language/zaf/24">[zaf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Ayoquesco <a href="/language/zaf/25">[zaf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Cajonos <a href="/language/zad/24">[zad]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Cajonos <a href="/language/zad/25">[zad]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Chichicapan <a href="/language/zpv/24">[zpv]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Chichicapan <a href="/language/zpv/25">[zpv]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Choapan <a href="/language/zpc/24">[zpc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Choapan <a href="/language/zpc/25">[zpc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Coatecas Altas <a href="/language/zca/24">[zca]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Coatecas Altas <a href="/language/zca/25">[zca]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Coatlán <a href="/language/zps/24">[zps]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Coatlán <a href="/language/zps/25">[zps]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, El Alto <a href="/language/zpp/24">[zpp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, El Alto <a href="/language/zpp/25">[zpp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Elotepec <a href="/language/zte/24">[zte]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Elotepec <a href="/language/zte/25">[zte]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Guevea de Humboldt <a href="/language/zpg/24">[zpg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Guevea de Humboldt <a href="/language/zpg/25">[zpg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Güilá <a href="/language/ztu/24">[ztu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Güilá <a href="/language/ztu/25">[ztu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Isthmus <a href="/language/zai/24">[zai]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Isthmus <a href="/language/zai/25">[zai]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Lachiguiri <a href="/language/zpa/24">[zpa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Lachiguiri <a href="/language/zpa/25">[zpa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Lachixío <a href="/language/zpl/24">[zpl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Lachixío <a href="/language/zpl/25">[zpl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Lapaguía-Guivini <a href="/language/ztl/24">[ztl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Lapaguía-Guivini <a href="/language/ztl/25">[ztl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Loxicha <a href="/language/ztp/24">[ztp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Las Delicias <a href="/language/zcd/25">[zcd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Mazaltepec <a href="/language/zpy/24">[zpy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Loxicha <a href="/language/ztp/25">[ztp]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Miahuatlán <a href="/language/zam/24">[zam]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Mazaltepec <a href="/language/zpy/25">[zpy]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Mitla <a href="/language/zaw/24">[zaw]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Miahuatlán <a href="/language/zam/25">[zam]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Mixtepec <a href="/language/zpm/24">[zpm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Mitla <a href="/language/zaw/25">[zaw]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Ocotlán <a href="/language/zac/24">[zac]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Mixtepec <a href="/language/zpm/25">[zpm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Ozolotepec <a href="/language/zao/24">[zao]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Ocotlán <a href="/language/zac/25">[zac]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Petapa <a href="/language/zpe/24">[zpe]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Ozolotepec <a href="/language/zao/25">[zao]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Quiavicuzas <a href="/language/zpj/24">[zpj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Petapa <a href="/language/zpe/25">[zpe]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Quioquitani-Quierí <a href="/language/ztq/24">[ztq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Quiavicuzas <a href="/language/zpj/25">[zpj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Rincón <a href="/language/zar/24">[zar]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Quioquitani-Quierí <a href="/language/ztq/25">[ztq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Agustín Mixtepec <a href="/language/ztm/24">[ztm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Rincón <a href="/language/zar/25">[zar]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Baltazar Loxicha <a href="/language/zpx/24">[zpx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Agustín Mixtepec <a href="/language/ztm/25">[ztm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Pedro Quiatoni <a href="/language/zpf/24">[zpf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Baltazar Loxicha <a href="/language/zpx/25">[zpx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Vicente Coatlán <a href="/language/zpt/24">[zpt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Pedro Quiatoni <a href="/language/zpf/25">[zpf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santa Catarina Albarradas <a href="/language/ztn/24">[ztn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, San Vicente Coatlán <a href="/language/zpt/25">[zpt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santa Inés Yatzechi <a href="/language/zpn/24">[zpn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santa Catarina Albarradas <a href="/language/ztn/25">[ztn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santa María Quiegolani <a href="/language/zpi/24">[zpi]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santa Inés Yatzechi <a href="/language/zpn/25">[zpn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santiago Xanica <a href="/language/zpr/24">[zpr]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santa María Quiegolani <a href="/language/zpi/25">[zpi]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santo Domingo Albarradas <a href="/language/zas/24">[zas]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santiago Xanica <a href="/language/zpr/25">[zpr]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Sierra de Juárez <a href="/language/zaa/24">[zaa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Santo Domingo Albarradas <a href="/language/zas/25">[zas]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Southeastern Ixtlán <a href="/language/zpd/24">[zpd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Sierra de Juárez <a href="/language/zaa/25">[zaa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Southern Rincon <a href="/language/zsr/24">[zsr]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Southeastern Ixtlán <a href="/language/zpd/25">[zpd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tabaa <a href="/language/zat/24">[zat]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Southern Rincon <a href="/language/zsr/25">[zsr]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tejalapan <a href="/language/ztt/24">[ztt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tabaa <a href="/language/zat/25">[zat]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Texmelucan <a href="/language/zpz/24">[zpz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tejalapan <a href="/language/ztt/25">[ztt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tilquiapan <a href="/language/zts/24">[zts]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Texmelucan <a href="/language/zpz/25">[zpz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tlacolulita <a href="/language/zpk/24">[zpk]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tilquiapan <a href="/language/zts/25">[zts]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Totomachapan <a href="/language/zph/24">[zph]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Tlacolulita <a href="/language/zpk/25">[zpk]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Western Tlacolula Valley <a href="/language/zab/24">[zab]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Totomachapan <a href="/language/zph/25">[zph]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Xadani <a href="/language/zax/24">[zax]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Western Tlacolula Valley <a href="/language/zab/25">[zab]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Xanaguía <a href="/language/ztg/24">[ztg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Xadani <a href="/language/zax/25">[zax]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yalálag <a href="/language/zpu/24">[zpu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Xanaguía <a href="/language/ztg/25">[ztg]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yareni <a href="/language/zae/24">[zae]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yalálag <a href="/language/zpu/25">[zpu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yatee <a href="/language/zty/24">[zty]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yareni <a href="/language/zae/25">[zae]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yatzachi <a href="/language/zav/24">[zav]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yatee <a href="/language/zty/25">[zty]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yautepec <a href="/language/zpb/24">[zpb]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yatzachi <a href="/language/zav/25">[zav]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Zaachila <a href="/language/ztx/24">[ztx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Yautepec <a href="/language/zpb/25">[zpb]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Zaniza <a href="/language/zpw/24">[zpw]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Zaachila <a href="/language/ztx/25">[ztx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Zoogocho <a href="/language/zpq/24">[zpq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Zaniza <a href="/language/zpw/25">[zpw]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zapotec, Zoogocho <a href="/language/zpq/25">[zpq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1262,7 +1264,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/western-otomanguean">Western Otomanguean (37)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7b74d3b3dc90547e2f28ee91175fd4c7">
+          <a href="/subgroups/western-otomanguean">Western Otomanguean (37)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6d0d64d9d701c3a9746a14f7bba4fd87">
         
   
   
@@ -1273,7 +1275,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/oto-pame-chinantecan">Oto-Pame-Chinantecan (31)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-26500df452b24ee520d3e306411c138a">
+          <a href="/subgroups/oto-pame-chinantecan">Oto-Pame-Chinantecan (31)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0c8effa155b87683893ad9008e8385fe">
         
   
   
@@ -1284,39 +1286,39 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/chinantecan">Chinantecan (14)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d4ea438bd18af4585a525942c8c6c2b9">
+          <a href="/subgroups/chinantecan">Chinantecan (14)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d89c0a6d0d5b2238824f6638adcf9b2e">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Chiltepec <a href="/language/csa/24">[csa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Chiltepec <a href="/language/csa/25">[csa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Comaltepec <a href="/language/cco/24">[cco]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Comaltepec <a href="/language/cco/25">[cco]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Lalana <a href="/language/cnl/24">[cnl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Lalana <a href="/language/cnl/25">[cnl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Lealao <a href="/language/cle/24">[cle]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Lealao <a href="/language/cle/25">[cle]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Ojitlán <a href="/language/chj/24">[chj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Ojitlán <a href="/language/chj/25">[chj]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Ozumacín <a href="/language/chz/24">[chz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Ozumacín <a href="/language/chz/25">[chz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Palantla <a href="/language/cpa/24">[cpa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Palantla <a href="/language/cpa/25">[cpa]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Quiotepec <a href="/language/chq/24">[chq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Quiotepec <a href="/language/chq/25">[chq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Sochiapam <a href="/language/cso/24">[cso]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Sochiapam <a href="/language/cso/25">[cso]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Tepetotutla <a href="/language/cnt/24">[cnt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Tepetotutla <a href="/language/cnt/25">[cnt]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Tepinapa <a href="/language/cte/24">[cte]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Tepinapa <a href="/language/cte/25">[cte]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Tlacoatzintepec <a href="/language/ctl/24">[ctl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Tlacoatzintepec <a href="/language/ctl/25">[ctl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Usila <a href="/language/cuc/24">[cuc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Usila <a href="/language/cuc/25">[cuc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Valle Nacional <a href="/language/cvn/24">[cvn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinantec, Valle Nacional <a href="/language/cvn/25">[cvn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1325,13 +1327,13 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/oto-pamean">Oto-Pamean (17)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c963f3f32d5f0b72ef9454b140330ebf">
+          <a href="/subgroups/oto-pamean">Oto-Pamean (17)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4a4402bbedb6dd5ac5a9677320a4c5e0">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chichimeco-Jonaz <a href="/language/pei/24">[pei]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chichimeco-Jonaz <a href="/language/pei/25">[pei]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1340,15 +1342,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/matlatzinca-ocuilteco">Matlatzinca-Ocuilteco (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0d3f867a36953f379f3c50b2c4830b78">
+          <a href="/subgroups/matlatzinca-ocuilteco">Matlatzinca-Ocuilteco (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-64e9fec81530cac166c7da63442edd5a">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Matlatzinca, Atzingo <a href="/language/ocu/24">[ocu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Matlatzinca, Atzingo <a href="/language/ocu/25">[ocu]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Matlatzinca, San Francisco <a href="/language/mat/24">[mat]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Matlatzinca, San Francisco <a href="/language/mat/25">[mat]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1357,15 +1359,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/mazahua">Mazahua (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-327b9d2e150db44b1b50057e7331dd3e">
+          <a href="/subgroups/mazahua">Mazahua (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-46528f23c5f6ddbcd34e46e9364795dd">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazahua, Central <a href="/language/maz/24">[maz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazahua, Central <a href="/language/maz/25">[maz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazahua, Michoacán <a href="/language/mmc/24">[mmc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mazahua, Michoacán <a href="/language/mmc/25">[mmc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1374,29 +1376,29 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/otomi">Otomi (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-031c1e119129add58d1a41f158124912">
+          <a href="/subgroups/otomi">Otomi (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f9c5cc5d181e5ea49d4b052bdcec0f7a">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Eastern Highland <a href="/language/otm/24">[otm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Eastern Highland <a href="/language/otm/25">[otm]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomí, Estado de México <a href="/language/ots/24">[ots]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomí, Estado de México <a href="/language/ots/25">[ots]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Ixtenco <a href="/language/otz/24">[otz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Ixtenco <a href="/language/otz/25">[otz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Mezquital <a href="/language/ote/24">[ote]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Mezquital <a href="/language/ote/25">[ote]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Querétaro <a href="/language/otq/24">[otq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Querétaro <a href="/language/otq/25">[otq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Temoaya <a href="/language/ott/24">[ott]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Temoaya <a href="/language/ott/25">[ott]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Tenango <a href="/language/otn/24">[otn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Tenango <a href="/language/otn/25">[otn]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Texcatepec <a href="/language/otx/24">[otx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Texcatepec <a href="/language/otx/25">[otx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Tilapa <a href="/language/otl/24">[otl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Otomi, Tilapa <a href="/language/otl/25">[otl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1405,17 +1407,17 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/pame">Pame (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4559e7c17996805f38eca11a13b6b289">
+          <a href="/subgroups/pame">Pame (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e42cd2d4ae2aa0905adec999556968ce">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pame, Central <a href="/language/pbs/24">[pbs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pame, Central <a href="/language/pbs/25">[pbs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pame, Northern <a href="/language/pmq/24">[pmq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pame, Northern <a href="/language/pmq/25">[pmq]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pame, Southern <a href="/language/pmz/24">[pmz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pame, Southern <a href="/language/pmz/25">[pmz]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1424,7 +1426,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/tlapanec-manguean">Tlapanec-Manguean (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4398a44e467a55bb5ff9aa95dbae0185">
+          <a href="/subgroups/tlapanec-manguean">Tlapanec-Manguean (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1d49ba9934af83f455a12587528fc653">
         
   
   
@@ -1435,13 +1437,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/manguean">Manguean (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-aee98078daadd295271c7accb9d63297">
+          <a href="/subgroups/manguean">Manguean (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d6432a675ff8cc2cfdb39c7249c153f7">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chiapanec <a href="/language/cip/24">[cip]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chiapanec <a href="/language/cip/25">[cip]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1450,13 +1452,13 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/tlapanec-subtiaba">Tlapanec-Subtiaba (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9eccc4ccf5a0111af4d3a52a8d530531">
+          <a href="/subgroups/tlapanec-subtiaba">Tlapanec-Subtiaba (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-375111c2c763f5c5aeb37d4cdc28056b">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Subtiaba <a href="/language/sut/24">[sut]</a> (A language of <a href="/country/NI">Nicaragua</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Subtiaba <a href="/language/sut/25">[sut]</a> (A language of <a href="/country/NI">Nicaragua</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1465,19 +1467,19 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first last">  
-          <a href="/subgroups/tlapanec">Tlapanec (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f86c88581f53fa02817352ec0a34e8fe">
+          <a href="/subgroups/tlapanec">Tlapanec (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-60a45f83126dc1742b5352e04f16c1c8">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Acatepec <a href="/language/tpx/24">[tpx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Acatepec <a href="/language/tpx/25">[tpx]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Azoyú <a href="/language/tpc/24">[tpc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Azoyú <a href="/language/tpc/25">[tpc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Malinaltepec <a href="/language/tcf/24">[tcf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Malinaltepec <a href="/language/tcf/25">[tcf]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Tlacoapa <a href="/language/tpl/24">[tpl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Me’phaa, Tlacoapa <a href="/language/tpl/25">[tpl]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1526,7 +1528,7 @@ font-size: 14px;
               <h2 class="block-title">Current Edition</h2>
             
     <div class="content clearfix">
-      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 24th Edition</a></li>
+      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 25th Edition</a></li>
 <li class="leaf"><a href="/abbreviations">Abbreviations</a></li>
 <li class="leaf"><a href="/bibliography">Bibliography</a></li>
 <li class="leaf"><a href="/credits">Credits</a></li>
@@ -1586,7 +1588,7 @@ color: #e5e5e5 !important;
 <p class="address">Ethnologue<br/>
 by <a href="https://www.sil.org">SIL International</a><br/>
 </p>
-<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#6d0b0808090f0c0e062d081905030201020a1808430e0200"><u>Contact us</u></a>
+<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#8fe9eaeaebedeeece4cfeafbe7e1e0e3e0e8faeaa1ece0e2"><u>Contact us</u></a>
 <br/>
 <br/>
 <p class="contact">
@@ -1602,7 +1604,7 @@ by <a href="https://www.sil.org">SIL International</a><br/>
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2021. <em>Ethnologue: Languages of the World.</em> Twenty-fourth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
+      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2022. <em>Ethnologue: Languages of the World.</em> Twenty-fifth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
   </div>
 </div><div class="block block-block block-10 block-block-10 even block-without-title" id="block-block-10">
   <div class="block-inner clearfix">
@@ -1624,7 +1626,7 @@ by <a href="https://www.sil.org">SIL International</a><br/>
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      Copyright © 2021 SIL International    </div>
+      Copyright © 2022 SIL International    </div>
   </div>
 </div><div class="block block-block block-11 block-block-11 even block-without-title" id="block-block-11">
   <div class="block-inner clearfix">
@@ -1652,5 +1654,5 @@ window.intercomSettings = {
   </div>
   <div class="separator"></div>
 </div></footer>      </div>
-</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":710,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":517,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>

@@ -16,8 +16,8 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
-<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?r6n0n4" type="image/vnd.microsoft.icon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?raymof" type="image/vnd.microsoft.icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.5, minimum-scale=1, user-scalable=yes" />
 <meta name="generator" content="Drupal 7 (http://drupal.org)" />
 <link rel="canonical" href="https://www.ethnologue.com/subgroups/sign-language" />
@@ -31,7 +31,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="Ethnologue" href="/sites/default/files/ethnologuedotcom.xml">
   <link rel="apple-touch-icon" href="/sites/all/themes/ethn/images/apple-touch-icon.png" />
   <title>Sign language | Ethnologue</title>
-  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?d842db56"></script-->
+  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?d36bc6f5"></script-->
   <!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,99 +45,99 @@
   
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/modules/system/system.base.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.menus.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.messages.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.theme.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.base.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.menus.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.messages.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.theme.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/comment/comment.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/field/theme/field.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/node/node.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/search/search.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/user/user.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?raymof");
+@import url("https://www.ethnologue.com/modules/comment/comment.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?raymof");
+@import url("https://www.ethnologue.com/modules/field/theme/field.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?raymof");
+@import url("https://www.ethnologue.com/modules/node/node.css?raymof");
+@import url("https://www.ethnologue.com/modules/search/search.css?raymof");
+@import url("https://www.ethnologue.com/modules/user/user.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?raymof");
 </style>
 
 <!--[if lt IE 10]>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?raymof");
 </style>
 <![endif]-->
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?raymof");
 </style>
 
 <!--[if (lt IE 9)&(!IEMobile)]>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?raymof");
 </style>
 <![endif]-->
 
 <!--[if gte IE 9]><!-->
 <style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?raymof");
 </style>
 <!--<![endif]-->
 
 <!--[if gte IE 9]><!-->
 <style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?raymof");
 </style>
 <!--<![endif]-->
 <style type="text/css" media="print">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?raymof");
 </style>
   <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?raymof"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?raymof"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-20037946-14", {"cookieDomain":"auto"});ga("set", "dimension2", "anonymous user");ga('require', 'linkid', {
@@ -147,20 +147,20 @@ var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
 ga('set', 'dimension1', pixelRatio );ga("send", "pageview");ga('require', 'Clearbit', {"mapping":{"companyName":"dimension3","companyDomain":"dimension4","companyTags":"dimension5","companySector":"dimension6","companyIndustryGroup":"dimension7","companyIndustry":"dimension8","companySubIndustry":"dimension9","companyType":"dimension10","companyEmployeesRange":"dimension11","companyAlexaRank":"dimension12","companyCity":"dimension13","companyState":"dimension14","companyCountry":"dimension15"}});
 //--><!]]>
 </script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?raymof"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"Z3GQGTI_0wAP4YOUIXgB1oPO_J7vubUov1O7TC_-scc","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.22.0"},"smart_ip":{"location":{"country_code":"CH","country":"Switzerland","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"212.25.19.58","timestamp":1643843936}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"6DS06TOYe1YsOTt4h3KvCAXq-DyUGqdrccbB7QJt8YQ","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.27.1"},"smart_ip":{"location":{"country_code":"PA","country":"Panama","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"186.148.105.138","timestamp":1652908788}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
 //--><!]]>
 </script>
 </head>
-<body class="html not-front not-logged-in no-sidebars page-family page-family-24-2 context-subgroups">
+<body class="html not-front not-logged-in no-sidebars page-family page-family-25-2 context-subgroups">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7MVKTH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -383,11 +383,11 @@ document.getElementById("aa-search-input").onclick = function() {
 <!-- Initialize autocomplete menu -->
 <script>
 var client = algoliasearch("2RP8PHQQI3", "45348df641ea37f730d2938add600be1");
-var countries = client.initIndex('countries_24');
-var macrolanguages = client.initIndex('macrolanguages_24');
-var languages = client.initIndex('languages_24');
-var alt = client.initIndex('alt_24');
-var autonyms = client.initIndex('autonyms_24');
+var countries = client.initIndex('countries_25');
+var macrolanguages = client.initIndex('macrolanguages_25');
+var languages = client.initIndex('languages_25');
+var alt = client.initIndex('alt_25');
+var autonyms = client.initIndex('autonyms_25');
 var guides = client.initIndex('guides');
 
 //initialize autocomplete on search input (ID selector must match)
@@ -709,7 +709,7 @@ font-size: 14px;
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/24-2">Login</a></li>
+      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/25-2">Login</a></li>
 <li class="last leaf"><a href="/cart/my" style="text-transform: capitalize;">Shopping cart</a></li>
 </ul>    </div>
   </div>
@@ -718,7 +718,7 @@ font-size: 14px;
   <div class="region-inner region-branding-inner">
         <div class="branding-data clearfix">
             <div class="logo-img">
-        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?r6n0n4" alt="Ethnologue" id="logo" /></a>      </div>
+        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?raymof" alt="Ethnologue" id="logo" /></a>      </div>
                         <hgroup class="site-name-slogan">        
                                 <h2 class="site-name element-invisible"><a href="/" title="Home">Ethnologue</a></h2>
                               </hgroup>
@@ -760,7 +760,7 @@ font-size: 14px;
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-dcdaaf0745538af7cb24d5aecbb06596">
+      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-5bbc6f47428ce632eb95db5a9db66355">
         
   
       <div class="attachment attachment-before">
@@ -786,13 +786,13 @@ font-size: 14px;
       <div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
       
-  <div class="views-field views-field-name-1">        <span class="field-content">Sign language (150)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a04d93db805063f5513046e10db04edd">
+  <div class="views-field views-field-name-1">        <span class="field-content">Sign language (157)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a854465529fca47ddaf2df39d17dd7e1">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">International Sign <a href="/language/ils/24">[ils]</a> (A language of <a href="/country/IT">Italy</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">International Sign <a href="/language/ils/25">[ils]</a> (A language of <a href="/country/IT">Italy</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -812,267 +812,269 @@ font-size: 14px;
   
       <div class="view-content indent1">
       <div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/deaf-community-sign-language">Deaf community sign language (128)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5f2ff3219e8650331b03c178b4dc72c2">
+          <a href="/subgroups/deaf-community-sign-language">Deaf community sign language (129)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-907a6c91240fb03121687d2d25cd69dc">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Afghan Sign Language <a href="/language/afg/24">[afg]</a> (A language of <a href="/country/AF">Afghanistan</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Afghan Sign Language <a href="/language/afg/25">[afg]</a> (A language of <a href="/country/AF">Afghanistan</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Albanian Sign Language <a href="/language/sqk/24">[sqk]</a> (A language of <a href="/country/AL">Albania</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Albanian Sign Language <a href="/language/sqk/25">[sqk]</a> (A language of <a href="/country/AL">Albania</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Algerian Sign Language <a href="/language/asp/24">[asp]</a> (A language of <a href="/country/DZ">Algeria</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Algerian Sign Language <a href="/language/asp/25">[asp]</a> (A language of <a href="/country/DZ">Algeria</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">American Sign Language <a href="/language/ase/24">[ase]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">American Sign Language <a href="/language/ase/25">[ase]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Argentine Sign Language <a href="/language/aed/24">[aed]</a> (A language of <a href="/country/AR">Argentina</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Argentine Sign Language <a href="/language/aed/25">[aed]</a> (A language of <a href="/country/AR">Argentina</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Armenian Sign Language <a href="/language/aen/24">[aen]</a> (A language of <a href="/country/AM">Armenia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Armenian Sign Language <a href="/language/aen/25">[aen]</a> (A language of <a href="/country/AM">Armenia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Auslan <a href="/language/asf/24">[asf]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Auslan <a href="/language/asf/25">[asf]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Austrian Sign Language <a href="/language/asq/24">[asq]</a> (A language of <a href="/country/AT">Austria</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Austrian Sign Language <a href="/language/asq/25">[asq]</a> (A language of <a href="/country/AT">Austria</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bolivian Sign Language <a href="/language/bvl/24">[bvl]</a> (A language of <a href="/country/BO">Bolivia, Plurinational State of</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bolivian Sign Language <a href="/language/bvl/25">[bvl]</a> (A language of <a href="/country/BO">Bolivia, Plurinational State of</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Brazilian Sign Language <a href="/language/bzs/24">[bzs]</a> (A language of <a href="/country/BR">Brazil</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Brazilian Sign Language <a href="/language/bzs/25">[bzs]</a> (A language of <a href="/country/BR">Brazil</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">British Sign Language <a href="/language/bfi/24">[bfi]</a> (A language of <a href="/country/GB">United Kingdom</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">British Sign Language <a href="/language/bfi/25">[bfi]</a> (A language of <a href="/country/GB">United Kingdom</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bulgarian Sign Language <a href="/language/bqn/24">[bqn]</a> (A language of <a href="/country/BG">Bulgaria</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bulgarian Sign Language <a href="/language/bqn/25">[bqn]</a> (A language of <a href="/country/BG">Bulgaria</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Burundian Sign Language <a href="/language/lsb/24">[lsb]</a> (A language of <a href="/country/BI">Burundi</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Burundian Sign Language <a href="/language/lsb/25">[lsb]</a> (A language of <a href="/country/BI">Burundi</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cambodian Sign Language <a href="/language/csx/24">[csx]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cambodian Sign Language <a href="/language/csx/25">[csx]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Catalan Sign Language <a href="/language/csc/24">[csc]</a> (A language of <a href="/country/ES">Spain</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Catalan Sign Language <a href="/language/csc/25">[csc]</a> (A language of <a href="/country/ES">Spain</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chadian Sign Language <a href="/language/cds/24">[cds]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chadian Sign Language <a href="/language/cds/25">[cds]</a> (A language of <a href="/country/TD">Chad</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chiangmai Sign Language <a href="/language/csd/24">[csd]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chiangmai Sign Language <a href="/language/csd/25">[csd]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chilean Sign Language <a href="/language/csg/24">[csg]</a> (A language of <a href="/country/CL">Chile</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chilean Sign Language <a href="/language/csg/25">[csg]</a> (A language of <a href="/country/CL">Chile</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinese Sign Language <a href="/language/csl/24">[csl]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chinese Sign Language <a href="/language/csl/25">[csl]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Colombian Sign Language <a href="/language/csn/24">[csn]</a> (A language of <a href="/country/CO">Colombia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Colombian Sign Language <a href="/language/csn/25">[csn]</a> (A language of <a href="/country/CO">Colombia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Costa Rican Sign Language <a href="/language/csr/24">[csr]</a> (A language of <a href="/country/CR">Costa Rica</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Costa Rican Sign Language <a href="/language/csr/25">[csr]</a> (A language of <a href="/country/CR">Costa Rica</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Croatian Sign Language <a href="/language/csq/24">[csq]</a> (A language of <a href="/country/HR">Croatia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Croatian Sign Language <a href="/language/csq/25">[csq]</a> (A language of <a href="/country/HR">Croatia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cuban Sign Language <a href="/language/csf/24">[csf]</a> (A language of <a href="/country/CU">Cuba</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cuban Sign Language <a href="/language/csf/25">[csf]</a> (A language of <a href="/country/CU">Cuba</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Czech Sign Language <a href="/language/cse/24">[cse]</a> (A language of <a href="/country/CZ">Czechia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Czech Sign Language <a href="/language/cse/25">[cse]</a> (A language of <a href="/country/CZ">Czechia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Danish Sign Language <a href="/language/dsl/24">[dsl]</a> (A language of <a href="/country/DK">Denmark</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Danish Sign Language <a href="/language/dsl/25">[dsl]</a> (A language of <a href="/country/DK">Denmark</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dominican Sign Language <a href="/language/doq/24">[doq]</a> (A language of <a href="/country/DO">Dominican Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Dominican Sign Language <a href="/language/doq/25">[doq]</a> (A language of <a href="/country/DO">Dominican Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ecuadorian Sign Language <a href="/language/ecs/24">[ecs]</a> (A language of <a href="/country/EC">Ecuador</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ecuadorian Sign Language <a href="/language/ecs/25">[ecs]</a> (A language of <a href="/country/EC">Ecuador</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Egyptian Sign Language <a href="/language/esl/24">[esl]</a> (A language of <a href="/country/EG">Egypt</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Egyptian Sign Language <a href="/language/esl/25">[esl]</a> (A language of <a href="/country/EG">Egypt</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Estonian Sign Language <a href="/language/eso/24">[eso]</a> (A language of <a href="/country/EE">Estonia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Estonian Sign Language <a href="/language/eso/25">[eso]</a> (A language of <a href="/country/EE">Estonia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ethiopian Sign Language <a href="/language/eth/24">[eth]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ethiopian Sign Language <a href="/language/eth/25">[eth]</a> (A language of <a href="/country/ET">Ethiopia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Filipino Sign Language <a href="/language/psp/24">[psp]</a> (A language of <a href="/country/PH">Philippines</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Filipino Sign Language <a href="/language/psp/25">[psp]</a> (A language of <a href="/country/PH">Philippines</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Finland-Swedish Sign Language <a href="/language/fss/24">[fss]</a> (A language of <a href="/country/FI">Finland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Finland-Swedish Sign Language <a href="/language/fss/25">[fss]</a> (A language of <a href="/country/FI">Finland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Finnish Sign Language <a href="/language/fse/24">[fse]</a> (A language of <a href="/country/FI">Finland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Finnish Sign Language <a href="/language/fse/25">[fse]</a> (A language of <a href="/country/FI">Finland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Flemish Sign Language <a href="/language/vgt/24">[vgt]</a> (A language of <a href="/country/BE">Belgium</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Flemish Sign Language <a href="/language/vgt/25">[vgt]</a> (A language of <a href="/country/BE">Belgium</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">French Belgian Sign Language <a href="/language/sfb/24">[sfb]</a> (A language of <a href="/country/BE">Belgium</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">French Belgian Sign Language <a href="/language/sfb/25">[sfb]</a> (A language of <a href="/country/BE">Belgium</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">French Sign Language <a href="/language/fsl/24">[fsl]</a> (A language of <a href="/country/FR">France</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">French Sign Language <a href="/language/fsl/25">[fsl]</a> (A language of <a href="/country/FR">France</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">German Sign Language <a href="/language/gsg/24">[gsg]</a> (A language of <a href="/country/DE">Germany</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">German Sign Language <a href="/language/gsg/25">[gsg]</a> (A language of <a href="/country/DE">Germany</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ghanaian Sign Language <a href="/language/gse/24">[gse]</a> (A language of <a href="/country/GH">Ghana</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ghanaian Sign Language <a href="/language/gse/25">[gse]</a> (A language of <a href="/country/GH">Ghana</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Greek Sign Language <a href="/language/gss/24">[gss]</a> (A language of <a href="/country/GR">Greece</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Greek Sign Language <a href="/language/gss/25">[gss]</a> (A language of <a href="/country/GR">Greece</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Guatemalan Sign Language <a href="/language/gsm/24">[gsm]</a> (A language of <a href="/country/GT">Guatemala</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Guatemalan Sign Language <a href="/language/gsm/25">[gsm]</a> (A language of <a href="/country/GT">Guatemala</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Guinean Sign Language <a href="/language/gus/24">[gus]</a> (A language of <a href="/country/GN">Guinea</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Guinean Sign Language <a href="/language/gus/25">[gus]</a> (A language of <a href="/country/GN">Guinea</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Haiphong Sign Language <a href="/language/haf/24">[haf]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Haiphong Sign Language <a href="/language/haf/25">[haf]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hanoi Sign Language <a href="/language/hab/24">[hab]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hanoi Sign Language <a href="/language/hab/25">[hab]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hausa Sign Language <a href="/language/hsl/24">[hsl]</a> (A language of <a href="/country/NG">Nigeria</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hausa Sign Language <a href="/language/hsl/25">[hsl]</a> (A language of <a href="/country/NG">Nigeria</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hawaii Sign Language <a href="/language/hps/24">[hps]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hawaii Sign Language <a href="/language/hps/25">[hps]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ho Chi Minh City Sign Language <a href="/language/hos/24">[hos]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ho Chi Minh City Sign Language <a href="/language/hos/25">[hos]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Honduran Sign Language <a href="/language/hds/24">[hds]</a> (A language of <a href="/country/HN">Honduras</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Honduran Sign Language <a href="/language/hds/25">[hds]</a> (A language of <a href="/country/HN">Honduras</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hong Kong Sign Language <a href="/language/hks/24">[hks]</a> (A language of <a href="/country/HK">Hong Kong</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hong Kong Sign Language <a href="/language/hks/25">[hks]</a> (A language of <a href="/country/HK">Hong Kong</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hungarian Sign Language <a href="/language/hsh/24">[hsh]</a> (A language of <a href="/country/HU">Hungary</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hungarian Sign Language <a href="/language/hsh/25">[hsh]</a> (A language of <a href="/country/HU">Hungary</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Icelandic Sign Language <a href="/language/icl/24">[icl]</a> (A language of <a href="/country/IS">Iceland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Icelandic Sign Language <a href="/language/icl/25">[icl]</a> (A language of <a href="/country/IS">Iceland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Indian Sign Language <a href="/language/ins/24">[ins]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Indian Sign Language <a href="/language/ins/25">[ins]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Indonesian Sign Language <a href="/language/inl/24">[inl]</a> (A language of <a href="/country/ID">Indonesia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Indonesian Sign Language <a href="/language/inl/25">[inl]</a> (A language of <a href="/country/ID">Indonesia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Inuit Sign Language <a href="/language/iks/24">[iks]</a> (A language of <a href="/country/CA">Canada</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Iranian Sign Language <a href="/language/psc/25">[psc]</a> (A language of <a href="/country/IR">Iran, Islamic Republic of</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Iranian Sign Language <a href="/language/psc/24">[psc]</a> (A language of <a href="/country/IR">Iran, Islamic Republic of</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Irish Sign Language <a href="/language/isg/25">[isg]</a> (A language of <a href="/country/IE">Ireland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Irish Sign Language <a href="/language/isg/24">[isg]</a> (A language of <a href="/country/IE">Ireland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Israeli Sign Language <a href="/language/isr/25">[isr]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Israeli Sign Language <a href="/language/isr/24">[isr]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Italian Sign Language <a href="/language/ise/25">[ise]</a> (A language of <a href="/country/IT">Italy</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Italian Sign Language <a href="/language/ise/24">[ise]</a> (A language of <a href="/country/IT">Italy</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jamaican Sign Language <a href="/language/jls/25">[jls]</a> (A language of <a href="/country/JM">Jamaica</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jamaican Sign Language <a href="/language/jls/24">[jls]</a> (A language of <a href="/country/JM">Jamaica</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Japanese Sign Language <a href="/language/jsl/25">[jsl]</a> (A language of <a href="/country/JP">Japan</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Japanese Sign Language <a href="/language/jsl/24">[jsl]</a> (A language of <a href="/country/JP">Japan</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jordanian Sign Language <a href="/language/jos/25">[jos]</a> (A language of <a href="/country/JO">Jordan</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jordanian Sign Language <a href="/language/jos/24">[jos]</a> (A language of <a href="/country/JO">Jordan</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kenyan Sign Language <a href="/language/xki/25">[xki]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kenyan Sign Language <a href="/language/xki/24">[xki]</a> (A language of <a href="/country/KE">Kenya</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korean Sign Language <a href="/language/kvk/25">[kvk]</a> (A language of <a href="/country/KR">Korea, Republic of</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korean Sign Language <a href="/language/kvk/24">[kvk]</a> (A language of <a href="/country/KR">Korea, Republic of</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Laos Sign Language <a href="/language/lso/25">[lso]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Laos Sign Language <a href="/language/lso/24">[lso]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Latvian Sign Language <a href="/language/lsl/25">[lsl]</a> (A language of <a href="/country/LV">Latvia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Latvian Sign Language <a href="/language/lsl/24">[lsl]</a> (A language of <a href="/country/LV">Latvia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Libyan Sign Language <a href="/language/lbs/25">[lbs]</a> (A language of <a href="/country/LY">Libya</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Libyan Sign Language <a href="/language/lbs/24">[lbs]</a> (A language of <a href="/country/LY">Libya</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lithuanian Sign Language <a href="/language/lls/25">[lls]</a> (A language of <a href="/country/LT">Lithuania</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lithuanian Sign Language <a href="/language/lls/24">[lls]</a> (A language of <a href="/country/LT">Lithuania</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malagasy Sign Language <a href="/language/mzc/25">[mzc]</a> (A language of <a href="/country/MG">Madagascar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malagasy Sign Language <a href="/language/mzc/24">[mzc]</a> (A language of <a href="/country/MG">Madagascar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malawian Sign Language <a href="/language/lws/25">[lws]</a> (A language of <a href="/country/MW">Malawi</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malawian Sign Language <a href="/language/lws/24">[lws]</a> (A language of <a href="/country/MW">Malawi</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malaysian Sign Language <a href="/language/xml/25">[xml]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malaysian Sign Language <a href="/language/xml/24">[xml]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malian Sign Language <a href="/language/bog/25">[bog]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Malian Sign Language <a href="/language/bog/24">[bog]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maltese Sign Language <a href="/language/mdl/25">[mdl]</a> (A language of <a href="/country/MT">Malta</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maltese Sign Language <a href="/language/mdl/24">[mdl]</a> (A language of <a href="/country/MT">Malta</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maritime Sign Language <a href="/language/nsr/25">[nsr]</a> (A language of <a href="/country/CA">Canada</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maritime Sign Language <a href="/language/nsr/24">[nsr]</a> (A language of <a href="/country/CA">Canada</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mauritian Sign Language <a href="/language/lsy/25">[lsy]</a> (A language of <a href="/country/MU">Mauritius</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mauritian Sign Language <a href="/language/lsy/24">[lsy]</a> (A language of <a href="/country/MU">Mauritius</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mexican Sign Language <a href="/language/mfs/25">[mfs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mexican Sign Language <a href="/language/mfs/24">[mfs]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Moldova Sign Language <a href="/language/vsi/25">[vsi]</a> (A language of <a href="/country/MD">Moldova, Republic of</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Moldova Sign Language <a href="/language/vsi/24">[vsi]</a> (A language of <a href="/country/MD">Moldova, Republic of</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mongolian Sign Language <a href="/language/msr/25">[msr]</a> (A language of <a href="/country/MN">Mongolia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mongolian Sign Language <a href="/language/msr/24">[msr]</a> (A language of <a href="/country/MN">Mongolia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Moroccan Sign Language <a href="/language/xms/25">[xms]</a> (A language of <a href="/country/MA">Morocco</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Moroccan Sign Language <a href="/language/xms/24">[xms]</a> (A language of <a href="/country/MA">Morocco</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mozambican Sign Language <a href="/language/mzy/25">[mzy]</a> (A language of <a href="/country/MZ">Mozambique</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mozambican Sign Language <a href="/language/mzy/24">[mzy]</a> (A language of <a href="/country/MZ">Mozambique</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Myanmar Sign Language <a href="/language/ysm/25">[ysm]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Myanmar Sign Language <a href="/language/ysm/24">[ysm]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Namibian Sign Language <a href="/language/nbs/25">[nbs]</a> (A language of <a href="/country/NA">Namibia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Namibian Sign Language <a href="/language/nbs/24">[nbs]</a> (A language of <a href="/country/NA">Namibia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nepalese Sign Language <a href="/language/nsp/25">[nsp]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nepalese Sign Language <a href="/language/nsp/24">[nsp]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">New Zealand Sign Language <a href="/language/nzs/25">[nzs]</a> (A language of <a href="/country/NZ">New Zealand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">New Zealand Sign Language <a href="/language/nzs/24">[nzs]</a> (A language of <a href="/country/NZ">New Zealand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicaraguan Sign Language <a href="/language/ncs/25">[ncs]</a> (A language of <a href="/country/NI">Nicaragua</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicaraguan Sign Language <a href="/language/ncs/24">[ncs]</a> (A language of <a href="/country/NI">Nicaragua</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nigerian Sign Language <a href="/language/nsi/25">[nsi]</a> (A language of <a href="/country/NG">Nigeria</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nigerian Sign Language <a href="/language/nsi/24">[nsi]</a> (A language of <a href="/country/NG">Nigeria</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Norwegian Sign Language <a href="/language/nsl/25">[nsl]</a> (A language of <a href="/country/NO">Norway</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Norwegian Sign Language <a href="/language/nsl/24">[nsl]</a> (A language of <a href="/country/NO">Norway</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pakistan Sign Language <a href="/language/pks/25">[pks]</a> (A language of <a href="/country/PK">Pakistan</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pakistan Sign Language <a href="/language/pks/24">[pks]</a> (A language of <a href="/country/PK">Pakistan</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Panamanian Sign Language <a href="/language/lsp/25">[lsp]</a> (A language of <a href="/country/PA">Panama</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Panamanian Sign Language <a href="/language/lsp/24">[lsp]</a> (A language of <a href="/country/PA">Panama</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Papua New Guinean Sign Language <a href="/language/pgz/25">[pgz]</a> (A language of <a href="/country/PG">Papua New Guinea</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Papua New Guinean Sign Language <a href="/language/pgz/24">[pgz]</a> (A language of <a href="/country/PG">Papua New Guinea</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Paraguayan Sign Language <a href="/language/pys/25">[pys]</a> (A language of <a href="/country/PY">Paraguay</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Paraguayan Sign Language <a href="/language/pys/24">[pys]</a> (A language of <a href="/country/PY">Paraguay</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Penang Sign Language <a href="/language/psg/25">[psg]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Penang Sign Language <a href="/language/psg/24">[psg]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Peruvian Sign Language <a href="/language/prl/25">[prl]</a> (A language of <a href="/country/PE">Peru</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Peruvian Sign Language <a href="/language/prl/24">[prl]</a> (A language of <a href="/country/PE">Peru</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Polish Sign Language <a href="/language/pso/25">[pso]</a> (A language of <a href="/country/PL">Poland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Polish Sign Language <a href="/language/pso/24">[pso]</a> (A language of <a href="/country/PL">Poland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Portuguese Sign Language <a href="/language/psr/25">[psr]</a> (A language of <a href="/country/PT">Portugal</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Portuguese Sign Language <a href="/language/psr/24">[psr]</a> (A language of <a href="/country/PT">Portugal</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Puerto Rican Sign Language <a href="/language/psl/25">[psl]</a> (A language of <a href="/country/PR">Puerto Rico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Puerto Rican Sign Language <a href="/language/psl/24">[psl]</a> (A language of <a href="/country/PR">Puerto Rico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Quebec Sign Language <a href="/language/fcs/25">[fcs]</a> (A language of <a href="/country/CA">Canada</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Quebec Sign Language <a href="/language/fcs/24">[fcs]</a> (A language of <a href="/country/CA">Canada</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Romanian Sign Language <a href="/language/rms/25">[rms]</a> (A language of <a href="/country/RO">Romania</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Romanian Sign Language <a href="/language/rms/24">[rms]</a> (A language of <a href="/country/RO">Romania</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Russian Sign Language <a href="/language/rsl/25">[rsl]</a> (A language of <a href="/country/RU">Russian Federation</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Russian Sign Language <a href="/language/rsl/24">[rsl]</a> (A language of <a href="/country/RU">Russian Federation</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Rwandan Sign Language <a href="/language/rsn/25">[rsn]</a> (A language of <a href="/country/RW">Rwanda</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Salvadoran Sign Language <a href="/language/esn/24">[esn]</a> (A language of <a href="/country/SV">El Salvador</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Salvadoran Sign Language <a href="/language/esn/25">[esn]</a> (A language of <a href="/country/SV">El Salvador</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Saudi Arabian Sign Language <a href="/language/sdl/24">[sdl]</a> (A language of <a href="/country/SA">Saudi Arabia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Saudi Arabian Sign Language <a href="/language/sdl/25">[sdl]</a> (A language of <a href="/country/SA">Saudi Arabia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Selangor Sign Language <a href="/language/kgi/24">[kgi]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Selangor Sign Language <a href="/language/kgi/25">[kgi]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sierra Leone Sign Language <a href="/language/sgx/24">[sgx]</a> (A language of <a href="/country/SL">Sierra Leone</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Seychelles Sign Language <a href="/language/lsw/25">[lsw]</a> (A language of <a href="/country/SC">Seychelles</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sign Language of the Netherlands <a href="/language/dse/24">[dse]</a> (A language of <a href="/country/NL">Netherlands</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sierra Leone Sign Language <a href="/language/sgx/25">[sgx]</a> (A language of <a href="/country/SL">Sierra Leone</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Singapore Sign Language <a href="/language/sls/24">[sls]</a> (A language of <a href="/country/SG">Singapore</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sign Language of the Netherlands <a href="/language/dse/25">[dse]</a> (A language of <a href="/country/NL">Netherlands</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Slovakian Sign Language <a href="/language/svk/24">[svk]</a> (A language of <a href="/country/SK">Slovakia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Singapore Sign Language <a href="/language/sls/25">[sls]</a> (A language of <a href="/country/SG">Singapore</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Slovenian Sign Language <a href="/language/ysl/24">[ysl]</a> (A language of <a href="/country/SI">Slovenia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Slovakian Sign Language <a href="/language/svk/25">[svk]</a> (A language of <a href="/country/SK">Slovakia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Solomon Islands Sign Language <a href="/language/szs/24">[szs]</a> (A language of <a href="/country/SB">Solomon Islands</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Slovenian Sign Language <a href="/language/ysl/25">[ysl]</a> (A language of <a href="/country/SI">Slovenia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">South African Sign Language <a href="/language/sfs/24">[sfs]</a> (A language of <a href="/country/ZA">South Africa</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Solomon Islands Sign Language <a href="/language/szs/25">[szs]</a> (A language of <a href="/country/SB">Solomon Islands</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Spanish Sign Language <a href="/language/ssp/24">[ssp]</a> (A language of <a href="/country/ES">Spain</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">South African Sign Language <a href="/language/sfs/25">[sfs]</a> (A language of <a href="/country/ZA">South Africa</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sri Lankan Sign Language <a href="/language/sqs/24">[sqs]</a> (A language of <a href="/country/LK">Sri Lanka</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Spanish Sign Language <a href="/language/ssp/25">[ssp]</a> (A language of <a href="/country/ES">Spain</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swedish Sign Language <a href="/language/swl/24">[swl]</a> (A language of <a href="/country/SE">Sweden</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sri Lankan Sign Language <a href="/language/sqs/25">[sqs]</a> (A language of <a href="/country/LK">Sri Lanka</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swiss-French Sign Language <a href="/language/ssr/24">[ssr]</a> (A language of <a href="/country/CH">Switzerland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swedish Sign Language <a href="/language/swl/25">[swl]</a> (A language of <a href="/country/SE">Sweden</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swiss-German Sign Language <a href="/language/sgg/24">[sgg]</a> (A language of <a href="/country/CH">Switzerland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swiss-French Sign Language <a href="/language/ssr/25">[ssr]</a> (A language of <a href="/country/CH">Switzerland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swiss-Italian Sign Language <a href="/language/slf/24">[slf]</a> (A language of <a href="/country/CH">Switzerland</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swiss-German Sign Language <a href="/language/sgg/25">[sgg]</a> (A language of <a href="/country/CH">Switzerland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Taiwan Sign Language <a href="/language/tss/24">[tss]</a> (A language of <a href="/country/TW">Taiwan, Province of China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Swiss-Italian Sign Language <a href="/language/slf/25">[slf]</a> (A language of <a href="/country/CH">Switzerland</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tanzanian Sign Language <a href="/language/tza/24">[tza]</a> (A language of <a href="/country/TZ">Tanzania, United Republic of</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Taiwan Sign Language <a href="/language/tss/25">[tss]</a> (A language of <a href="/country/TW">Taiwan, Province of China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Thai Sign Language <a href="/language/tsq/24">[tsq]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tanzanian Sign Language <a href="/language/tza/25">[tza]</a> (A language of <a href="/country/TZ">Tanzania, United Republic of</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tibetan Sign Language <a href="/language/lsn/24">[lsn]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Thai Sign Language <a href="/language/tsq/25">[tsq]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Trinidad and Tobago Sign Language <a href="/language/lst/24">[lst]</a> (A language of <a href="/country/TT">Trinidad and Tobago</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tibetan Sign Language <a href="/language/lsn/25">[lsn]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tunisian Sign Language <a href="/language/tse/24">[tse]</a> (A language of <a href="/country/TN">Tunisia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Trinidad and Tobago Sign Language <a href="/language/lst/25">[lst]</a> (A language of <a href="/country/TT">Trinidad and Tobago</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Turkish Sign Language <a href="/language/tsm/24">[tsm]</a> (A language of <a href="/country/TR">Turkey</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tunisian Sign Language <a href="/language/tse/25">[tse]</a> (A language of <a href="/country/TN">Tunisia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ugandan Sign Language <a href="/language/ugn/24">[ugn]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Turkish Sign Language <a href="/language/tsm/25">[tsm]</a> (A language of <a href="/country/TR">Turkey</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ukrainian Sign Language <a href="/language/ukl/24">[ukl]</a> (A language of <a href="/country/UA">Ukraine</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ugandan Sign Language <a href="/language/ugn/25">[ugn]</a> (A language of <a href="/country/UG">Uganda</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Uruguayan Sign Language <a href="/language/ugy/24">[ugy]</a> (A language of <a href="/country/UY">Uruguay</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ukrainian Sign Language <a href="/language/ukl/25">[ukl]</a> (A language of <a href="/country/UA">Ukraine</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Valencian Sign Language <a href="/language/vsv/24">[vsv]</a> (A language of <a href="/country/ES">Spain</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Uruguayan Sign Language <a href="/language/ugy/25">[ugy]</a> (A language of <a href="/country/UY">Uruguay</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Venezuelan Sign Language <a href="/language/vsl/24">[vsl]</a> (A language of <a href="/country/VE">Venezuela, Bolivarian Republic of</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Valencian Sign Language <a href="/language/vsv/25">[vsv]</a> (A language of <a href="/country/ES">Spain</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">West Bengal Sign Language <a href="/language/wbs/24">[wbs]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Venezuelan Sign Language <a href="/language/vsl/25">[vsl]</a> (A language of <a href="/country/VE">Venezuela, Bolivarian Republic of</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zambian Sign Language <a href="/language/zsl/24">[zsl]</a> (A language of <a href="/country/ZM">Zambia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">West Bengal Sign Language <a href="/language/wbs/25">[wbs]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zimbabwe Sign Language <a href="/language/zib/24">[zib]</a> (A language of <a href="/country/ZW">Zimbabwe</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zambian Sign Language <a href="/language/zsl/25">[zsl]</a> (A language of <a href="/country/ZM">Zambia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Zimbabwe Sign Language <a href="/language/zib/25">[zib]</a> (A language of <a href="/country/ZW">Zimbabwe</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1081,53 +1083,65 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/shared-signing-language">Shared-signing language (21)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1e268c3aad4d028dad7912a84401b4bd">
+          <a href="/subgroups/shared-sign-language">Shared sign language (27)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6106bd69044f0ee75069038ec5cbc71b">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Adamorobe Sign Language <a href="/language/ads/24">[ads]</a> (A language of <a href="/country/GH">Ghana</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Adamorobe Sign Language <a href="/language/ads/25">[ads]</a> (A language of <a href="/country/GH">Ghana</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Al-Sayyid Bedouin Sign Language <a href="/language/syy/24">[syy]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Al-Sayyid Bedouin Sign Language <a href="/language/syy/25">[syy]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amami Koniya Sign Language <a href="/language/jks/24">[jks]</a> (A language of <a href="/country/JP">Japan</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Albarradas Sign Language <a href="/language/lsc/25">[lsc]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Australian Aborigines Sign Language <a href="/language/asw/24">[asw]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Algerian Jewish Sign Language <a href="/language/ajs/25">[ajs]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ban Khor Sign Language <a href="/language/bfk/24">[bfk]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Amami Koniya Sign Language <a href="/language/jks/25">[jks]</a> (A language of <a href="/country/JP">Japan</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ghandruk Sign Language <a href="/language/gds/24">[gds]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Australian Aborigines Sign Language <a href="/language/asw/25">[asw]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jhankot Sign Language <a href="/language/jhs/24">[jhs]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ban Khor Sign Language <a href="/language/bfk/25">[bfk]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jumla Sign Language <a href="/language/jus/24">[jus]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bribri Sign Language <a href="/language/rib/25">[rib]</a> (A language of <a href="/country/CR">Costa Rica</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kaapor Sign Language <a href="/language/uks/24">[uks]</a> (A language of <a href="/country/BR">Brazil</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Brunca Sign Language <a href="/language/rnb/25">[rnb]</a> (A language of <a href="/country/CR">Costa Rica</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kata Kolok <a href="/language/bqy/24">[bqy]</a> (A language of <a href="/country/ID">Indonesia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ghandruk Sign Language <a href="/language/gds/25">[gds]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Konchri Sain <a href="/language/jcs/24">[jcs]</a> (A language of <a href="/country/JM">Jamaica</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Inuit Sign Language <a href="/language/iks/25">[iks]</a> (A language of <a href="/country/CA">Canada</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kufr Qassem Sign Language <a href="/language/sqx/24">[sqx]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jhankot Sign Language <a href="/language/jhs/25">[jhs]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Miriwoong Sign Language <a href="/language/rsm/24">[rsm]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jumla Sign Language <a href="/language/jus/25">[jus]</a> (A language of <a href="/country/NP">Nepal</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Miyakubo Sign Language <a href="/language/ehs/24">[ehs]</a> (A language of <a href="/country/JP">Japan</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kaapor Sign Language <a href="/language/uks/25">[uks]</a> (A language of <a href="/country/BR">Brazil</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Plains Indian Sign Language <a href="/language/psd/24">[psd]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kata Kolok <a href="/language/bqy/25">[bqy]</a> (A language of <a href="/country/ID">Indonesia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Providencia Sign Language <a href="/language/prz/24">[prz]</a> (A language of <a href="/country/CO">Colombia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Konchri Sain <a href="/language/jcs/25">[jcs]</a> (A language of <a href="/country/JM">Jamaica</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sivia Sign Language <a href="/language/lsv/24">[lsv]</a> (A language of <a href="/country/PE">Peru</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kufr Qassem Sign Language <a href="/language/sqx/25">[sqx]</a> (A language of <a href="/country/IL">Israel</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tebul Sign Language <a href="/language/tsy/24">[tsy]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mardin Sign Language <a href="/language/dsz/25">[dsz]</a> (A language of <a href="/country/TR">Turkey</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yan-nhangu Sign Language <a href="/language/yhs/24">[yhs]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Miriwoong Sign Language <a href="/language/rsm/25">[rsm]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yolngu Sign Language <a href="/language/ygs/24">[ygs]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Miyakubo Sign Language <a href="/language/ehs/25">[ehs]</a> (A language of <a href="/country/JP">Japan</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yucatec Maya Sign Language <a href="/language/msd/24">[msd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Plains Indian Sign Language <a href="/language/psd/25">[psd]</a> (A language of <a href="/country/US">United States</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Providencia Sign Language <a href="/language/prz/25">[prz]</a> (A language of <a href="/country/CO">Colombia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sivia Sign Language <a href="/language/lsv/25">[lsv]</a> (A language of <a href="/country/PE">Peru</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tebul Sign Language <a href="/language/tsy/25">[tsy]</a> (A language of <a href="/country/ML">Mali</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yan-nhangu Sign Language <a href="/language/yhs/25">[yhs]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yolngu Sign Language <a href="/language/ygs/25">[ygs]</a> (A language of <a href="/country/AU">Australia</a>)</span>  </span></li>
+          <li class="lang-indent">  
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Yucatec Maya Sign Language <a href="/language/msd/25">[msd]</a> (A language of <a href="/country/MX">Mexico</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1176,7 +1190,7 @@ font-size: 14px;
               <h2 class="block-title">Current Edition</h2>
             
     <div class="content clearfix">
-      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 24th Edition</a></li>
+      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 25th Edition</a></li>
 <li class="leaf"><a href="/abbreviations">Abbreviations</a></li>
 <li class="leaf"><a href="/bibliography">Bibliography</a></li>
 <li class="leaf"><a href="/credits">Credits</a></li>
@@ -1236,7 +1250,7 @@ color: #e5e5e5 !important;
 <p class="address">Ethnologue<br/>
 by <a href="https://www.sil.org">SIL International</a><br/>
 </p>
-<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#8ee8ebebeaecefede5ceebfae6e0e1e2e1e9fbeba0ede1e3"><u>Contact us</u></a>
+<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#cfa9aaaaabadaeaca48faabba7a1a0a3a0a8baaae1aca0a2"><u>Contact us</u></a>
 <br/>
 <br/>
 <p class="contact">
@@ -1252,7 +1266,7 @@ by <a href="https://www.sil.org">SIL International</a><br/>
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2021. <em>Ethnologue: Languages of the World.</em> Twenty-fourth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
+      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2022. <em>Ethnologue: Languages of the World.</em> Twenty-fifth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
   </div>
 </div><div class="block block-block block-10 block-block-10 even block-without-title" id="block-block-10">
   <div class="block-inner clearfix">
@@ -1274,7 +1288,7 @@ by <a href="https://www.sil.org">SIL International</a><br/>
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      Copyright © 2021 SIL International    </div>
+      Copyright © 2022 SIL International    </div>
   </div>
 </div><div class="block block-block block-11 block-block-11 even block-without-title" id="block-block-11">
   <div class="block-inner clearfix">
@@ -1302,5 +1316,5 @@ window.intercomSettings = {
   </div>
   <div class="separator"></div>
 </div></footer>      </div>
-</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":447,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":263,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>

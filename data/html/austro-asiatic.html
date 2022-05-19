@@ -16,8 +16,8 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
-<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?r6n0n4" type="image/vnd.microsoft.icon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"982e558c2b",applicationID:"21031547"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.ethnologue.com/sites/all/themes/ethn/favicon.ico?raymof" type="image/vnd.microsoft.icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.5, minimum-scale=1, user-scalable=yes" />
 <meta name="generator" content="Drupal 7 (http://drupal.org)" />
 <link rel="canonical" href="https://www.ethnologue.com/subgroups/austro-asiatic" />
@@ -31,7 +31,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="Ethnologue" href="/sites/default/files/ethnologuedotcom.xml">
   <link rel="apple-touch-icon" href="/sites/all/themes/ethn/images/apple-touch-icon.png" />
   <title>Austro-Asiatic | Ethnologue</title>
-  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?d557b229"></script-->
+  <!--script type="text/javascript" src="/sites/all/modules/ethn_institutional_customer/scripts/requirehttps.php?0876d611"></script-->
   <!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,99 +45,99 @@
   
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/modules/system/system.base.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.menus.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.messages.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/system/system.theme.css?r6n0n4");
+@import url("https://www.ethnologue.com/modules/system/system.base.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.menus.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.messages.css?raymof");
+@import url("https://www.ethnologue.com/modules/system/system.theme.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/comment/comment.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/field/theme/field.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/node/node.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/search/search.css?r6n0n4");
-@import url("https://www.ethnologue.com/modules/user/user.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/calendar/css/calendar_multiday.css?raymof");
+@import url("https://www.ethnologue.com/modules/comment/comment.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_api/date.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/date/date_popup/themes/datepicker.1.7.css?raymof");
+@import url("https://www.ethnologue.com/modules/field/theme/field.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/logintoboggan/logintoboggan.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/luxe/css/luxe.css?raymof");
+@import url("https://www.ethnologue.com/modules/node/node.css?raymof");
+@import url("https://www.ethnologue.com/modules/search/search.css?raymof");
+@import url("https://www.ethnologue.com/modules/user/user.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/views/css/views.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/recurly_paywall/css/recurly_paywall.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/ethn_paywall/css/ethn_paywall.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/wysiwyg_align.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/caption-filter.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/back_to_top/css/back_to_top.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?r6n0n4");
-@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/modules/amazon/amazon.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/ctools/css/ctools.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/modules/lightbox2/css/lightbox.css?raymof");
+@import url("https://www.ethnologue.com/profiles/openenterprise/modules/panels/css/panels.css?raymof");
 </style>
 
 <!--[if lt IE 10]>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/default/files/ctools/css/d41d8cd98f00b204e9800998ecf8427e.css?raymof");
 </style>
 <![endif]-->
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/slicknav.css?raymof");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-reset.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-text.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-branding.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/omega/css/omega-menu.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/global.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/context/sub.css?raymof");
 </style>
 
 <!--[if (lt IE 9)&(!IEMobile)]>
 <style type="text/css" media="all">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?raymof");
 </style>
 <![endif]-->
 
 <!--[if gte IE 9]><!-->
 <style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-24.css?raymof");
 </style>
 <!--<![endif]-->
 
 <!--[if gte IE 9]><!-->
 <style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?r6n0n4");
-@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/ethn-alpha-default.css?raymof");
+@import url("https://www.ethnologue.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-24.css?raymof");
 </style>
 <!--<![endif]-->
 <style type="text/css" media="print">
-@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?r6n0n4");
+@import url("https://www.ethnologue.com/sites/all/themes/ethn/css/print.css?raymof");
 </style>
   <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/misc/drupal.js?raymof"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
 <script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/visualization/js/visualization.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_paywall/scripts/ethn_paywall.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/profiles/openenterprise/modules/caption_filter/js/caption-filter.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/back_to_top/js/back_to_top.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/lightbox2/js/lightbox.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/ethn_languages/js/ethn_language_families.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/modules/google_analytics/googleanalytics.js?raymof"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-20037946-14", {"cookieDomain":"auto"});ga("set", "dimension2", "anonymous user");ga('require', 'linkid', {
@@ -147,20 +147,20 @@ var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
 ga('set', 'dimension1', pixelRatio );ga("send", "pageview");ga('require', 'Clearbit', {"mapping":{"companyName":"dimension3","companyDomain":"dimension4","companyTags":"dimension5","companySector":"dimension6","companyIndustryGroup":"dimension7","companyIndustry":"dimension8","companySubIndustry":"dimension9","companyType":"dimension10","companyEmployeesRange":"dimension11","companyAlexaRank":"dimension12","companyCity":"dimension13","companyState":"dimension14","companyCountry":"dimension15"}});
 //--><!]]>
 </script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?r6n0n4"></script>
-<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?r6n0n4"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/field-stripe.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-core.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-menu.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/site-search.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/ethn/js/jquery.slicknav.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?raymof"></script>
+<script type="text/javascript" src="https://www.ethnologue.com/sites/all/themes/omega/omega/js/omega-equalheights.js?raymof"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"Z3GQGTI_0wAP4YOUIXgB1oPO_J7vubUov1O7TC_-scc","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.22.0"},"smart_ip":{"location":{"country_code":"CH","country":"Switzerland","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"212.25.19.58","timestamp":1643843936}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ethn","theme_token":"6DS06TOYe1YsOTt4h3KvCAXq-DyUGqdrccbB7QJt8YQ","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/visualization\/js\/visualization.js":1,"sites\/all\/modules\/ethn_paywall\/scripts\/ethn_paywall.js":1,"profiles\/openenterprise\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/ethn_languages\/js\/ethn_language_families.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/ethn\/js\/field-stripe.js":1,"sites\/all\/themes\/ethn\/js\/site-core.js":1,"sites\/all\/themes\/ethn\/js\/site-menu.js":1,"sites\/all\/themes\/ethn\/js\/site-search.js":1,"sites\/all\/themes\/ethn\/js\/jquery.slicknav.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/openenterprise\/modules\/date\/date_api\/date.css":1,"profiles\/openenterprise\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/luxe\/css\/luxe.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openenterprise\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/recurly_paywall\/css\/recurly_paywall.css":1,"sites\/all\/modules\/ethn_paywall\/css\/ethn_paywall.css":1,"profiles\/openenterprise\/wysiwyg_align.css":1,"profiles\/openenterprise\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/openenterprise\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"profiles\/openenterprise\/modules\/panels\/css\/panels.css":1,"public:\/\/ctools\/css\/d41d8cd98f00b204e9800998ecf8427e.css":1,"sites\/all\/themes\/ethn\/css\/slicknav.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/ethn\/css\/global.css":1,"sites\/all\/themes\/ethn\/css\/context\/sub.css":1,"ie::normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/ethn\/css\/ethn-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"sites\/all\/themes\/ethn\/css\/print.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"python-requests\/2.27.1"},"smart_ip":{"location":{"country_code":"PA","country":"Panama","region":"","region_code":"","city":"","zip":"","latitude":"","longitude":"","time_zone":"","source":"smart_ip","ip_address":"186.148.105.138","timestamp":1652908788}},"smart_ip_src":{"smart_ip":"smart_ip","geocoded_smart_ip":"geocoded_smart_ip","w3c":"w3c"},"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}},"site":{"search_text":"Search Ethnologue..."}});
 //--><!]]>
 </script>
 </head>
-<body class="html not-front not-logged-in no-sidebars page-family page-family-24-231 context-subgroups">
+<body class="html not-front not-logged-in no-sidebars page-family page-family-25-231 context-subgroups">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7MVKTH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -383,11 +383,11 @@ document.getElementById("aa-search-input").onclick = function() {
 <!-- Initialize autocomplete menu -->
 <script>
 var client = algoliasearch("2RP8PHQQI3", "45348df641ea37f730d2938add600be1");
-var countries = client.initIndex('countries_24');
-var macrolanguages = client.initIndex('macrolanguages_24');
-var languages = client.initIndex('languages_24');
-var alt = client.initIndex('alt_24');
-var autonyms = client.initIndex('autonyms_24');
+var countries = client.initIndex('countries_25');
+var macrolanguages = client.initIndex('macrolanguages_25');
+var languages = client.initIndex('languages_25');
+var alt = client.initIndex('alt_25');
+var autonyms = client.initIndex('autonyms_25');
 var guides = client.initIndex('guides');
 
 //initialize autocomplete on search input (ID selector must match)
@@ -709,7 +709,7 @@ font-size: 14px;
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/24-231">Login</a></li>
+      <ul class="menu inline"><li class="first leaf"><a href="/user/login?current=family/25-231">Login</a></li>
 <li class="last leaf"><a href="/cart/my" style="text-transform: capitalize;">Shopping cart</a></li>
 </ul>    </div>
   </div>
@@ -718,7 +718,7 @@ font-size: 14px;
   <div class="region-inner region-branding-inner">
         <div class="branding-data clearfix">
             <div class="logo-img">
-        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?r6n0n4" alt="Ethnologue" id="logo" /></a>      </div>
+        <a href="/" rel="home" title="Ethnologue"><img src="https://www.ethnologue.com/sites/all/themes/ethn/logo.png?raymof" alt="Ethnologue" id="logo" /></a>      </div>
                         <hgroup class="site-name-slogan">        
                                 <h2 class="site-name element-invisible"><a href="/" title="Home">Ethnologue</a></h2>
                               </hgroup>
@@ -760,7 +760,7 @@ font-size: 14px;
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-d1472abaa4b39f7c63fd902226a1259c">
+      <div class="view view-family view-id-family view-display-id-page_1 ethn-tree view-dom-id-5ddee626df7457db982240f2998c3d85">
         
   
       <div class="attachment attachment-before">
@@ -786,7 +786,7 @@ font-size: 14px;
       <div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
       
-  <div class="views-field views-field-name-1">        <span class="field-content">Austro-Asiatic (167)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ac0d9f92e47edaa62b5e575e2d4b8432">
+  <div class="views-field views-field-name-1">        <span class="field-content">Austro-Asiatic (167)</span>  </div><div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b223e955f657a0be6fa93b7bdbe045ea">
         
   
   
@@ -808,7 +808,7 @@ font-size: 14px;
   
       <div class="view-content indent1">
       <div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/mon-khmer">Mon-Khmer (144)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d0f0ff40f7cab9dd65f286f973ccab98">
+          <a href="/subgroups/mon-khmer">Mon-Khmer (144)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c6d01cfd16454947ac91e7a454592157">
         
   
   
@@ -819,7 +819,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/aslian">Aslian (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d43ba5475ccf514c5d58f4baeae810be">
+          <a href="/subgroups/aslian">Aslian (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-664d80594491a06fce7bbf075c5c42ac">
         
   
   
@@ -830,13 +830,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/jah-hut">Jah Hut (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-746a2a556954b2d5f9d55e5197f48a1a">
+          <a href="/subgroups/jah-hut">Jah Hut (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e4dbc7d7539596fe271c63db056fff58">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jah Hut <a href="/language/jah/24">[jah]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jah Hut <a href="/language/jah/25">[jah]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -845,7 +845,7 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/north-aslian">North Aslian (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-dc16a8c37d4d69878c4d360ea7f2eab6">
+          <a href="/subgroups/north-aslian">North Aslian (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f90898e5745be458e20cbca62ff715f4">
         
   
   
@@ -856,13 +856,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/chewong">Chewong (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ab68d8b258536de6fb9208576a989882">
+          <a href="/subgroups/chewong">Chewong (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f2e7a9e4494cc0fce7a8ead136a95909">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cheq Wong <a href="/language/cwg/24">[cwg]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cheq Wong <a href="/language/cwg/25">[cwg]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -871,19 +871,19 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/eastern-23">Eastern (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2672ed89f657e94e2fb621e0f182c8e4">
+          <a href="/subgroups/eastern-23">Eastern (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c1b4ca86d2bbc3f99a30960e394ca1f9">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Batek <a href="/language/btq/24">[btq]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Batek <a href="/language/btq/25">[btq]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jehai <a href="/language/jhi/24">[jhi]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jehai <a href="/language/jhi/25">[jhi]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Minriq <a href="/language/mnq/24">[mnq]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Minriq <a href="/language/mnq/25">[mnq]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mintil <a href="/language/mzt/24">[mzt]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mintil <a href="/language/mzt/25">[mzt]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -892,13 +892,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/tonga">Tonga (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ce5ac9027c300ce68a3c5de77d79e418">
+          <a href="/subgroups/tonga">Tonga (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5bf99edf93d2cce42a2c1c9f268d13e2">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ten’edn <a href="/language/tnz/24">[tnz]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ten’edn <a href="/language/tnz/25">[tnz]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -907,15 +907,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/western-22">Western (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cd393203725c0941ff0bbc476d1085d8">
+          <a href="/subgroups/western-22">Western (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-69ecb700e8b5e5481725839c25f7e1f6">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kensiu <a href="/language/kns/24">[kns]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kensiu <a href="/language/kns/25">[kns]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kintaq <a href="/language/knq/24">[knq]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kintaq <a href="/language/knq/25">[knq]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -924,21 +924,21 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li>  
-          <a href="/subgroups/senoic">Senoic (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-491eae9f40955eb05bb73444820a67eb">
+          <a href="/subgroups/senoic">Senoic (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4971ab10cbdf828a02b72073094d2163">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lanoh <a href="/language/lnh/24">[lnh]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lanoh <a href="/language/lnh/25">[lnh]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sabüm <a href="/language/sbo/24">[sbo]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sabüm <a href="/language/sbo/25">[sbo]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semai <a href="/language/sea/24">[sea]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semai <a href="/language/sea/25">[sea]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semnam <a href="/language/ssm/24">[ssm]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semnam <a href="/language/ssm/25">[ssm]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Temiar <a href="/language/tea/24">[tea]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Temiar <a href="/language/tea/25">[tea]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -947,19 +947,19 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/south-aslian">South Aslian (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fd51530058d5be1cd6d8899880699391">
+          <a href="/subgroups/south-aslian">South Aslian (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6d5f61565931df2192b066354202e209">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mah Meri <a href="/language/mhe/24">[mhe]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mah Meri <a href="/language/mhe/25">[mhe]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semaq Beri <a href="/language/szc/24">[szc]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semaq Beri <a href="/language/szc/25">[szc]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semelai <a href="/language/sza/24">[sza]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Semelai <a href="/language/sza/25">[sza]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Temoq <a href="/language/tmo/24">[tmo]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Temoq <a href="/language/tmo/25">[tmo]</a> (A language of <a href="/country/MY">Malaysia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -968,7 +968,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li>  
-          <a href="/subgroups/eastern-mon-khmer">Eastern Mon-Khmer (64)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-25b57e53af450a96b03c290be2539523">
+          <a href="/subgroups/eastern-mon-khmer">Eastern Mon-Khmer (64)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7ce7f46b8b36385bb693c6f2b232f164">
         
   
   
@@ -979,7 +979,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/bahnaric">Bahnaric (38)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-64c3f31560f3b554659cc00164c90e02">
+          <a href="/subgroups/bahnaric">Bahnaric (38)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a778327f703499873c72ea67dbe54201">
         
   
   
@@ -990,19 +990,19 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/central-bahnaric">Central Bahnaric (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ff85aae390ab8a5609e1a8b9db2d7dec">
+          <a href="/subgroups/central-bahnaric">Central Bahnaric (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1190b4c4f11d39a2e9f5a52511af0856">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Alak <a href="/language/alk/24">[alk]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Alak <a href="/language/alk/25">[alk]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bahnar <a href="/language/bdq/24">[bdq]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bahnar <a href="/language/bdq/25">[bdq]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Romam <a href="/language/rmx/24">[rmx]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Romam <a href="/language/rmx/25">[rmx]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tampuan <a href="/language/tpu/24">[tpu]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tampuan <a href="/language/tpu/25">[tpu]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1011,13 +1011,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/east-bahnaric">East Bahnaric (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-49d870e0b567326a902c161fa6415ac3">
+          <a href="/subgroups/east-bahnaric">East Bahnaric (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-47a509e09d60af1e46c7f5a76e417bdc">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cua <a href="/language/cua/24">[cua]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Cua <a href="/language/cua/25">[cua]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1026,15 +1026,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/north-bahnaric">North Bahnaric (14)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-de528256f677b0b25619b6a2cface244">
+          <a href="/subgroups/north-bahnaric">North Bahnaric (14)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-94c0f25d77492ea71ce7b03b0ff04c45">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kaco’ <a href="/language/xkk/24">[xkk]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kachok <a href="/language/xkk/25">[xkk]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katua <a href="/language/kta/24">[kta]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katua <a href="/language/kta/25">[kta]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1043,15 +1043,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/east-10">East (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-340b97cda931aa49db33e27db7677829">
+          <a href="/subgroups/east-10">East (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3582908ddc70c20690c24e851fa6c7e3">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kayong <a href="/language/kxy/24">[kxy]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kayong <a href="/language/kxy/25">[kxy]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Takua <a href="/language/tkz/24">[tkz]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Takua <a href="/language/tkz/25">[tkz]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1060,15 +1060,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/west-7">West (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1faa0ed882d3ecd1f754e62fb4e14ab5">
+          <a href="/subgroups/west-7">West (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ebda2328b3b5007e9bc80c239c3991f1">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Talieng <a href="/language/tdf/24">[tdf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Talieng <a href="/language/tdf/25">[tdf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Trieng <a href="/language/stg/24">[stg]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Trieng <a href="/language/stg/25">[stg]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1077,13 +1077,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/duan">Duan (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2e59bceb78ed55828500fd4097bb19bf">
+          <a href="/subgroups/duan">Duan (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-87b19cc74eee416d6d8f0fa2c3e73cb9">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Halang Doan <a href="/language/hld/24">[hld]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Halang Doan <a href="/language/hld/25">[hld]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1092,15 +1092,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/jeh-halang">Jeh-Halang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fba6eed4aa7628862cba806a79416057">
+          <a href="/subgroups/jeh-halang">Jeh-Halang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ccddf5fd90f818a9aa644c37ac8c3868">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Halang <a href="/language/hal/24">[hal]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Halang <a href="/language/hal/25">[hal]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jeh <a href="/language/jeh/24">[jeh]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Jeh <a href="/language/jeh/25">[jeh]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1109,13 +1109,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/rengao">Rengao (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ac12a6f3a140ef8cfcb74fbbd1673887">
+          <a href="/subgroups/rengao">Rengao (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d06262b0eb5084a764292a9c68e9a987">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Rengao <a href="/language/ren/24">[ren]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Rengao <a href="/language/ren/25">[ren]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1124,7 +1124,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/sedang-todrah">Sedang-Todrah (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-96f2dc735632a620b8762dc5b2830ce6">
+          <a href="/subgroups/sedang-todrah">Sedang-Todrah (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e50f7ff18fccdb2cdd8d74bf5a5eedbf">
         
   
   
@@ -1135,15 +1135,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/sedang">Sedang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cf96f933ee9d71d56c521e0ef75b9b03">
+          <a href="/subgroups/sedang">Sedang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8281e2c60f6b89b803c58d11f4bc816c">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hre <a href="/language/hre/24">[hre]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hre <a href="/language/hre/25">[hre]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sedang <a href="/language/sed/24">[sed]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sedang <a href="/language/sed/25">[sed]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1152,15 +1152,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/todrah-monom">Todrah-Monom (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-046bef5b74aa3ebdef6893ba8bf2ab80">
+          <a href="/subgroups/todrah-monom">Todrah-Monom (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9c01a4d923f613a98777e922c4ac5fe7">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Monom <a href="/language/moo/24">[moo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Monom <a href="/language/moo/25">[moo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Todrah <a href="/language/tdr/24">[tdr]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Todrah <a href="/language/tdr/25">[tdr]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1169,13 +1169,13 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li></ul></div></li><li>  
-          <a href="/subgroups/south-bahnaric">South Bahnaric (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-49bea0a7769a9d7dc688670fab7e89ce">
+          <a href="/subgroups/south-bahnaric">South Bahnaric (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d7029930678ced1b1df9a2ec983a158a">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Stieng, Budeh <a href="/language/stt/24">[stt]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Stieng, Budeh <a href="/language/stt/25">[stt]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1184,7 +1184,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/sre-mnong">Sre-Mnong (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-effc1342254e0a436e2af1e635f73ffb">
+          <a href="/subgroups/sre-mnong">Sre-Mnong (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6f321fae7975f410907235de9d799da7">
         
   
   
@@ -1195,7 +1195,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/mnong">Mnong (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2df1b7a1f0db113d883df7c123b490c3">
+          <a href="/subgroups/mnong">Mnong (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-561a3cf7a98d63b3a0d321385a104715">
         
   
   
@@ -1206,13 +1206,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/eastern-mnong">Eastern Mnong (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-11b59c67a7f9015c3add2e800a6c6073">
+          <a href="/subgroups/eastern-mnong">Eastern Mnong (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-646348b8cc1a141674974c16042e53a4">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mnong, Eastern <a href="/language/mng/24">[mng]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mnong, Eastern <a href="/language/mng/25">[mng]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1221,17 +1221,17 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/southern-central-mnong">Southern-Central Mnong (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8cb3e75bb6b333b2c1d2031f38d19440">
+          <a href="/subgroups/southern-central-mnong">Southern-Central Mnong (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cb980ce19bb746f0668169659b4e301b">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kraol <a href="/language/rka/24">[rka]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kraol <a href="/language/rka/25">[rka]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mnong, Central <a href="/language/cmo/24">[cmo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mnong, Central <a href="/language/cmo/25">[cmo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mnong, Southern <a href="/language/mnn/24">[mnn]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mnong, Southern <a href="/language/mnn/25">[mnn]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1240,15 +1240,15 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/sre">Sre (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c5d09eb38c35401407c5c93806a0adfb">
+          <a href="/subgroups/sre">Sre (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5454a5561041b94b3cbb4359b222fd27">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Koho <a href="/language/kpm/24">[kpm]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Koho <a href="/language/kpm/25">[kpm]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maa <a href="/language/cma/24">[cma]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maa <a href="/language/cma/25">[cma]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1257,17 +1257,17 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/stieng-chrau">Stieng-Chrau (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-dc21a7f602b6ad07a99f43b7d96be6bc">
+          <a href="/subgroups/stieng-chrau">Stieng-Chrau (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b4c320e2864498031745421a54bbdda5">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chrau <a href="/language/crw/24">[crw]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chrau <a href="/language/crw/25">[crw]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mel-Khaonh <a href="/language/hkn/24">[hkn]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mel-Khaonh <a href="/language/hkn/25">[hkn]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Stieng, Bulo <a href="/language/sti/24">[sti]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Stieng, Bulo <a href="/language/sti/25">[sti]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1276,13 +1276,13 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/west-bahnaric">West Bahnaric (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7730c81a5d39027888188f4a9def5900">
+          <a href="/subgroups/west-bahnaric">West Bahnaric (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cf08e5a86b7edaf8a78faf9852ebca0e">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lavi <a href="/language/lvi/24">[lvi]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lavi <a href="/language/lvi/25">[lvi]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1291,19 +1291,19 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/brao-kravet">Brao-Kravet (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-95a94df2391a19e895dc56bcfaf308de">
+          <a href="/subgroups/brao-kravet">Brao-Kravet (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-88544e9b677840baa8436f476c26f0de">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kavet <a href="/language/krv/24">[krv]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Brao <a href="/language/brb/25">[brb]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Krung <a href="/language/krr/24">[krr]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kavet <a href="/language/krv/25">[krv]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lave <a href="/language/brb/24">[brb]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Krung <a href="/language/krr/25">[krr]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sou <a href="/language/sqq/24">[sqq]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sou <a href="/language/sqq/25">[sqq]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1312,13 +1312,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/laven">Laven (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6faee30e0331ba5ef15b9fc12c3e7b38">
+          <a href="/subgroups/laven">Laven (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-82fe5e37053fab0bb5bbfdf68c6e7207">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Laven <a href="/language/lbo/24">[lbo]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Laven <a href="/language/lbo/25">[lbo]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1327,13 +1327,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/nyaheun">Nyaheun (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-103997e5a7322d1b1a511dd6c3d96bc7">
+          <a href="/subgroups/nyaheun">Nyaheun (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fe2a40aa82bb9c0520650f1ee268a3b8">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyaheun <a href="/language/nev/24">[nev]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyaheun <a href="/language/nev/25">[nev]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1342,15 +1342,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/oi">Oi-The (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-495cd7464593101e6a6fe170e879b073">
+          <a href="/subgroups/oi">Oi-The (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a8241f53b40629e5e575b7685a7542a3">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Oy <a href="/language/oyb/24">[oyb]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Oy <a href="/language/oyb/25">[oyb]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sapuan <a href="/language/spu/24">[spu]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sapuan <a href="/language/spu/25">[spu]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1359,7 +1359,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li><li>  
-          <a href="/subgroups/katuic">Katuic (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-214f62b8c28a29dbe3fb29c1643225e4">
+          <a href="/subgroups/katuic">Katuic (18)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cbfdaa025e7aaebb2ba5c8239e19b643">
         
   
   
@@ -1370,7 +1370,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/central-katuic">Central Katuic (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-559023edca0416348980aac4a152d5d2">
+          <a href="/subgroups/central-katuic">Central Katuic (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f157e9d469376cf5a91313f1e8842f78">
         
   
   
@@ -1381,19 +1381,19 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first last">  
-          <a href="/subgroups/ta%E2%80%99oih">Ta’oih (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a940065ddb3e318b1941ab1eb4d93012">
+          <a href="/subgroups/ta%E2%80%99oih">Ta’oih (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-98f0e62e542f71f8e9c751c0c3fa5060">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ir <a href="/language/irr/24">[irr]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ir <a href="/language/irr/25">[irr]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ong <a href="/language/oog/24">[oog]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ong <a href="/language/oog/25">[oog]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ta’oih, Lower <a href="/language/tto/24">[tto]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ta’oih, Lower <a href="/language/tto/25">[tto]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ta’oih, Upper <a href="/language/tth/24">[tth]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ta’oih, Upper <a href="/language/tth/25">[tth]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1402,7 +1402,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li>  
-          <a href="/subgroups/east-katuic">East Katuic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e25e0a279f99a1cf8480aa2c9cb2faf0">
+          <a href="/subgroups/east-katuic">East Katuic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0d1101163ec8a0d942da996bc4e6aeee">
         
   
   
@@ -1413,21 +1413,21 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/katu-pacoh">Katu-Pacoh (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b29131e7e4a74b065d6b85bd80b9d94b">
+          <a href="/subgroups/katu-pacoh">Katu-Pacoh (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-912302ee11e584b0b1328685da79cf7e">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katu, Eastern <a href="/language/ktv/24">[ktv]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katu, Eastern <a href="/language/ktv/25">[ktv]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katu, Western <a href="/language/kuf/24">[kuf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katu, Western <a href="/language/kuf/25">[kuf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pacoh <a href="/language/pac/24">[pac]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pacoh <a href="/language/pac/25">[pac]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Phuong <a href="/language/phg/24">[phg]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Phuong <a href="/language/phg/25">[phg]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tareng <a href="/language/tgr/24">[tgr]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tareng <a href="/language/tgr/25">[tgr]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1436,13 +1436,13 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/ngeq-nkriang">Ngeq-Nkriang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-68e35721f0522c27eb2382a8414813a4">
+          <a href="/subgroups/ngeq-nkriang">Ngeq-Nkriang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1476f58397e783073ffcbaf38ff3d8d4">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kriang <a href="/language/ngt/24">[ngt]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kriang <a href="/language/ngt/25">[ngt]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1451,7 +1451,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/west-katuic">West Katuic (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-502e6f5f090926de834ccb39922332ab">
+          <a href="/subgroups/west-katuic">West Katuic (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-046c0d52230b755db3530ed68e4fb29f">
         
   
   
@@ -1462,23 +1462,23 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/bru">Bru (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-da929c6bd1c36a3a3cfe796f0235059e">
+          <a href="/subgroups/bru">Bru (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-03fe70e60d2f7c3057aa2405034963c7">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bru, Eastern <a href="/language/bru/24">[bru]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bru, Eastern <a href="/language/bru/25">[bru]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bru, Western <a href="/language/brv/24">[brv]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bru, Western <a href="/language/brv/25">[brv]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katang, Northern <a href="/language/ncq/24">[ncq]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katang, Northern <a href="/language/ncq/25">[ncq]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katang, Southern <a href="/language/sct/24">[sct]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Katang, Southern <a href="/language/sct/25">[sct]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khua <a href="/language/xhv/24">[xhv]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khua <a href="/language/xhv/25">[xhv]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">So <a href="/language/sss/24">[sss]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">So <a href="/language/sss/25">[sss]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1487,15 +1487,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/kuay">Kuay (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cb2cd41fe9acc11d3b4b37a2309b1d6b">
+          <a href="/subgroups/kuay">Kuay (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-983039ac2d44036eb1c36335301036b4">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kuay <a href="/language/kdt/24">[kdt]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kuay <a href="/language/kdt/25">[kdt]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyeu <a href="/language/nyl/24">[nyl]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyeu <a href="/language/nyl/25">[nyl]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1504,15 +1504,15 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li><li>  
-          <a href="/subgroups/khmer">Khmer (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c8153ade30448bd197f5b95ab8a2bc3b">
+          <a href="/subgroups/khmer">Khmer (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cb8bf2710438476b46ddad1b4f73af3f">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khmer <a href="/language/khm/24">[khm]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khmer <a href="/language/khm/25">[khm]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khmer, Northern <a href="/language/kxm/24">[kxm]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khmer, Northern <a href="/language/kxm/25">[kxm]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1521,7 +1521,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/pearic">Pearic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8321931b6cc5a706002b8951ddcc9937">
+          <a href="/subgroups/pearic">Pearic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b0f4c2c8c593a96d756eaedffe1dc8d1">
         
   
   
@@ -1532,13 +1532,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/eastern-20">Eastern (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a5fcf181240b045fffb5181fb79c3ba9">
+          <a href="/subgroups/eastern-20">Eastern (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bb74474906a199264df5d602f5680e23">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pear <a href="/language/pcb/24">[pcb]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pear <a href="/language/pcb/25">[pcb]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1547,7 +1547,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/western-19">Western (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e946dbf3b6c35f619ace8b074453550a">
+          <a href="/subgroups/western-19">Western (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5e49f1b2b113dbe72ed7e9cdaa858bbe">
         
   
   
@@ -1558,15 +1558,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/chong">Chong (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cbd85abcf836c6c93a5f6d7a3e2483ed">
+          <a href="/subgroups/chong">Chong (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8bf86c37b65d4e02db192e7a139cad82">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chong <a href="/language/cog/24">[cog]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chong <a href="/language/cog/25">[cog]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chung <a href="/language/scq/24">[scq]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chung <a href="/language/scq/25">[scq]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1575,15 +1575,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/samre">Samre (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4387c51272d9b29e2b42ef0f1a85a0cd">
+          <a href="/subgroups/samre">Samre (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1d22a039a4c66a3b99bddc65e8e536b6">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Samre <a href="/language/sxm/24">[sxm]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Samre <a href="/language/sxm/25">[sxm]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Somray <a href="/language/smu/24">[smu]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Somray <a href="/language/smu/25">[smu]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1592,13 +1592,13 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/suoy">Suoy (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5c7238e546c1dddf980d2453caad4c54">
+          <a href="/subgroups/suoy">Suoy (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-84fc52807e39c1052369d6da99e64d57">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Su’ung <a href="/language/syo/24">[syo]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Su’ung <a href="/language/syo/25">[syo]</a> (A language of <a href="/country/KH">Cambodia</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1607,13 +1607,13 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li></ul></div></li><li>  
-          <a href="/subgroups/monic">Monic (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7c2a992d2ca10ba77cc7c348f927ea86">
+          <a href="/subgroups/monic">Monic (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-179415a3dc44fb686c7c0ab55f8b474a">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mon <a href="/language/mnw/24">[mnw]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mon <a href="/language/mnw/25">[mnw]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1622,7 +1622,7 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/nicobar">Nicobar (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-75d51b28b4e5df5ca4ec57acb402f584">
+          <a href="/subgroups/nicobar">Nicobar (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-dd3effb8d8967cbfba82a3fa5ffc7a30">
         
   
   
@@ -1633,13 +1633,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/car">Car (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-074d47843c7496fd376ec9f70bebb0a9">
+          <a href="/subgroups/car">Car (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4d661832541aed7d2535c9069699cf36">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicobarese, Car <a href="/language/caq/24">[caq]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicobarese, Car <a href="/language/caq/25">[caq]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1648,15 +1648,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/chowra-teressa">Chowra-Teressa (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4fe5aa217925be13c5339f38e9d4be28">
+          <a href="/subgroups/chowra-teressa">Chowra-Teressa (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4e07e0c51c3d0e45a4473f5e65551476">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chaura <a href="/language/crv/24">[crv]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chaura <a href="/language/crv/25">[crv]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Teressa <a href="/language/tef/24">[tef]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Teressa <a href="/language/tef/25">[tef]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1665,13 +1665,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/great-nicobar">Great Nicobar (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-46bd587e342af6de2f60997065f78b0d">
+          <a href="/subgroups/great-nicobar">Great Nicobar (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f65a37262936335ee3eb62a9c930247b">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicobarese, Southern <a href="/language/nik/24">[nik]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicobarese, Southern <a href="/language/nik/25">[nik]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1680,13 +1680,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/nancowry">Nancowry (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fc38df1614b820441064b9a8b8346110">
+          <a href="/subgroups/nancowry">Nancowry (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-27f92f73eebbc54a6b125499ebe672d8">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicobarese, Central <a href="/language/ncb/24">[ncb]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nicobarese, Central <a href="/language/ncb/25">[ncb]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1695,13 +1695,13 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/shom-peng">Shom Peng (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5e977046f36e2949a1eff04bd8d4bfe9">
+          <a href="/subgroups/shom-peng">Shom Peng (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5b4e59b6f136aa4a1a0a313d6a68de3d">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Shom Peng <a href="/language/sii/24">[sii]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Shom Peng <a href="/language/sii/25">[sii]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1710,7 +1710,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li>  
-          <a href="/subgroups/northern-mon-khmer">Northern Mon-Khmer (40)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-6fc0a7e400e7398b28ece7abe618ca76">
+          <a href="/subgroups/northern-mon-khmer">Northern Mon-Khmer (40)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b8c7b487411e57e0face3b1c33616e53">
         
   
   
@@ -1721,19 +1721,19 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/khasian">Khasian (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-023806a89c5b5dd2dbdd7fc74dfe3786">
+          <a href="/subgroups/khasian">Khasian (4)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-824dbc326f10ba51b5b3f7cdb15dffea">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khasi <a href="/language/kha/24">[kha]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khasi <a href="/language/kha/25">[kha]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lyngngam <a href="/language/lyg/24">[lyg]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lyngngam <a href="/language/lyg/25">[lyg]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pnar <a href="/language/pbv/24">[pbv]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Pnar <a href="/language/pbv/25">[pbv]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">War-Jaintia <a href="/language/aml/24">[aml]</a> (A language of <a href="/country/BD">Bangladesh</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">War-Jaintia <a href="/language/aml/25">[aml]</a> (A language of <a href="/country/BD">Bangladesh</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1742,7 +1742,7 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/khmuic">Khmuic (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-91beb280da773b3c7bf2fbb1d10c862e">
+          <a href="/subgroups/khmuic">Khmuic (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ab443737bc7711d4013e90f8db8af008">
         
   
   
@@ -1753,13 +1753,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/khao">Khao (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3c4203b7dea8d165a374a3531b5331a5">
+          <a href="/subgroups/khao">Khao (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a31944caa7c517fd8921c84fd63d1550">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khao <a href="/language/xao/24">[xao]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khao <a href="/language/xao/25">[xao]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1768,7 +1768,7 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/mal-khmu%E2%80%99">Mal-Khmu’ (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-493a00af2a04fe700d9fc4f77208628f">
+          <a href="/subgroups/mal-khmu%E2%80%99">Mal-Khmu’ (5)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a57af01165d940c9889add2795bee875">
         
   
   
@@ -1779,17 +1779,17 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/khmu%E2%80%99">Khmu’ (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3fb9cf6ec8ad9de5e41db921cec60f92">
+          <a href="/subgroups/khmu%E2%80%99">Khmu’ (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c5061ffe2d0db5f46a0c3eabc9fb6d52">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khmu <a href="/language/kjg/24">[kjg]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khmu <a href="/language/kjg/25">[kjg]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khuen <a href="/language/khf/24">[khf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Khuen <a href="/language/khf/25">[khf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">O’du <a href="/language/tyh/24">[tyh]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">O’du <a href="/language/tyh/25">[tyh]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1798,15 +1798,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/mal-prai">Mal-Prai (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-196b11c320d28768130eaf307f0559a9">
+          <a href="/subgroups/mal-prai">Mal-Prai (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-472e05183e748d536f5c31c15ebb6d1e">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mal <a href="/language/mlf/24">[mlf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mal <a href="/language/mlf/25">[mlf]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Prai <a href="/language/prt/24">[prt]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Prai <a href="/language/prt/25">[prt]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1815,13 +1815,13 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li>  
-          <a href="/subgroups/mlabri">Mlabri (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ac9e10b80c94c0218091552e385e3753">
+          <a href="/subgroups/mlabri">Mlabri (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-62cc7e498e0597c3a1b09ca2bc4336c5">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mlabri <a href="/language/mra/24">[mra]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mlabri <a href="/language/mra/25">[mra]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1830,15 +1830,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/xinh-mul">Xinh Mul (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cb7d54a4399b793016dc8e7d815c4bc7">
+          <a href="/subgroups/xinh-mul">Xinh Mul (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d9e92e7fa9e5ca046bc99d1f90e7a7bd">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Phong-Kniang <a href="/language/pnx/24">[pnx]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Phong-Kniang <a href="/language/pnx/25">[pnx]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Puoc <a href="/language/puo/24">[puo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Puoc <a href="/language/puo/25">[puo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1847,13 +1847,13 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li>  
-          <a href="/subgroups/mang">Mang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-806987c94efc8c7cacf5bc65a5b98a66">
+          <a href="/subgroups/mang">Mang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-45a6b4031f09d613e066dfee46654d01">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mang <a href="/language/zng/24">[zng]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mang <a href="/language/zng/25">[zng]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1862,7 +1862,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/palaungic">Palaungic (26)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-65715e959d4afe091aa6e839062a9a65">
+          <a href="/subgroups/palaungic">Palaungic (26)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3414da98c5a7bb537f24f42e7cb6805c">
         
   
   
@@ -1873,7 +1873,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/eastern-palaungic">Eastern Palaungic (20)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8ee7938bee517ec351d8d2c192463d23">
+          <a href="/subgroups/eastern-palaungic">Eastern Palaungic (20)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-18d7a4571a106bd73bd17a15461c3104">
         
   
   
@@ -1884,29 +1884,29 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/angkuic">Angkuic (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c2467d432ce075b50b34c903a0ded9d1">
+          <a href="/subgroups/angkuic">Angkuic (9)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-19319b9aa3fd339492a10e6556ac36c6">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hu <a href="/language/huo/24">[huo]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hu <a href="/language/huo/25">[huo]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kiorr <a href="/language/xko/24">[xko]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kiorr <a href="/language/xko/25">[xko]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kon Keu <a href="/language/kkn/24">[kkn]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kon Keu <a href="/language/kkn/25">[kkn]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Man Met <a href="/language/mml/24">[mml]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Man Met <a href="/language/mml/25">[mml]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mok <a href="/language/mqt/24">[mqt]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mok <a href="/language/mqt/25">[mqt]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Muak Sa-aak <a href="/language/ukk/24">[ukk]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Muak Sa-aak <a href="/language/ukk/25">[ukk]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Samtao <a href="/language/stu/24">[stu]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Samtao <a href="/language/stu/25">[stu]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tai Loi <a href="/language/tlq/24">[tlq]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tai Loi <a href="/language/tlq/25">[tlq]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">U <a href="/language/uuu/24">[uuu]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">U <a href="/language/uuu/25">[uuu]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1915,17 +1915,17 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/bit-khang">Bit-Khang (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-257567f6f18b9f7990a597addc028c48">
+          <a href="/subgroups/bit-khang">Bit-Khang (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e79081820af436e94c4ca1e9688d84fe">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bit <a href="/language/bgk/24">[bgk]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bit <a href="/language/bgk/25">[bgk]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bumang <a href="/language/bvp/24">[bvp]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bumang <a href="/language/bvp/25">[bvp]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kháng <a href="/language/kjm/24">[kjm]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kháng <a href="/language/kjm/25">[kjm]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1934,15 +1934,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/lametic">Lametic (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fa32d0a11acfa006bf802a3631d2a1d7">
+          <a href="/subgroups/lametic">Lametic (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5a2e8b2c31737e9266a05ed93cb864e3">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Con <a href="/language/cno/24">[cno]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Con <a href="/language/cno/25">[cno]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Rmeet <a href="/language/lbn/24">[lbn]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Rmeet <a href="/language/lbn/25">[lbn]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1951,7 +1951,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/waic">Waic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-26ae945c5e764b6b4233a9de06063b04">
+          <a href="/subgroups/waic">Waic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a323772b1c366955ed44f85d006cd01f">
         
   
   
@@ -1962,13 +1962,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/bulang">Bulang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f2e4d37ffb037ecd9dbf9a7625936299">
+          <a href="/subgroups/bulang">Bulang (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ef7df29e1ca64f2e4c626da0758c80f6">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Blang <a href="/language/blr/24">[blr]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Blang <a href="/language/blr/25">[blr]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1977,15 +1977,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/lawa">Lawa (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-83862443864edfa7f6aaad0d3ff0903e">
+          <a href="/subgroups/lawa">Lawa (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-29c36376b51377142fe13bc6c43d7460">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lawa, Eastern <a href="/language/lwl/24">[lwl]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lawa, Eastern <a href="/language/lwl/25">[lwl]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lawa, Western <a href="/language/lcp/24">[lcp]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Lawa, Western <a href="/language/lcp/25">[lcp]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -1994,17 +1994,17 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/wa">Wa (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ce07290c547648d6b25c35a22e883d44">
+          <a href="/subgroups/wa">Wa (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7ed1a9276ef792105cef5a5033b602ab">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Awa <a href="/language/vwa/24">[vwa]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Awa <a href="/language/vwa/25">[vwa]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Wa, Parauk <a href="/language/prk/24">[prk]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Wa, Parauk <a href="/language/prk/25">[prk]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Wa, Vo <a href="/language/wbm/24">[wbm]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Wa, Vo <a href="/language/wbm/25">[wbm]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2013,7 +2013,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/western-palaungic">Western Palaungic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-31911b2c186923ca9fa58af883ca3488">
+          <a href="/subgroups/western-palaungic">Western Palaungic (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-bc80d6b9696abd7da76440ce286502aa">
         
   
   
@@ -2024,13 +2024,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/danau">Danau (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ca0abddd994ce3245be845afbbc10eef">
+          <a href="/subgroups/danau">Danau (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0a49e25ab03095a29af321974caf4d72">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Danau <a href="/language/dnu/24">[dnu]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Danau <a href="/language/dnu/25">[dnu]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2039,17 +2039,17 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/palaung">Palaung (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8d9b36aaf490c2e4f9290ccc64bcc899">
+          <a href="/subgroups/palaung">Palaung (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d181ab73f8b869bf95f7afbaa0a30e4c">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Palaung, Ruching <a href="/language/pce/24">[pce]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Palaung, Ruching <a href="/language/pce/25">[pce]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Palaung, Rumai <a href="/language/rbb/24">[rbb]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Palaung, Rumai <a href="/language/rbb/25">[rbb]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Palaung, Shwe <a href="/language/pll/24">[pll]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Palaung, Shwe <a href="/language/pll/25">[pll]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2058,15 +2058,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/riang">Riang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a8046e186718e57c99c5832df330c542">
+          <a href="/subgroups/riang">Riang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-337a0efa9583edef59c8629cf3022ff6">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Riang Lai <a href="/language/yin/24">[yin]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Riang Lai <a href="/language/yin/25">[yin]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Riang Lang <a href="/language/ril/24">[ril]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Riang Lang <a href="/language/ril/25">[ril]</a> (A language of <a href="/country/MM">Myanmar</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2075,15 +2075,15 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li></ul></div></li><li>  
-          <a href="/subgroups/palyu">Palyu (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-26b6291c551a037257d998d3ea014b29">
+          <a href="/subgroups/palyu">Palyu (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-d648cf94eef1e27d0b44f6448f7f0016">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bolyu <a href="/language/ply/24">[ply]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bolyu <a href="/language/ply/25">[ply]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bugan <a href="/language/bbh/24">[bbh]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bugan <a href="/language/bbh/25">[bbh]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2092,13 +2092,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/southern-monic">Southern Monic (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-79ff426653763bc296866e904fd24011">
+          <a href="/subgroups/southern-monic">Southern Monic (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-54b768260fbf2842f5b0c5d0a9e2ed0d">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyahkur <a href="/language/cbn/24">[cbn]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nyahkur <a href="/language/cbn/25">[cbn]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2107,15 +2107,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/unclassified-6">Unclassified (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-f765f9bb9c56b822034770905d0b1021">
+          <a href="/subgroups/unclassified-6">Unclassified (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-48ed88c161e94550b1ddac540fd87f84">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kemiehua <a href="/language/kfj/24">[kfj]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kemiehua <a href="/language/kfj/25">[kfj]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kuanhua <a href="/language/xnh/24">[xnh]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kuanhua <a href="/language/xnh/25">[xnh]</a> (A language of <a href="/country/CN">China</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2124,7 +2124,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/viet-muong">Viet-Muong (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-48c7c6622b1a0e19b2221a3e8f8ed3cf">
+          <a href="/subgroups/viet-muong">Viet-Muong (10)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-7d1470fe9901db212997409532930613">
         
   
   
@@ -2135,17 +2135,17 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/chut">Chut (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8e730970430e41d9b495f2dc946d9f8f">
+          <a href="/subgroups/chut">Chut (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2a008bcd448b792861e0eace00e052cd">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Arem <a href="/language/aem/24">[aem]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Arem <a href="/language/aem/25">[aem]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chut <a href="/language/scb/24">[scb]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Chut <a href="/language/scb/25">[scb]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maleng <a href="/language/pkt/24">[pkt]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Maleng <a href="/language/pkt/25">[pkt]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2154,15 +2154,15 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/cuoi">Cuoi (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fbc76ffe7ffa1f99da444fa6e7142ef6">
+          <a href="/subgroups/cuoi">Cuoi (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-3aba2e44fdea38872c9020a4982501b9">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hung <a href="/language/hnu/24">[hnu]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Hung <a href="/language/hnu/25">[hnu]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tho <a href="/language/tou/24">[tou]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Tho <a href="/language/tou/25">[tou]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2171,17 +2171,17 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/muong">Muong (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-b93b141950118d309e515b8c640c02cd">
+          <a href="/subgroups/muong">Muong (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2bd74e826466b192b8fadd97e4eb720e">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bo <a href="/language/bgl/24">[bgl]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bo <a href="/language/bgl/25">[bgl]</a> (A language of <a href="/country/LA">Lao People&#039;s Democratic Republic</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Muong <a href="/language/mtq/24">[mtq]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Muong <a href="/language/mtq/25">[mtq]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nguôn <a href="/language/nuo/24">[nuo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Nguôn <a href="/language/nuo/25">[nuo]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2190,13 +2190,13 @@ font-size: 14px;
   
   
 </div></li><li>  
-          <a href="/subgroups/thavung">Thavung (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-929b8f1fc1419b6ac4ee7f1f22548c20">
+          <a href="/subgroups/thavung">Thavung (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-54fd806f2ec24ab75be69867879b0119">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Aheu <a href="/language/thm/24">[thm]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Aheu <a href="/language/thm/25">[thm]</a> (A language of <a href="/country/TH">Thailand</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2205,13 +2205,13 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/vietnamese">Vietnamese (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ce1570af53dd2ec4e21ca61a3aa2d200">
+          <a href="/subgroups/vietnamese">Vietnamese (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0ffcfa34cfb94e6c30204809dfe596a6">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Vietnamese <a href="/language/vie/24">[vie]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Vietnamese <a href="/language/vie/25">[vie]</a> (A language of <a href="/country/VN">Viet Nam</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2220,7 +2220,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/munda">Munda (23)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-c6234bd9c874ad3988dda85293871cbc">
+          <a href="/subgroups/munda">Munda (23)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e0269c6dd065264a7b52f8abc4384180">
         
   
   
@@ -2231,7 +2231,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/north-munda">North Munda (15)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e0d7214170283ef5f161dd6fa31c0565">
+          <a href="/subgroups/north-munda">North Munda (15)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-faa6561ca733a18c3438ca7a2d5da134">
         
   
   
@@ -2242,17 +2242,17 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/kherwari">Kherwari (14)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-80d4ac3493e929fbb348f27a28443e1e">
+          <a href="/subgroups/kherwari">Kherwari (14)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-8b8d04286f24794efcd98ce213beeec2">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Agariya <a href="/language/agi/24">[agi]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Agariya <a href="/language/agi/25">[agi]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bijori <a href="/language/bix/24">[bix]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bijori <a href="/language/bix/25">[bix]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kodaku <a href="/language/ksz/24">[ksz]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kodaku <a href="/language/ksz/25">[ksz]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2261,27 +2261,27 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/mundari">Mundari (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5b8b5080091a77982f4778b3b4d90b4b">
+          <a href="/subgroups/mundari">Mundari (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-eb97ea2458d895263a5b44f03a659ed1">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Asuri <a href="/language/asr/24">[asr]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Asuri <a href="/language/asr/25">[asr]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Birhor <a href="/language/biy/24">[biy]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Birhor <a href="/language/biy/25">[biy]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ho <a href="/language/hoc/24">[hoc]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Ho <a href="/language/hoc/25">[hoc]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Koda <a href="/language/cdz/24">[cdz]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Koda <a href="/language/cdz/25">[cdz]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kol <a href="/language/ekl/24">[ekl]</a> (A language of <a href="/country/BD">Bangladesh</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kol <a href="/language/ekl/25">[ekl]</a> (A language of <a href="/country/BD">Bangladesh</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korwa <a href="/language/kfp/24">[kfp]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korwa <a href="/language/kfp/25">[kfp]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Munda <a href="/language/unx/24">[unx]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Munda <a href="/language/unx/25">[unx]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mundari <a href="/language/unr/24">[unr]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mundari <a href="/language/unr/25">[unr]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2290,17 +2290,17 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/santali">Santali (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-09d3c5cd961fa0bdfb9f5c0218bf7636">
+          <a href="/subgroups/santali">Santali (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-635c95c9e06d9abefde5edaeaa808fc0">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mahali <a href="/language/mjx/24">[mjx]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Mahali <a href="/language/mjx/25">[mjx]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Santhali <a href="/language/sat/24">[sat]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Santhali <a href="/language/sat/25">[sat]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Turi <a href="/language/trd/24">[trd]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Turi <a href="/language/trd/25">[trd]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2309,13 +2309,13 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/korku">Korku (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-81feb83b2399fd30d487ef2c1b0a9f68">
+          <a href="/subgroups/korku">Korku (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1a24c9596240a4f6cfbd15ce914c38b7">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korku <a href="/language/kfq/24">[kfq]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Korku <a href="/language/kfq/25">[kfq]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2324,7 +2324,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/south-munda">South Munda (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-e3966716b27a8106ca3be5b4cf46ea82">
+          <a href="/subgroups/south-munda">South Munda (8)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-9eafb8bf8f6ac3c180c7345e424157e5">
         
   
   
@@ -2335,15 +2335,15 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/kharia-juang">Kharia-Juang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-dd73648c44bcadd079a4644d7e61765c">
+          <a href="/subgroups/kharia-juang">Kharia-Juang (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-1066a7cc6c326e4b5ae3e12d4eed27c8">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Juang <a href="/language/jun/24">[jun]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Juang <a href="/language/jun/25">[jun]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kharia <a href="/language/khr/24">[khr]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Kharia <a href="/language/khr/25">[khr]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2352,7 +2352,7 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/koraput-munda">Koraput Munda (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-a719223ad686fe89bf6404eac0041b7d">
+          <a href="/subgroups/koraput-munda">Koraput Munda (6)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-535d0a0f3372bcb3bedfdd484a1d838b">
         
   
   
@@ -2363,7 +2363,7 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/gutob-remo-geta%E2%80%99">Gutob-Remo-Geta’ (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-2d35c740d263a815718dad2f2c1ea1bc">
+          <a href="/subgroups/gutob-remo-geta%E2%80%99">Gutob-Remo-Geta’ (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-5db4fb5d67996b90b1fa887a9844a1aa">
         
   
   
@@ -2374,13 +2374,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/geta%E2%80%99">Geta’ (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-389c20f043b688c935469583d5c22f10">
+          <a href="/subgroups/geta%E2%80%99">Geta’ (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-34a3cb2b2929de4dd54b67d28eab46e0">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gata’ <a href="/language/gaq/24">[gaq]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gata’ <a href="/language/gaq/25">[gaq]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2389,15 +2389,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/gutob-remo">Gutob-Remo (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-706cab909c1cfb42be64303f7f8b50ae">
+          <a href="/subgroups/gutob-remo">Gutob-Remo (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-fb20094afbc41a68683e29ab87d79637">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bondo <a href="/language/bfw/24">[bfw]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Bondo <a href="/language/bfw/25">[bfw]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gadaba, Bodo <a href="/language/gbj/24">[gbj]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Gadaba, Bodo <a href="/language/gbj/25">[gbj]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2406,7 +2406,7 @@ font-size: 14px;
   
   
 </div></li></ul></div></li><li class="last">  
-          <a href="/subgroups/sora-juray-gorum">Sora-Juray-Gorum (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-25c4e7308a2f71286a9d9c15f892a419">
+          <a href="/subgroups/sora-juray-gorum">Sora-Juray-Gorum (3)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-0f5fb02bc20a8728aa2872856f316f43">
         
   
   
@@ -2417,13 +2417,13 @@ font-size: 14px;
   
   
 </div><div class="item-list"><ul><li class="first">  
-          <a href="/subgroups/gorum">Gorum (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-4413013267ffcac4f3832ec6cbbefc7f">
+          <a href="/subgroups/gorum">Gorum (1)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-28e6efa9717fb466432ef319d0783063">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Parenga <a href="/language/pcj/24">[pcj]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Parenga <a href="/language/pcj/25">[pcj]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2432,15 +2432,15 @@ font-size: 14px;
   
   
 </div></li><li class="last">  
-          <a href="/subgroups/sora-juray">Sora-Juray (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-cb3771d15768bd3b8bc756c7f7c91a86">
+          <a href="/subgroups/sora-juray">Sora-Juray (2)</a>  <div class="view view-language view-id-language view-display-id-block_2 view-dom-id-ffd84a2db75c5c6174f9107291ac7f2c">
         
   
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Juray <a href="/language/juy/24">[juy]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Juray <a href="/language/juy/25">[juy]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
           <li class="lang-indent">  
-  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sora <a href="/language/srb/24">[srb]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
+  <span class="views-field views-field-field-iso-639-3">        <span class="field-content">Sora <a href="/language/srb/25">[srb]</a> (A language of <a href="/country/IN">India</a>)</span>  </span></li>
       </ul></div>    </div>
   
   
@@ -2489,7 +2489,7 @@ font-size: 14px;
               <h2 class="block-title">Current Edition</h2>
             
     <div class="content clearfix">
-      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 24th Edition</a></li>
+      <ul class="menu"><li class="first leaf"><a href="/about/this-edition">About the 25th Edition</a></li>
 <li class="leaf"><a href="/abbreviations">Abbreviations</a></li>
 <li class="leaf"><a href="/bibliography">Bibliography</a></li>
 <li class="leaf"><a href="/credits">Credits</a></li>
@@ -2549,7 +2549,7 @@ color: #e5e5e5 !important;
 <p class="address">Ethnologue<br/>
 by <a href="https://www.sil.org">SIL International</a><br/>
 </p>
-<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#0d6b6868696f6c6e664d687965636261626a7868236e6260"><u>Contact us</u></a>
+<a class="contact" title="Contact Us" id="intercom" href="/cdn-cgi/l/email-protection#bddbd8d8d9dfdcded6fdd8c9d5d3d2d1d2dac8d893ded2d0"><u>Contact us</u></a>
 <br/>
 <br/>
 <p class="contact">
@@ -2565,7 +2565,7 @@ by <a href="https://www.sil.org">SIL International</a><br/>
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2021. <em>Ethnologue: Languages of the World.</em> Twenty-fourth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
+      <p>This web edition of the<em> Ethnologue</em> may be cited as:  Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2022. <em>Ethnologue: Languages of the World.</em> Twenty-fifth edition. Dallas, Texas: SIL International. Online version: <a id="footer-home" href="http://www.ethnologue.com" target="_blank">http://www.ethnologue.com</a>.</p>    </div>
   </div>
 </div><div class="block block-block block-10 block-block-10 even block-without-title" id="block-block-10">
   <div class="block-inner clearfix">
@@ -2587,7 +2587,7 @@ by <a href="https://www.sil.org">SIL International</a><br/>
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      Copyright © 2021 SIL International    </div>
+      Copyright © 2022 SIL International    </div>
   </div>
 </div><div class="block block-block block-11 block-block-11 even block-without-title" id="block-block-11">
   <div class="block-inner clearfix">
@@ -2615,5 +2615,5 @@ window.intercomSettings = {
   </div>
   <div class="separator"></div>
 </div></footer>      </div>
-</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":1346,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"982e558c2b","applicationID":"21031547","transactionName":"ZQdWY0MEDBdQV0wKDlxNdVRFDA0KHkJRBhZBPURWVgA=","queueTime":0,"applicationTime":1615,"atts":"SUBVFQseHxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
