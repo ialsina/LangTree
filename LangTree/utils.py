@@ -536,7 +536,8 @@ class Node:
 
 
 
-def nodes_(node):
+# DEPRECATED
+def nodes_terminal_(node):
 
     children = node.children
 
@@ -552,8 +553,8 @@ def nodes_(node):
     return l
 
 
-
-def paths_(node):
+# DEPRECATED
+def paths_terminal_(node):
 
     name = node.name.replace('/', '')
     children = node.children
@@ -564,7 +565,30 @@ def paths_(node):
     l = []
 
     for child in children:
+        l.extend([name + '/' + el for el in paths_(child)])
 
+    return l
+
+
+def nodes_(node):
+    children = node.children
+
+    l = [node]
+
+    for child in children:
+        l.extend(nodes_(child))
+
+    return l
+
+
+
+def paths_(node):
+    name = node.name.replace('/', '')
+    children = node.children
+
+    l = [name]
+
+    for child in children:
         l.extend([name + '/' + el for el in paths_(child)])
 
     return l

@@ -1,2 +1,0 @@
-Check why does tree.nodes(terminal = False) or tree.nodes(language = True)
-	act like tree.nodes(terminal = True).
