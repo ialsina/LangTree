@@ -1,12 +1,14 @@
-from load_tree import load_obj
-from utils import Node, NodeSet
 import pandas as pd
 from tqdm import tqdm
 import numpy as np
 from copy import copy, deepcopy
 from collections import Counter
 
-f = open("output/cross_lang_report.txt", "w")
+from load_tree import load_obj
+from utils import Node, NodeSet
+
+
+out_file = open("output/cross_lang_report.txt", "w")
 
 def print_(text):
 	print(text)

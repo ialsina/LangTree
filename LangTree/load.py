@@ -1,30 +1,40 @@
 from tqdm import tqdm
-from utils import Node
 import json
 import sys
 import os
 import pickle
 
-def load_json():
+from utils import Node
 
-	with open('data/node_tree.json', 'r') as f:
+def protect(func):
+	def inner(*args, **kwargs):
+
+		try:
+			return func(*args, **kwargs)
+
+		except FileNotFoundError as e:
+			return
+
+	return inner
+
+
+@protect
+def load_json():
+	with open(os.path.join('..', 'data', 'node_tree.json'), 'r') as f:
 		return json.load(f)
 
-
+@protect
 def load_obj():
-
-	with open('data/node_tree.pickle', 'rb') as f:
+	with open(os.path.join('..', 'data', 'node_tree.pickle'), 'rb') as f:
 		return pickle.load(f)
 
-
+@protect
 def load_paths():
-
-	with open('data/lang_paths.txt', 'r') as f:
+	with open(os.path.join('..', 'data', 'lang_paths.txt'), 'r') as f:
 		return [el.replace('\n', '') for el in f.readlines()]
 
 
 def load_tree():
-
 	return get_tree(load_json())
 
 
@@ -52,6 +62,10 @@ def get_tree(inp):
 		n = Node(inp)
 
 	return n
+
+
+def load_all():
+	return load_json(), load_paths(), load_obj(), load_tree()
 
 	
 

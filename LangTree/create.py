@@ -1,20 +1,63 @@
-"""Given the html files for each of the language families,
-build language tree for each and write them in json object
-"""
-
-from bs4 import BeautifulSoup
-from tqdm import tqdm
+import requests
 import json
 import sys
 import os
+from tqdm import tqdm
 from copy import copy, deepcopy
 
-from ..utils import Node
-from ..helper import *
+from bs4 import BeautifulSoup
 
-link = 'html/indo-european.html'
-link = 'html/mongolic.html'
-link = 'html/bororoan.html'
+from utils import Node
+from helper import ParsingError, BadPathError, EmptyR1, FullR1
+from definitions import *
+
+def fetch_ethnologue(file_path = None, dest_path = None, dict_urls = None, dict_filenames = None):
+    """Given the file families.txt, recursively guess
+    the ethnologue url for each specific language family,
+    and write the url content to file
+    """
+
+    file_path = file_path or os.path.join(PATH_DATA, 'families.txt')
+    dest_path = dest_path or PATH_HTML
+    dict_urls = dict_urls or {"kx’a": "kx’"}
+    dict_filenames = dict_filenames or {"kx’a": "kx'"}
+
+    if not os.path.isdir(dest_path):
+        os.mkdir(dest_path)
+
+    session = requests.Session()
+    session.mount("https://", requests.adapters.HTTPAdapter(max_retries=2))
+
+    families = []
+    with open(file_path, 'r') as f:
+        for l in f.readlines():
+            line = l.replace('\t', '').replace('\n', '').strip()
+
+            if line == "" or line.startswith("#"):
+                continue
+
+            family = '-'.join(line.split(' ')[:-1]).lower().strip()
+            family = family.replace('(', '').replace(')', '')
+            
+            families.append(family)
+
+    families = sorted(families)
+
+    with tqdm(total = len(families)) as progress:
+        for family in families:
+            family_name = dict_urls.get(family) or family
+            filename = dict_filenames.get(family) or family
+            url = 'https://www.ethnologue.com/subgroups/{}'.format(family_name)
+
+            progress.set_description_str('{:>30s}'.format(family))
+            progress.update()
+            response = session.get(url)
+
+            if response.status_code != 200:
+                print('Error in', family)
+            else:
+                with open(os.path.join(dest_path, '{}.html'.format(filename)), 'w') as f:
+                    f.write(response.text)
 
 
 def get_elements(html):
@@ -48,7 +91,7 @@ def get_elements(html):
 
 
 def get_list(html):
-    global result1, result2, hh
+    global result1, result2
     if html.name == 'div' and 'item-list' in html.attrs.get('class', []):
         # Already inputted item list
         elements = get_elements(html)
@@ -116,17 +159,11 @@ def attachment_before(soup):
     return res[0]
 
 
-def get_root(inp, is_path=False, write=False):
+def get_root(path):
 
     global soup
 
-    if is_path:
-        path = '{}'.format(inp)
-        family = os.path.split(path)[-1].replace('.html', '')
-
-    else:
-        path = 'html/{}.html'.format(inp)
-        family = inp
+    family = os.path.split(path)[-1].replace('.html', '')
 
     with open(path, 'r') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
@@ -134,9 +171,6 @@ def get_root(inp, is_path=False, write=False):
     root = soup.find_all("div", {"class": "ethn-tree"})
     assert len(root) == 1, "Too many root candidates!"
     root = root[0]
-
-    if write:
-        write_root(root, 'pretty/{}.txt'.format(family))
 
     return root
 
@@ -172,7 +206,7 @@ def parse_len1(tag, save_soup=True):
 def parse_file(path, save_soup=True):
     global name, c, children, divs, tops, children1
 
-    root = get_root(path, is_path=True, write=False)
+    root = get_root(path)
 
     children = []
 
@@ -204,18 +238,12 @@ def parse_file(path, save_soup=True):
     return Node(name, children, path=path, soup = root if save_soup else None)
 
 
-def write_root(r, path_to_file):
-
-    with open(path_to_file, "w") as f:
-        f.write(r.prettify())
-
-
-def parse_all(save_soup=True):
+def parse_all(save_soup = True):
     tree = Node("/")
 
     errcount = 0
     
-    dirs = sorted(os.listdir('html'))
+    dirs = sorted(os.listdir(PATH_HTML))
 
     with tqdm(total=len(dirs)) as progress:
         for file in dirs:
@@ -227,7 +255,7 @@ def parse_all(save_soup=True):
             if file == '.html':
                 continue
 
-            path = os.path.join('html', file)
+            path = os.path.join(PATH_HTML, file)
             try:
                 tree.add(parse_file(path, save_soup))
 
@@ -250,11 +278,24 @@ def parse_all(save_soup=True):
     return tree
 
 
-if __name__ == '__main__':
-    tree = parse_all(True)
+def main():
+    if not os.path.exists(os.path.join(PATH_DATA, 'families.txt')):
+        print("File 'families.txt' missing. Please, add file in\n{}".format(PATH_DATA))
+        return
+
+
+    if not os.path.isdir(os.path.join(PATH_HTML)):
+        print("Directory 'html/' missing. Fetching html from ethnologue.com")
+        fetch_ethnologue()
+
+    print("Parsing all html files into Node tree")
+    tree = parse_all()
     tree.save()
     tree.save_json()
-    tree.save_paths()
 
-    #aa = parse_file('html/afro-asiatic.html')
-    #ie = parse_file('html/indo-european.html')
+
+if __name__ == "__main__":
+    main()
+    
+
+

@@ -1,6 +1,8 @@
 from copy import deepcopy, copy
 import os
+
 from helper import *
+from definitions import PATH_DATA
 
 class NodeSet:
     """Class that represents a collection of nodes,
@@ -479,7 +481,7 @@ class Node:
     def save(self, location = None):
         import pickle
 
-        location = location or 'data/node_tree.pickle'
+        location = location or os.path.join(PATH_DATA, 'node_tree.pickle')
 
         with open(location, "wb") as f:
             pickle.dump(self, f, pickle.HIGHEST_PROTOCOL)
@@ -490,7 +492,7 @@ class Node:
     def save_json(self, location = None):
         import json
 
-        location = location or 'data/node_tree.json'
+        location = location or os.path.join(PATH_DATA, 'node_tree.json')
 
         with open(location, "w") as f:
             json.dump(self.json(), f)
@@ -506,13 +508,13 @@ class Node:
         assert kind in ['txt', 'json'], "kind not supported"
 
         if kind == 'txt':
-            location = location or 'data/lang_paths.txt'
+            location = location or os.path.join(PATH_DATA, 'lang_paths.txt')
 
             with open(location, "w") as f:
                 f.write("\n".join(self.paths()))
 
         elif kind == 'json':
-            location = location or 'data/lang_paths.json'
+            location = location or os.path.join(PATH_DATA, 'lang_paths.json')
 
             with open(location, "w") as f:
                 json.dump({el.split('/')[-1]: el for el in self.paths()}, f)
