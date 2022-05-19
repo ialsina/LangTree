@@ -467,13 +467,13 @@ class Node:
         if expected is None:
             out = None
         else:
-            out = expected == self.count_terminal
+            out = expected == self.count_terminal()
 
         if verbose:
             if out is None:
                 print("Check impossible")
             elif out is False:
-                print("Result: expected - actual = {}".format(expected - self.count_terminal))
+                print("Result: expected - actual = {}".format(expected - self.count_terminal()))
 
         return out
 
