@@ -35,12 +35,12 @@ class NodeSet:
             return output + "* Empty *"
 
         if self.has_paths:
-            for node, clean_path in zip(self._nodes, self.clean_paths):
-                output += "{:>52s}    {:<40s}\n".format(node.__repr__(), clean_path)
+            for i, (node, clean_path) in enumerate(zip(self._nodes, self.clean_paths)):
+                output += "{:>2d}. {:>52s}    {:<40s}\n".format(i+1, node.__repr__(), clean_path)
 
         else:
-            for node in self._nodes:
-                output += "{:>52s}\n".format(node.__repr__())
+            for i, node in enumerate(self._nodes):
+                output += "{:>2d}. {:>52s}\n".format(i+1, node.__repr__())
 
         return output
 
@@ -53,7 +53,15 @@ class NodeSet:
         return len(self._nodes)
 
     def __getitem__(self, key):
-        assert isinstance(key, int)
+        if not isinstance(key, int):
+            raise TypeError("NodeSet indices must be integers, not {}".format(type(key).__name__))
+
+        if not (abs(key) >= 1 and abs(key) <= self.__len__()):
+            raise IndexError("NodeSet index out of range")
+            #raise IndexError("NodeSet index must be between 1 and {:d}".format(self.__len__()))
+
+        if key > 0:
+            key -= 1 # Nummeration from 1 (instead of 0). For negative indices, no change
 
         if self.has_paths:
             return self._nodes[key], self._paths[key]
@@ -153,18 +161,24 @@ class Node:
     def __repr__(self):
         #return "NODE: {} | CHILDREN_COUNT: {}".format(self._name, len(self._children))
 
-        if self.__len__() == 0:
+        if self.is_language:
             name = self._name
             iso3 = self.get("iso3")
             iso2 = self.get("iso2")
 
             if iso2:
-                return "{} ({} | {})".format(name, iso3, iso2)
+                symb = "{} ({} | {})".format(name, iso3, iso2)
             else:
-                return "{} ({})".format(name, iso3)
+                symb = "{} ({})".format(name, iso3)
 
         else:
-            return "NODE: {} | CHILDREN_COUNT: {}".format(self.name, self.__len__())
+            symb = self.name
+
+        if self.__len__() == 0:
+            return symb
+
+        else:
+            return "NODE: {} | CHILDREN_COUNT: {}".format(symb, self.__len__())
 
 
     def __getitem__(self, key):
@@ -367,8 +381,6 @@ class Node:
 
 
 
-    # TO BE UPDATED
-    @property
     def count_nodes(self):
         return len(self.nodes(terminal = False))
 

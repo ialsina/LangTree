@@ -1,0 +1,48 @@
+# A final slash (/) means that a new Node is created as a child
+# The lack of it means that an existing node is granted language status
+# Separate fields with tabulation
+# Extra attributes separate key:value with a colon (:),
+# and among themselves with further tabulations
+#
+# Columns as follows:
+# ISO3	PATH	EXTRA ATTRIBUTES (KEY:VAL)
+#
+ara	/Afro-Asiatic/Semitic/Central/South/Arabic	country:Saudi Arabia
+aym	/Aymaran/Aymara	country:Bolivia
+aze	/Turkic/Southern/Azerbaijani	country:Iran
+cre	/Algic/Algonquian/Cree-Montagnais	country:Canada
+est	/Uralic/Finnic/	country:Estonia
+fas	/Indo-European/Indo-Iranian/Iranian/Western/Southwestern/Persian/Persian, Iranian	alt_name:Farsi
+ful	/Niger-Congo/Atlantic-Congo/Atlantic/Northern/Senegambian/Fula-Wolof/Fula	alt_name:Fula
+grn	/Tupian/Tupí-Guaraní/Guaraní/Guaraní	country:Paraguay
+hbs	/Indo-European/Balto-Slavic/Slavic/South/Western/	country:Serbia
+ido	/Constructed language/	
+iku	/Eskimo-Aleut/Eskimo/Inuit-Inupiaq/	country:Canada
+ile	/Constructed language/	
+ina	/Constructed language/	
+ipk	/Eskimo-Aleut/Eskimo/Inuit-Inupiaq/	country:Canada
+kau	/Nilo-Saharan/Saharan/Western/Kanuri	country:Nigeria
+kom	/Uralic/Permian/Komi	country:Russian Federation
+kon	/Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/	country:Congo, The Democratic Republic of the
+kur	/Indo-European/Indo-Iranian/Iranian/Western/Northwestern/Kurdish	country:Iraq
+lav	/Indo-European/Balto-Slavic/Baltic/Eastern/	country:Lativa
+mlg	/Austronesian/Malayo-Polynesian/Greater Barito/East/Malagasy	country:Madagascar
+mon	/Mongolic/Eastern/Oirat-Khalkha/Khalkha-Buriat/Mongolian Proper	country:Mongolia
+msa	/Austronesian/Malayo-Polynesian/Malayo-Chamic/Malayic/Malay	country:Malaysia
+nep	/Indo-European/Indo-Iranian/Indo-Aryan/Intermediate Divisions/Eastern/Eastern Pahari/Nepali	country:Nepal
+nno	/Indo-European/Germanic/North/West Scandinavian/	country:Norway
+nob	Indo-European/Germanic/North/East Scandinavian/Danish-Swedish/Danish-Bokmal/	country:Norway
+oji	/Algic/Algonquian/Ojibwa-Potawatomi	country:Canada
+ori	/Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Eastern/Oriya	country:India
+orm	/Afro-Asiatic/Cushitic/East/Oromo	country:Ethiopia
+pus	/Indo-European/Indo-Iranian/Iranian/Eastern/Southeastern/Pashto	alt_name:Pushto
+que	/Quechuan	country:Peru
+sqi	/Indo-European/Albanian	country:Albania
+srd	/Indo-European/Italic/Romance/Southern/Sardinian	country:Italy
+swa	/Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/	country:Tanzania
+twi	/Niger-Congo/Atlantic-Congo/Volta-Congo/Kwa/Nyo/Potou-Tano/Tano/Central/Akan/	country:Ghana
+uzb	/Turkic/Eastern/	country:Uzbekistan
+vol	/Constructed language/	
+yid	/Indo-European/Germanic/West/High German/Yiddish	country:Israel
+zha	/Kra-Dai/Kam-Tai/Tai/	country:China
+zho	/Sino-Tibetan/Chinese	country:China
