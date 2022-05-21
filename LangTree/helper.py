@@ -46,10 +46,10 @@ class BadPathError(Exception):
 class DebugStop(Exception):
     pass
 
-class EmptyR1(Exception):
+class EmptyR1Error(Exception):
     pass
 
-class FullR1(Exception):
+class FullR1Error(Exception):
     pass
 
 class Container:

@@ -4,7 +4,7 @@ import sys
 import os
 import pickle
 
-from utils import Node
+from LangTree import Node
 
 def protect(func):
 	def inner(*args, **kwargs):

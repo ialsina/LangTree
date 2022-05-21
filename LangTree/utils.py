@@ -1,8 +1,9 @@
 from copy import deepcopy, copy
 import os
 
-from helper import *
-from definitions import PATH_DATA
+from ete3 import Tree as EteTree
+
+from LangTree import PATH_DATA
 
 class NodeSet:
     """Class that represents a collection of nodes,
@@ -317,6 +318,10 @@ class Node:
             return self._name
         else:
             return {self._name: [child.json() for child in self._children]}
+
+
+    def ete_tree(self):
+        newick = json
 
 
     def paths(self, terminal = False, language = False):

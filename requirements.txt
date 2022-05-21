@@ -32,6 +32,8 @@ jupyter-console==6.4.0
 jupyter-core==4.9.2
 jupyterlab-pygments==0.1.2
 jupyterlab-widgets==1.0.2
+-e git+git@github.com:ivanalsina/LangTree.git@dc11b4639c5551331ceedd316cdad5d8271c7a3c#egg=langtree
+local-LangTree==0.1.0
 MarkupSafe==2.1.0
 matplotlib-inline==0.1.3
 mistune==0.8.4
