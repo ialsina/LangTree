@@ -5,6 +5,7 @@ from ete3 import Tree as EteTree
 
 from LangTree import PATH_DATA
 
+
 class NodeSet:
     """Class that represents a collection of nodes,
     typically as a result of a query.
@@ -320,10 +321,6 @@ class Node:
             return {self._name: [child.json() for child in self._children]}
 
 
-    def ete_tree(self):
-        newick = json
-
-
     def paths(self, terminal = False, language = False):
         outp = paths_(self)
 
@@ -444,7 +441,9 @@ class Node:
 
     def __parse_info(self, readstream, replace_name=True):
         import re
-        roun = re.findall(r"\((.*?) *\)", readstream)
+        # https://stackoverflow.com/questions/15864800/
+        # searching-for-outermost-parentheses-using-python-regex
+        roun = re.findall(r"\((.*)\)", readstream)
         squa = re.findall(r"\[(.*?) *\]", readstream)
         roun_readd = []
 
@@ -469,7 +468,7 @@ class Node:
                 self._attrs["iso3"] = squa[0]
 
         if replace_name:
-            out = re.sub(r"\((.*?) *\)", "", readstream)
+            out = re.sub(r"\((.*)\)", "", readstream)
             out = re.sub(r"\[(.*?) *\]", "", out)
             out = out.strip()
 
