@@ -4,6 +4,7 @@ import os
 from ete3 import Tree as EteTree
 
 from LangTree import PATH_DATA
+from LangTree.helper import to_ete_tree
 
 class NodeSet:
     """Class that represents a collection of nodes,
@@ -320,6 +321,9 @@ class Node:
         else:
             return {self._name: [child.json() for child in self._children]}
 
+
+    def ete_tree(self, verbose=False):
+        return to_ete_tree(self.json(), verbose=verbose)
 
     def paths(self, terminal = False, language = False):
         outp = paths_(self)
