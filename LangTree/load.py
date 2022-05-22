@@ -4,7 +4,8 @@ import sys
 import os
 import pickle
 
-from LangTree import Node
+from LangTree import Node, PATH_DATA
+from ete3 import Tree as EteTree
 
 def protect(func):
 	def inner(*args, **kwargs):
@@ -13,6 +14,7 @@ def protect(func):
 			return func(*args, **kwargs)
 
 		except FileNotFoundError as e:
+			print("Exception raised:\n{}".format(e))
 			return
 
 	return inner
@@ -20,17 +22,17 @@ def protect(func):
 
 @protect
 def load_json():
-	with open(os.path.join('..', 'data', 'node_tree.json'), 'r') as f:
+	with open(os.path.join(PATH_DATA, 'node_tree.json'), 'r') as f:
 		return json.load(f)
 
 @protect
 def load_obj():
-	with open(os.path.join('..', 'data', 'node_tree.pickle'), 'rb') as f:
+	with open(os.path.join(PATH_DATA, 'node_tree.pickle'), 'rb') as f:
 		return pickle.load(f)
 
 @protect
 def load_paths():
-	with open(os.path.join('..', 'data', 'lang_paths.txt'), 'r') as f:
+	with open(os.path.join(PATH_DATA, 'lang_paths.txt'), 'r') as f:
 		return [el.replace('\n', '') for el in f.readlines()]
 
 
