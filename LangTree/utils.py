@@ -5,7 +5,6 @@ from ete3 import Tree as EteTree
 
 from LangTree import PATH_DATA
 
-
 class NodeSet:
     """Class that represents a collection of nodes,
     typically as a result of a query.
@@ -134,6 +133,7 @@ class Node:
     def add(self, *children):
         self.__assert(*children)
         self._children.extend(children)
+        self._children = sorted(self._children, key=lambda el: el.name)
 
 
     def follow(self, path, omit_self = False, copy = False):
