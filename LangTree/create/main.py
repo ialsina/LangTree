@@ -13,7 +13,6 @@ def main():
         print("File 'families.txt' missing. Please, add file in\n{}".format(PATH_DATA))
         return
 
-
     if not os.path.isdir(os.path.join(PATH_HTML)):
         print("Directory 'html/' missing. Fetching html from ethnologue.com")
         fetch_ethnologue()
@@ -21,9 +20,9 @@ def main():
     print("Parsing all html files into Node tree")
     tree = parse_all()
 
-    #tree.save()
-    #tree.save_json()
-    #return
+    # tree.save()
+    # tree.save_json()
+    # return
 
     print("Appending manual records")
     tree, count = append_manual(tree)
@@ -33,7 +32,10 @@ def main():
     dicts, comparison_result = compare(tree, load_iso639_3())
 
     print("Producing comparison report")
-    comparison_report(*comparison_result, tree = tree)
+    comparison_report(*comparison_result, tree=tree)
 
     tree.save()
     tree.save_json()
+    tree.save_paths()
+    tree.save_paths(filename="paths_iso3", key="iso3")
+    tree.save_paths(filename="paths_iso2", key="iso2")

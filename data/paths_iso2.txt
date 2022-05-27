@@ -1,0 +1,184 @@
+aa: /Afro-Asiatic/Cushitic/East/Saho-Afar/Afar
+ab: /Abkhaz-Adyghe/Abkhaz-Abazin/Abkhaz
+ae: /Indo-European/Indo-Iranian/Iranian/Avestan
+af: /Indo-European/Germanic/West/Low Saxon-Low Franconian/Low Franconian/Afrikaans
+ak: /Niger-Congo/Atlantic-Congo/Volta-Congo/Kwa/Nyo/Potou-Tano/Tano/Central/Akan/Akan
+am: /Afro-Asiatic/Semitic/South/Ethiopian/South/Transversal/Amharic-Argobba/Amharic
+an: /Indo-European/Italic/Romance/Italo-Western/Western/Pyrenean-Mozarabic/Pyrenean/Aragonese
+ar: /Afro-Asiatic/Semitic/Central/South/Arabic
+as: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Eastern/Bengali-Assamese/Assamese
+av: /Nakh-Daghestanian/Avar-Andic/Avar/Avar
+ay: /Aymaran/Aymara
+az: /Turkic/Southern/Azerbaijani
+ba: /Turkic/Western/Uralian/Bashkort
+be: /Indo-European/Balto-Slavic/Slavic/East/Belarusian
+bg: /Indo-European/Balto-Slavic/Slavic/South/Eastern/Bulgarian
+bi: /Creole/English based/Pacific/Bislama
+bm: /Niger-Congo/Mande/Western/Central-Southwestern/Central/Manding-Jogo/Manding-Vai/Manding-Mokole/Manding/Manding-East/Northeastern Manding/Bamana/Bamanankan
+bn: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Eastern/Bengali-Assamese/Bengali
+bo: /Sino-Tibetan/Tibeto-Burman/Western Tibeto-Burman/Bodish/Central Bodish/Central/Tibetan, Central
+br: /Indo-European/Celtic/Insular/Brythonic/Breton
+bs: /Indo-European/Balto-Slavic/Slavic/South/Western/Bosnian
+ca: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Ibero-Romance/East Iberian/Catalan
+ce: /Nakh-Daghestanian/Nakh/Chechen-Ingush/Chechen
+ch: /Austronesian/Malayo-Polynesian/Chamorro/Chamorro
+co: /Indo-European/Italic/Romance/Southern/Corsican/Corsican
+cr: /Algic/Algonquian/Cree-Montagnais
+cs: /Indo-European/Balto-Slavic/Slavic/West/Czech-Slovak/Czech
+cu: /Indo-European/Balto-Slavic/Slavic/South/Eastern/Slavonic, Church
+cv: /Turkic/Bolgar/Chuvash
+cy: /Indo-European/Celtic/Insular/Brythonic/Welsh
+da: /Indo-European/Germanic/North/East Scandinavian/Danish-Swedish/Danish-Riksmal/Danish/Danish
+de: /Indo-European/Germanic/West/High German/German/Middle German/East Middle German/German, Standard
+dv: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Southern/Sinhalese-Maldivian/Maldivian
+dz: /Sino-Tibetan/Tibeto-Burman/Western Tibeto-Burman/Bodish/Central Bodish/Central/Southern/Dzongkha
+ee: /Niger-Congo/Atlantic-Congo/Volta-Congo/Kwa/Left Bank/Gbe/Éwé
+el: /Indo-European/Greek/Attic/Greek
+en: /Indo-European/Germanic/West/English/English
+eo: /Constructed language/Esperanto
+es: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Ibero-Romance/West Iberian/Castilian/Spanish
+et: /Uralic/Finnic/Estonian
+eu: /Language isolate/Basque
+fa: /Indo-European/Indo-Iranian/Iranian/Western/Southwestern/Persian/Persian, Iranian
+ff: /Niger-Congo/Atlantic-Congo/Atlantic/Northern/Senegambian/Fula-Wolof/Fula
+fi: /Uralic/Finnic/Finnish
+fj: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Central Pacific/East Fijian-Polynesian/East Fijian/Fijian
+fo: /Indo-European/Germanic/North/West Scandinavian/Faroese
+fr: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Gallo-Romance/Gallo-Rhaetian/Oïl/French/French
+fy: /Indo-European/Germanic/West/Frisian/Frisian
+ga: /Indo-European/Celtic/Insular/Goidelic/Irish
+gd: /Indo-European/Celtic/Insular/Goidelic/Scottish Gaelic
+gl: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Ibero-Romance/West Iberian/Portuguese-Galician/Galician
+gn: /Tupian/Tupí-Guaraní/Guaraní/Guaraní
+gu: /Indo-European/Indo-Iranian/Indo-Aryan/Intermediate Divisions/Western/Gujarati/Gujarati
+gv: /Indo-European/Celtic/Insular/Goidelic/Manx
+ha: /Afro-Asiatic/Chadic/West/A/A.1/Hausa
+he: /Afro-Asiatic/Semitic/Central/South/Canaanite/Hebrew
+hi: /Indo-European/Indo-Iranian/Indo-Aryan/Western Hindi/Hindustani/Hindi
+ho: /Pidgin/Motu based/Motu, Hiri
+hr: /Indo-European/Balto-Slavic/Slavic/South/Western/Croatian
+ht: /Creole/French based/Haitian Creole
+hu: /Uralic/Hungarian
+hy: /Indo-European/Armenian/Armenian
+hz: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Herero/Herero
+ia: /Constructed language/Interlingua
+id: /Austronesian/Malayo-Polynesian/Malayo-Chamic/Malayic/Malay/Indonesian
+ie: /Constructed language/Interlingue
+ig: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Igboid/Igbo/Igbo
+ii: /Sino-Tibetan/Tibeto-Burman/Ngwi-Burmese/Ngwi/Northern/Nuosu
+ik: /Eskimo-Aleut/Eskimo/Inuit-Inupiaq/Inupiaq
+io: /Constructed language/Ido
+is: /Indo-European/Germanic/North/West Scandinavian/Icelandic
+it: /Indo-European/Italic/Romance/Italo-Western/Italo-Dalmatian/Italian
+iu: /Eskimo-Aleut/Eskimo/Inuit-Inupiaq/Inuktitut
+ja: /Japonic/Japanese
+jv: /Austronesian/Malayo-Polynesian/Javanese/Javanese
+ka: /Kartvelian/Georgian/Georgian
+kg: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/H/Kongo
+ki: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/E/Kikuyu-Kamba/Gikuyu
+kj: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo/Oshiwambo
+kk: /Turkic/Western/Aralo-Caspian/Kazakh
+kl: /Eskimo-Aleut/Eskimo/Inuit-Inupiaq/Greenlandic
+km: /Austro-Asiatic/Mon-Khmer/Eastern Mon-Khmer/Khmer/Khmer
+kn: /Dravidian/Southern/Tamil-Kannada/Kannada/Kannada
+ko: /Koreanic/Korean
+kr: /Nilo-Saharan/Saharan/Western/Kanuri
+ks: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Northwestern/Dardic/Kashmiri/Kashmiri
+ku: /Indo-European/Indo-Iranian/Iranian/Western/Northwestern/Kurdish
+kv: /Uralic/Permian/Komi
+kw: /Indo-European/Celtic/Insular/Brythonic/Cornish
+ky: /Turkic/Western/Aralo-Caspian/Kyrgyz
+la: /Indo-European/Italic/Latino-Faliscan/Latin
+lb: /Indo-European/Germanic/West/High German/German/Middle German/West Middle German/Moselle Franconian/Luxembourgish
+lg: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Nyoro-Ganda/Ganda
+li: /Indo-European/Germanic/West/Low Saxon-Low Franconian/Low Franconian/Limburgish
+ln: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Northwest/C/Bangi-Ntomba/Lingala
+lo: /Kra-Dai/Kam-Tai/Tai/Southwestern/Lao
+lt: /Indo-European/Balto-Slavic/Baltic/Eastern/Lithuanian
+lu: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/L/Luba/Luba-Katanga
+lv: /Indo-European/Balto-Slavic/Baltic/Eastern/Latvian
+mg: /Austronesian/Malayo-Polynesian/Greater Barito/East/Malagasy
+mh: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Micronesian/Micronesian Proper/Marshallese/Marshallese
+mi: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Central Pacific/East Fijian-Polynesian/Polynesian/Nuclear/East/Central/Tahitic/Maori
+mk: /Indo-European/Balto-Slavic/Slavic/South/Eastern/Macedonian
+ml: /Dravidian/Southern/Tamil-Kannada/Tamil-Kodagu/Tamil-Malayalam/Malayalam/Malayalam
+mn: /Mongolic/Eastern/Oirat-Khalkha/Khalkha-Buriat/Mongolian Proper
+mr: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Southern/Marathi
+ms: /Austronesian/Malayo-Polynesian/Malayo-Chamic/Malayic/Malay
+mt: /Afro-Asiatic/Semitic/Central/South/Arabic/Maltese
+my: /Sino-Tibetan/Tibeto-Burman/Ngwi-Burmese/Burmish/Southern/Burmese
+na: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Micronesian/Nauruan/Nauruan
+nb: /Indo-European/Germanic/North/East Scandinavian/Danish-Swedish/Danish-Bokmal/Norwegian Bokmål
+nd: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni/Ndebele
+ne: /Indo-European/Indo-Iranian/Indo-Aryan/Intermediate Divisions/Eastern/Eastern Pahari/Nepali
+ng: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/R/Wambo/Ndonga
+nl: /Indo-European/Germanic/West/Low Saxon-Low Franconian/Low Franconian/Dutch
+nn: /Indo-European/Germanic/North/West Scandinavian/Norwegian Nynorsk
+no: /Indo-European/Germanic/North/East Scandinavian/Danish-Swedish/Danish-Bokmal/Norwegian
+nr: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni/Ndebele
+nv: /Eyak-Athabaskan/Athabaskan/Apachean/Navajo
+ny: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/N/Chewa-Nyanja/Chichewa
+oc: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Ibero-Romance/Oc/Occitan
+oj: /Algic/Algonquian/Ojibwa-Potawatomi
+om: /Afro-Asiatic/Cushitic/East/Oromo
+or: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Eastern/Oriya
+os: /Indo-European/Indo-Iranian/Iranian/Eastern/Northeastern/Ossetic
+pa: /Indo-European/Indo-Iranian/Indo-Aryan/Intermediate Divisions/Western/Panjabi/Punjabi, Eastern
+pi: /Indo-European/Indo-Iranian/Indo-Aryan/Unclassified/Pali
+pl: /Indo-European/Balto-Slavic/Slavic/West/Lechitic/Polish
+ps: /Indo-European/Indo-Iranian/Iranian/Eastern/Southeastern/Pashto
+pt: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Ibero-Romance/West Iberian/Portuguese-Galician/Portuguese
+qu: /Quechuan
+rm: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Gallo-Romance/Gallo-Rhaetian/Rhaetian/Romansh
+rn: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi/Rundi
+ro: /Indo-European/Italic/Romance/Eastern/Romanian
+ru: /Indo-European/Balto-Slavic/Slavic/East/Russian
+rw: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/J/Ruanda-Rundi/Kinyarwanda
+sa: /Indo-European/Indo-Iranian/Indo-Aryan/Sanskrit
+sc: /Indo-European/Italic/Romance/Southern/Sardinian
+sd: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Northwestern/Sindhi/Sindhi
+se: /Uralic/Sami/Western/Northern/Saami, North
+sg: /Creole/Ngbandi based/Sango
+sh: /Indo-European/Balto-Slavic/Slavic/South/Western/Serbo-Croatian
+si: /Indo-European/Indo-Iranian/Indo-Aryan/Outer Languages/Southern/Sinhalese-Maldivian/Sinhala
+sk: /Indo-European/Balto-Slavic/Slavic/West/Czech-Slovak/Slovak
+sl: /Indo-European/Balto-Slavic/Slavic/South/Western/Slovene
+sm: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Central Pacific/East Fijian-Polynesian/Polynesian/Nuclear/Samoic-Outlier/Samoan/Samoan
+sn: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Shona/Shona
+so: /Afro-Asiatic/Cushitic/East/Somali/Somali
+sq: /Indo-European/Albanian
+sr: /Indo-European/Balto-Slavic/Slavic/South/Western/Serbian
+ss: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni/Swati
+st: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana/Sotho, Southern
+su: /Austronesian/Malayo-Polynesian/Sundanese/Sunda
+sv: /Indo-European/Germanic/North/East Scandinavian/Danish-Swedish/Swedish/Swedish
+sw: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Swahili
+ta: /Dravidian/Southern/Tamil-Kannada/Tamil-Kodagu/Tamil-Malayalam/Tamil/Tamil
+te: /Dravidian/South-Central/Telugu/Telugu
+tg: /Indo-European/Indo-Iranian/Iranian/Western/Southwestern/Persian/Tajik
+th: /Kra-Dai/Kam-Tai/Tai/Southwestern/Thai
+ti: /Afro-Asiatic/Semitic/South/Ethiopian/North/Tigrigna
+tk: /Turkic/Southern/Turkmenian/Turkmen
+tl: /Austronesian/Malayo-Polynesian/Greater Central Philippine/Central Philippine/Tagalog/Tagalog
+tn: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Sotho-Tswana/Setswana
+to: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Central Pacific/East Fijian-Polynesian/Polynesian/Tongic/Tongan
+tr: /Turkic/Southern/Turkish/Turkish
+ts: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Tswa-Rhonga/Tsonga
+tt: /Turkic/Western/Uralian/Tatar
+tw: /Niger-Congo/Atlantic-Congo/Volta-Congo/Kwa/Nyo/Potou-Tano/Tano/Central/Akan/Twi
+ty: /Austronesian/Malayo-Polynesian/Central-Eastern Malayo-Polynesian/Eastern Malayo-Polynesian/Oceanic/Central-Eastern Oceanic/Remote Oceanic/Central Pacific/East Fijian-Polynesian/Polynesian/Nuclear/East/Central/Tahitic/Tahitian
+ug: /Turkic/Eastern/Uyghur
+uk: /Indo-European/Balto-Slavic/Slavic/East/Ukrainian
+ur: /Indo-European/Indo-Iranian/Indo-Aryan/Western Hindi/Hindustani/Urdu
+uz: /Turkic/Eastern/Uzbek
+ve: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Venda/Venda
+vi: /Austro-Asiatic/Mon-Khmer/Viet-Muong/Vietnamese/Vietnamese
+vo: /Constructed language/Volapük
+wa: /Indo-European/Italic/Romance/Italo-Western/Western/Gallo-Iberian/Gallo-Romance/Gallo-Rhaetian/Oïl/French/Walloon
+wo: /Niger-Congo/Atlantic-Congo/Atlantic/Northern/Senegambian/Fula-Wolof/Wolof/Wolof
+xh: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni/Xhosa
+yi: /Indo-European/Germanic/West/High German/Yiddish
+yo: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Defoid/Yoruboid/Edekiri/Yoruba
+za: /Kra-Dai/Kam-Tai/Tai/Zhuang
+zh: /Sino-Tibetan/Chinese
+zu: /Niger-Congo/Atlantic-Congo/Volta-Congo/Benue-Congo/Bantoid/Southern/Narrow Bantu/Central/S/Nguni/Zulu

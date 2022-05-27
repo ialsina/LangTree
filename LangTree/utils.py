@@ -6,12 +6,15 @@ from ete3 import Tree as EteTree
 from LangTree import PATH_DATA
 from LangTree.helper import to_ete_tree
 
+__all__ = ["NodeSet", "Node"]
+
+
 class NodeSet:
     """Class that represents a collection of nodes,
     typically as a result of a query.
     """
 
-    def __init__(self, nodes, paths = None):
+    def __init__(self, nodes, paths=None):
         assert isinstance(nodes, list) or isinstance(nodes, Node)
         assert isinstance(paths, list) or isinstance(paths, str) or paths is None
         assert all([isinstance(el, Node) for el in nodes])
@@ -29,7 +32,6 @@ class NodeSet:
         self._paths = paths
         self.has_paths = paths is not None
 
-
     def __str__(self):
         output = ""
 
@@ -38,18 +40,16 @@ class NodeSet:
 
         if self.has_paths:
             for i, (node, clean_path) in enumerate(zip(self._nodes, self.clean_paths)):
-                output += "{:>2d}. {:>52s}    {:<40s}\n".format(i+1, node.__repr__(), clean_path)
+                output += "{:>2d}. {:>52s}    {:<40s}\n".format(i + 1, node.__repr__(), clean_path)
 
         else:
             for i, node in enumerate(self._nodes):
-                output += "{:>2d}. {:>52s}\n".format(i+1, node.__repr__())
+                output += "{:>2d}. {:>52s}\n".format(i + 1, node.__repr__())
 
         return output
 
-
     def __repr__(self):
         return self.__str__()
-
 
     def __len__(self):
         return len(self._nodes)
@@ -60,10 +60,10 @@ class NodeSet:
 
         if not (abs(key) >= 1 and abs(key) <= self.__len__()):
             raise IndexError("NodeSet index out of range")
-            #raise IndexError("NodeSet index must be between 1 and {:d}".format(self.__len__()))
+            # raise IndexError("NodeSet index must be between 1 and {:d}".format(self.__len__()))
 
         if key > 0:
-            key -= 1 # Nummeration from 1 (instead of 0). For negative indices, no change
+            key -= 1  # Nummeration from 1 (instead of 0). For negative indices, no change
 
         if self.has_paths:
             return self._nodes[key], self._paths[key]
@@ -71,8 +71,7 @@ class NodeSet:
         else:
             return self._nodes[key]
 
-
-    def append(self, node, path = None):
+    def append(self, node, path=None):
         assert isinstance(node, Node)
 
         if self.has_paths:
@@ -84,7 +83,6 @@ class NodeSet:
         if self.has_paths:
             self._paths.append(path)
 
-
     @property
     def nodes(self):
         return self._nodes
@@ -95,16 +93,14 @@ class NodeSet:
 
     @property
     def clean_paths(self):
-        return ['/'.join(path.split('/')[:-1])+'/' for path in self._paths]
-    
-    
-    
+        return ['/'.join(path.split('/')[:-1]) + '/' for path in self._paths]
 
 
 class Node:
     """Core notion of the Tree. A nodes is each instance within it.
     It can contain children, and many attributes
     """
+
     def __init__(self, name, children=None, soup=None, path=None, **attrs):
         self._attrs = {}
         self._soup_txt = str(soup) if soup is not None else ""
@@ -130,14 +126,12 @@ class Node:
         else:
             raise TypeError("Argument 'children' must be list or None.")
 
-
     def add(self, *children):
         self.__assert(*children)
         self._children.extend(children)
         self._children = sorted(self._children, key=lambda el: el.name)
 
-
-    def follow(self, path, omit_self = False, copy = False):
+    def follow(self, path, omit_self=False, copy=False):
         levels = [el for el in path.split('/') if len(el) > 0]
         cur = ''
 
@@ -160,9 +154,8 @@ class Node:
 
         return output
 
-
     def __repr__(self):
-        #return "NODE: {} | CHILDREN_COUNT: {}".format(self._name, len(self._children))
+        # return "NODE: {} | CHILDREN_COUNT: {}".format(self._name, len(self._children))
 
         if self.is_language:
             name = self._name
@@ -183,7 +176,6 @@ class Node:
         else:
             return "NODE: {} | CHILDREN_COUNT: {}".format(symb, self.__len__())
 
-
     def __getitem__(self, key):
         if isinstance(key, int):
             return self._children[key]
@@ -192,12 +184,10 @@ class Node:
         elif isinstance(key, str):
             return self.find(key, deep=False)
 
-
     def __len__(self):
         return len(self._children)
 
-
-    def find(self, query, ret_path=False, deep=True, copy=False, terminal=False, single_as_element = True):
+    def find(self, query, ret_path=False, deep=True, copy=False, terminal=False, single_as_element=True):
 
         assert isinstance(query, str), "Argument must be str"
 
@@ -211,7 +201,7 @@ class Node:
                 path_list = path.split('/')
                 for i, p in enumerate(path_list):
                     if query in p.lower():
-                        candidates_set.add('/'.join(path_list[:i+1]))
+                        candidates_set.add('/'.join(path_list[:i + 1]))
 
             candidates = []
             candidate_paths = list(candidates_set)
@@ -250,7 +240,6 @@ class Node:
                     return child
             return None
 
-
     def find_iso(self, query, ret_path=False, copy=False):
 
         assert isinstance(query, str), "Argument must be str"
@@ -260,13 +249,13 @@ class Node:
 
         if len(query) == 3:
 
-            for node, path in zip(self.nodes(language = True), self.paths(language = True)):
+            for node, path in zip(self.nodes(language=True), self.paths(language=True)):
                 if node.attrs.get('iso3') == query:
                     output = (node, path)
 
         elif len(query) == 2:
 
-            for node, path in zip(self.nodes(language = True), self.paths(language = True)):
+            for node, path in zip(self.nodes(language=True), self.paths(language=True)):
                 if node.attrs.get('iso2') == query:
                     output = (node, path)
 
@@ -276,14 +265,10 @@ class Node:
         else:
             return output[0]
 
-
-
     @property
     def soup(self):
         from bs4 import BeautifulSoup
         return BeautifulSoup(self._soup_txt, 'html.parser')
-    
-
 
     def launch(self):
         import webbrowser
@@ -292,13 +277,11 @@ class Node:
         else:
             return False
 
-
-    def html(self, path = None):
+    def html(self, path=None):
         path = path or "file.txt"
 
         with open(path, "w") as f:
             f.write(self.soup.prettify())
-
 
     def __apply_to_children(self, fun):
         return [fun(el) for el in self._children]
@@ -309,11 +292,9 @@ class Node:
             raise ValueError
         self._children[ind] = child
 
-
     def __assert(self, *seq):
         if not all(isinstance(el, __class__) for el in seq):
             raise TypeError("Not all elements in input sequence belong to {}.".format(__class__))
-
 
     def json(self):
         if len(self._children) == 0:
@@ -321,23 +302,30 @@ class Node:
         else:
             return {self._name: [child.json() for child in self._children]}
 
-
     def ete_tree(self, verbose=False):
         return to_ete_tree(self.json(), verbose=verbose)
 
-    def paths(self, terminal = False, language = False):
+    def paths(self, terminal=False, language=False, key=None):
+        assert not (terminal and language), "Both terminal and language cannot be True"
+
+        if key:
+            return self._get_by_key(key=key, which='paths')
+
         outp = paths_(self)
 
         if terminal:
             outp = [pp for pp, nn in zip(outp, nodes_(self)) if nn.is_terminal]
+
 
         elif language:
             outp = [pp for pp, nn in zip(outp, nodes_(self)) if nn.is_language]
 
         return outp
 
+    def nodes(self, terminal=False, language=False, copy=False, key=None, **kwargs):
+        if key:
+            return self._get_by_key(key=key, which='paths')
 
-    def nodes(self, terminal = False, language = False, copy = False, **kwargs):
         outp = nodes_(self)
 
         if terminal:
@@ -354,7 +342,24 @@ class Node:
 
         return outp
 
+    def _get_by_key(self, key, which='paths'):
+        nodes = self.nodes()
+        paths = self.paths()
 
+        assert which in ['paths', 'nodes'], "'which' must be either 'nodes' or 'paths'"
+
+        keys = []
+        for nn in nodes:
+            try:
+                val = getattr(nn, key)
+            except AttributeError:
+                val = nn.attrs.get(key, '')
+            keys.append(val)
+
+        if which == 'paths':
+            return {k: v for k, v in zip(keys, paths) if k != ''}
+        elif which == 'nodes':
+            return {k: v for k, v in zip(keys, nodes) if k != ''}
 
     def __draw_level(self, stack=[], printer=print):
         pattern = ''.join(list(map(lambda x: {False: "   ", True: "┃  "}.get(x), stack[:-1])))
@@ -364,12 +369,10 @@ class Node:
             pattern += {True: "┠─ ", False: "┖─ "}.get(stack[-1])
         printer(pattern + self._name)
         for (i, child) in enumerate(self._children):
-
-            child.__draw_level(stack=stack+[i!=len(self._children)-1], printer=printer)
-
+            child.__draw_level(stack=stack + [i != len(self._children) - 1], printer=printer)
 
     # TO BE DEPRECATED
-    def terminal(self, ret_paths = False):
+    def terminal(self, ret_paths=False):
         if not ret_paths:
             return list(filter(lambda x: x.is_terminal, self.flatten()))
 
@@ -385,20 +388,18 @@ class Node:
 
             return filtered_nodes, filtered_paths
 
-
-
     def count_nodes(self):
-        return len(self.nodes(terminal = False))
+        return len(self.nodes(terminal=False))
 
     def count_terminal(self):
-        return len(self.nodes(terminal = True))
+        return len(self.nodes(terminal=True))
 
     def count_children(self):
-        return self.__len__()    
+        return self.__len__()
 
     @property
     def children(self):
-        return self._children 
+        return self._children
 
     @property
     def attrs(self):
@@ -410,23 +411,20 @@ class Node:
 
     @property
     def is_language(self):
-        return self.is_terminal or self.get("iso2") is not None    
+        return self.is_terminal or self.get("iso2") is not None
 
     @property
     def name(self):
         return self._name
 
-
     def update(self, **kwargs):
         self._attrs.update(kwargs)
-
 
     def get(self, key):
         return self._attrs.get(key)
 
-
     # TO BE DEPRECATED
-    def flatten(self, last_level = False):
+    def flatten(self, last_level=False):
 
         output = copy(self._children)
 
@@ -438,10 +436,8 @@ class Node:
 
         return output
 
-
     def tree(self, printer=print):
         self.__draw_level(printer=printer)
-
 
     def __parse_info(self, readstream, replace_name=True):
         import re
@@ -481,7 +477,6 @@ class Node:
 
             self._name = out.strip()
 
-
     def check(self, verbose=False):
         expected = self._attrs.get("exp_len")
         if expected is None:
@@ -497,97 +492,65 @@ class Node:
 
         return out
 
-
-    def save(self, location = None):
+    def save(self, filepath=None, filename=None):
         import pickle
 
-        location = location or os.path.join(PATH_DATA, 'node_tree.pickle')
+        filename = _ensure_extension(filename, 'pickle') or 'node_tree.pickle'
+        filepath = filepath or os.path.join(PATH_DATA, filename)
 
-        with open(location, "wb") as f:
+        with open(filepath, "wb") as f:
             pickle.dump(self, f, pickle.HIGHEST_PROTOCOL)
 
-        print("> Saved object in {}".format(os.path.abspath(location)))
+        print("> Saved object in {}".format(os.path.abspath(filepath)))
 
-
-    def save_json(self, location = None):
+    def save_json(self, filepath=None, filename=None):
         import json
 
-        location = location or os.path.join(PATH_DATA, 'node_tree.json')
+        filename = _ensure_extension(filename, 'json') or 'node_tree.json'
+        filepath = filepath or os.path.join(PATH_DATA, filename)
 
-        with open(location, "w") as f:
+        with open(filepath, "w") as f:
             json.dump(self.json(), f)
 
-        print("> Saved json in {}".format(os.path.abspath(location)))
+        print("> Saved json in {}".format(os.path.abspath(filepath)))
 
-
-    def save_paths(self, kind = 'txt', location = None):
+    def save_paths(self, kind='txt', filepath=None, filename=None, key=None):
         import json
 
         assert isinstance(kind, str)
         kind = kind.lower()
         assert kind in ['txt', 'json'], "kind not supported"
 
-        if kind == 'txt':
-            location = location or os.path.join(PATH_DATA, 'lang_paths.txt')
+        filename = filename or "paths"
 
-            with open(location, "w") as f:
-                f.write("\n".join(self.paths()))
+        if key == 'last':
+            paths = {el.split('/')[-1]: el for el in self.paths(key=None)}
+        else:
+            paths = self.paths(key=key)
+
+        if kind == 'txt':
+            filepath = filepath or os.path.join(PATH_DATA, _ensure_extension(filename, 'txt'))
+            with open(filepath, "w") as f:
+                f.write(_to_string(paths, sort=True))
 
         elif kind == 'json':
-            location = location or os.path.join(PATH_DATA, 'lang_paths.json')
+            filepath = filepath or os.path.join(PATH_DATA, _ensure_extension(filename, 'json'))
+            with open(filepath, "w") as f:
+                json.dump(paths, f)
 
-            with open(location, "w") as f:
-                json.dump({el.split('/')[-1]: el for el in self.paths()}, f)
+        print("> Saved paths ({}) in {}".format(kind, filepath))
 
-        print("> Saved paths ({}) in {}".format(kind, location))
-
-
-    def tree_to_file(self, location = None):
+    def tree_to_file(self, location=None):
         location = location or 'output/{}_tree.txt'.format(self._name)
 
         with open(location, "w") as f:
             self.tree(lambda x: print(x, file=f))
 
-    def html_to_file(self, location = None):
+    def html_to_file(self, location=None):
         location = location or 'output/{}_html.txt'.format(self._name)
 
         with open(location, "w") as f:
             f.write(self.soup.prettify())
-
-
-
-# DEPRECATED
-def nodes_terminal_(node):
-
-    children = node.children
-
-    if len(node) == 0:
-        return [node]
-
-    l = []
-
-    for child in children:
-
-        l.extend(nodes_(child))
-
-    return l
-
-
-# DEPRECATED
-def paths_terminal_(node):
-
-    name = node.name.replace('/', '')
-    children = node.children
-
-    if len(node) == 0:
-        return [name]
-
-    l = []
-
-    for child in children:
-        l.extend([name + '/' + el for el in paths_(child)])
-
-    return l
 
 
 def nodes_(node):
@@ -601,7 +564,6 @@ def nodes_(node):
     return l
 
 
-
 def paths_(node):
     name = node.name.replace('/', '')
     children = node.children
@@ -612,6 +574,36 @@ def paths_(node):
         l.extend([name + '/' + el for el in paths_(child)])
 
     return l
+
+
+def _to_string(inp, sort=False):
+    if isinstance(inp, dict):
+        list_like = ["{}: {}".format(k, v) for k, v in inp.items()]
+        if sort:
+            return "\n".join(sorted(list_like))
+        else:
+            return "\n".join(list_like)
+    elif isinstance(inp, list):
+        if sort:
+            return "\n".join(sorted(inp))
+        else:
+            return "\n".join(inp)
+    elif isinstance(inp, str):
+        return inp
+    else:
+        raise TypeError("inp must be dict, list or str")
+
+
+def _ensure_extension(filename, extension):
+    if filename is None:
+        return
+    assert isinstance(filename, str), "Filename must be str"
+    assert isinstance(extension, str), "Extension must be str"
+    if not extension.startswith('.'):
+        extension = '.' + extension
+    if not filename.endswith(extension):
+        filename = filename + extension
+    return filename
 
 
 if __name__ == "__main__":
