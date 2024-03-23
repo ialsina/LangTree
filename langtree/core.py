@@ -1,7 +1,7 @@
 from copy import deepcopy, copy
 import os
 
-from .paths import DATA_DIR
+from .paths import DATA_DIR, paths
 from .utils import to_ete_tree
 from ._exceptions import BadPathError
 
@@ -509,7 +509,7 @@ class Node:
     def save_json(self, filepath=None, filename=None):
         import json
 
-        filename = _ensure_extension(filename, 'json') or 'node_tree.json'
+        filename = _ensure_extension(filename, 'json') or paths.default_node_tree
         filepath = filepath or os.path.join(DATA_DIR, filename)
 
         with open(filepath, "w") as f:

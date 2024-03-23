@@ -12,3 +12,6 @@ class paths:
     lang_iso_name     = DATA_DIR / "lang_iso_name.json"
     language_speakers = DATA_DIR / "language_speakers.txt"
     families          = DATA_DIR / "families.txt"
+    default_node_tree = DATA_DIR / "node_tree.json"
+    language_paths    = DATA_DIR / "paths.txt"
+    iso639_3          = DATA_DIR / "iso636-3.txt"

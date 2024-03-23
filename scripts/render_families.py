@@ -7,7 +7,7 @@ from ete3 import Tree, faces, AttrFace, TreeStyle, NodeStyle
 
 from tqdm import tqdm
 
-from langtree import Node, load_obj, PATH_OUT
+from langtree import Node, load_obj, OUTPUT_DIR
 
 ORIENTATIONS = {"up": 0, "down": 180, "left": 270, "right": 90}
 OUTPUT_FORMAT = 'svg'

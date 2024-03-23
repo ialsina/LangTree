@@ -3,18 +3,18 @@ from typing import Sequence, Mapping, Any
 from pandas import read_table
 
 from langtree import Node
-from langtree.paths import DATA_DIR
+from langtree.paths import paths
 
 def load_json(fp=None):
     if fp is None:
-        fp = DATA_DIR / "node_tree.json"
-    with open(fp, "r", encoding="utf-8") as f:
+        fp = paths.default_node_tree
+    with open(fp, "r") as f:
         return json.load(f)
 
 def load_paths(fp=None):
     if fp is None:
-        fp = DATA_DIR / "lang_paths.txt"
-    with open(fp, "r", encoding="utf-8") as f:
+        fp = paths.language_paths
+    with open(fp, "r") as f:
         return [el.replace('\n', '') for el in f.readlines()]
 
 def load_tree(fp=None):
@@ -22,7 +22,7 @@ def load_tree(fp=None):
 
 def load_iso639_3(fp=None):
     if fp is None:
-        fp = DATA_DIR / "iso639-3.txt"
+        fp = paths.iso639_3
     return read_table(fp, index_col = 0, encoding = 'utf-8', na_values = "")
 
 def create_tree(data: Sequence[Any] | Mapping[str, Any]):
