@@ -283,23 +283,6 @@ class Node:
         for (i, child) in enumerate(self._children):
             child.__draw_level(stack=stack + [i != len(self._children) - 1], printer=printer)
 
-    # TO BE DEPRECATED
-    def terminal(self, ret_paths=False):
-        if not ret_paths:
-            return list(filter(lambda x: x.is_terminal, self.flatten()))
-
-        else:
-            paths, nodes = self.paths(), self.nodes()
-            filtered_paths = []
-            filtered_nodes = []
-
-            for path, node in zip(paths, nodes):
-                if node.is_terminal:
-                    filtered_paths.append(path)
-                    filtered_nodes.append(node)
-
-            return filtered_nodes, filtered_paths
-
     def count_nodes(self):
         return len(self.nodes(terminal=False))
 
@@ -334,19 +317,6 @@ class Node:
 
     def get(self, key):
         return self._attrs.get(key)
-
-    # TO BE DEPRECATED
-    def flatten(self, last_level=False):
-
-        output = copy(self._children)
-
-        for child in self._children:
-            output.extend(child.flatten())
-
-        if last_level:
-            output = [el for el in output if len(el) == 0]
-
-        return output
 
     def tree(self, printer=print):
         self.__draw_level(printer=printer)
