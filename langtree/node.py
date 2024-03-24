@@ -213,6 +213,27 @@ class Node:
             return self._name
         else:
             return {self._name: [child.json() for child in self._children]}
+    
+    @classmethod
+    def from_json(cls, data):
+        if isinstance(data, list):
+            return [cls.from_json(el) for el in data]
+        if isinstance(data, dict):
+            if not len(data) == 1:
+                raise ValueError(
+                    f"If data is a dict, must be of len 1, not {len(data)}"
+                )
+            key, val = list(data.items())[0]
+            if not isinstance(val, (list, tuple)):
+                raise TypeError(
+                    f"If data is a dict, value must be of type list, not {type(data)}"
+                )
+            return cls(key, [cls.from_json(el) for el in val])
+        if isinstance(data, str):
+            return cls(data)
+        raise TypeError(
+            f"data must be of type list, tuple, dict or str, not {type(data)}"
+        )
 
     def ete_tree(self, verbose=False):
         return to_ete_tree(self.json(), verbose=verbose)
