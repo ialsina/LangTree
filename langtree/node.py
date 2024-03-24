@@ -39,11 +39,13 @@ class Node(MutableSequence):
     def __repr__(self):
         if self.is_language:
             name = self.name
-            iso3 = self.get("iso3")
-            iso2 = self.get("iso2")
+            iso3 = self.attrs.get("iso3")
+            iso2 = self.attrs.get("iso2")
             symb = (
-                f"{name} ({iso3} | {iso2})" if iso2 else
-                f"{name} ({iso3})"
+                f"{name} ({iso3} | {iso2})" if iso3 and iso2 else
+                f"{name} ({iso3})" if iso3 else
+                f"{name} ({iso2})" if iso2 else
+                name
             )
         else:
             symb = self.name
@@ -69,6 +71,11 @@ class Node(MutableSequence):
         if not isinstance(ind, int):
             raise ValueError
         self._children[ind] = child
+    
+    def __getattr__(self, name):
+        if name in self.attrs:
+            return self.attrs[name]
+        return super().__getattribute__(name)
     
     def __delitem__(self, key):
         del self._children[key]
@@ -325,13 +332,10 @@ class Node(MutableSequence):
 
     @property
     def is_language(self):
-        return self.is_terminal or self.get("iso2") is not None
+        return self.is_terminal or self.attrs.get("iso2") is not None
 
     def update(self, **kwargs):
         self.attrs.update(kwargs)
-
-    def get(self, key):
-        return self.attrs.get(key)
 
     def tree(self, printer=print):
         self._draw_level(printer=printer)
