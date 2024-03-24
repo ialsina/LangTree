@@ -1,40 +1,56 @@
-from .core import Node
+from collections.abc import Sequence
 
 __all__ = ["NodeSet"]
 
-class NodeSet:
+class NodeSet(Sequence):
     """Class that represents a collection of nodes,
     typically as a result of a query.
     """
 
     def __init__(self, nodes, paths=None):
-        if not isinstance(nodes, (list, Node)):
-            raise TypeError(
-                f"nodes must be of type Node or list, not {type(nodes)}"
-            )
-        if not (isinstance(paths, (list, str)) or paths is None):
-            raise TypeError(
-                f"If passed, paths must be of type list, or str, not {type(paths)}"
-            )
-        assert all(isinstance(el, Node) for el in nodes)
-
-        if isinstance(nodes, Node):
-            nodes = [nodes]
-
-        if isinstance(paths, str):
-            paths = [paths]
-
+        nodes = self._normalize_nodes(nodes)
         if paths is not None:
-            assert len(nodes) == len(paths)
-
+            paths = self._normalize_paths(paths)
+            if len(nodes) != len(paths):
+                raise ValueError(
+                    f"Lengths of nodes and paths must match (they were {len(nodes)} and {len(paths)})."
+                )
         self._nodes = nodes
         self._paths = paths
-        self.has_paths = paths is not None
+    
+    @staticmethod
+    def _normalize_nodes(nodes):
+        from .node import Node # pylint: disable=C0415
+        if isinstance(nodes, Node):
+            return [nodes]
+        if isinstance(nodes, list):
+            if all(isinstance(element, Node) for element in nodes):
+                return nodes
+            raise ValueError(
+                "If passed as list, all elements of node must be of type Node."
+            )
+        raise TypeError(
+            f"node must be of type Node, not {type(nodes)}."
+        )
+    
+    @staticmethod
+    def _normalize_paths(paths):
+        if isinstance(paths, str):
+            return [paths]
+        if isinstance(paths, list):
+            if all(isinstance(element, str) for element in paths):
+                raise ValueError(
+                    "If passed as list, all elements of path must be of type str."
+                )
+            return paths
+        raise TypeError(
+            f"path must be of type Node, not {type(paths)}."
+        )
 
     def __str__(self):
         output = ""
 
-        if self.__len__() == 0:
+        if len(self) == 0:
             return output + "* Empty *"
 
         if self.has_paths:
@@ -48,7 +64,7 @@ class NodeSet:
         return output
 
     def __repr__(self):
-        return self.__str__()
+        return str(self)
 
     def __len__(self):
         return len(self._nodes)
@@ -69,15 +85,13 @@ class NodeSet:
             return self._nodes[key]
 
     def append(self, node, path=None):
-        assert isinstance(node, Node)
-
+        node = self._normalize_nodes(node)
+        self._nodes.extend(node)
         if self.has_paths:
-            assert isinstance(path, str)
-        else:
-            path = None
-
-        self._nodes.append(node)
-        if self.has_paths:
+            if not isinstance(path, str):
+                raise TypeError(
+                    f"path must be str, not {type(path)}"
+                )
             self._paths.append(path)
 
     @property
@@ -87,6 +101,10 @@ class NodeSet:
     @property
     def paths(self):
         return self._paths
+
+    @property
+    def has_paths(self):
+        return (self._paths is not None)
 
     @property
     def clean_paths(self):
